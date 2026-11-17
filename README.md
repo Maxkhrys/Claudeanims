@@ -32,6 +32,38 @@ clip again first. Card titles live in `scripts/build-full.mjs`; the card and end
 are in `src/clips/Extras.tsx`. The dashed boxes on the end screen mark where YouTube's
 suggested-video and subscribe elements go.
 
+## Video 2: AlphaBay
+
+One narration file, 14 clips, one composition.
+
+```bash
+npm run transcribe -- video2/full   # Whisper -> public/audio/video2/full.json
+npm run timings:video2              # matches the script to the transcript -> src/video2/clipTimings.ts
+npm run render:video2               # -> out/video2.mp4 (about 10:19)
+npx remotion render V2-Clip8 out/v2-clip8.mp4   # any single clip, with its slice of the audio
+```
+
+- `scripts/alphabay_script.md` is the source of truth for what appears on screen.
+- `scripts/clip-timings.mjs` finds each clip's start by matching the first narration line under
+  every `## Clip N` heading to the transcript, and cuts in the middle of the pause before it.
+- `src/video2/ClipN.tsx` holds one clip each. Inside a clip, `const { c, D } = useClip(N)` gives
+  cue frames local to that clip. Clips render visuals only; `Video2` adds the audio, background and captions.
+- `src/video2/words.ts` corrects Whisper's spellings of names (Cazes, Alexandre) for captions and cues.
+- Compositions: `Video2` (full), `V2-Clip1` ... `V2-Clip14`, and `V2StyleGuide` (cast and component sheet).
+
+New parts added for this video (all in `src/components/`): `EmailHeader`, `MapPins`, `EvidenceBoard`,
+`AssetGarage` + `Car`, `SeizedStamp`, `MarketLogo` / `OnionLogo` / `CamelLogo`, and the `Cazes`, `Cop`
+and `RossBlob` cast presets. Logos are stylised on purpose, not copies of the real ones.
+
+## Sound effects
+
+`python3 scripts/make-sfx.py` synthesizes 16 sounds into `public/sfx` (no samples). Components play
+them on their own: `TitleSlam` (slam), `Stamp` / `SeizedStamp` (stamp), `Counter` (ticks, then a coin
+for money), `Terminal` and `ChatWindow` (key clicks, notification), `Chip` (pop), glitches (glitch).
+Add extra ones with `<Sfx name="crash" at={c("smashes")} />`. Pass `sound={false}` to a component to
+mute it, or change `SFX_VOLUME` in `src/components/Sfx.tsx` for the overall level. Because the sounds
+live in the shared components, re-rendering the Silk Road clips adds sound to them too.
+
 ## Layout
 
 ```
