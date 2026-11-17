@@ -111,7 +111,8 @@ export const Captions: React.FC<{
                 letterSpacing: "0.01em",
                 color: active ? highlight : colors.text,
                 opacity: spoken ? 1 : 0.4,
-                transform: `scale(${active ? 1 + 0.08 * pop : 1})`,
+                // long words grow less, so they never eat the gap to their neighbours
+                transform: `scale(${active ? 1 + 0.08 * pop * Math.min(1, 6 / w.text.length) : 1})`,
                 textShadow: active
                   ? `0 0 26px ${highlight}77, 0 4px 0 #000, 0 0 12px #000, 0 0 30px #000`
                   : "0 4px 0 #000, 0 0 12px #000, 0 0 30px #000",

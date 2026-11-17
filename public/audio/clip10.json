@@ -1,0 +1,606 @@
+{
+  "clip": "clip10",
+  "model": "medium.en",
+  "words": [
+    {
+      "text": "In",
+      "start": 0.09,
+      "end": 0.15
+    },
+    {
+      "text": "2015,",
+      "start": 0.15,
+      "end": 1.41
+    },
+    {
+      "text": "Ross",
+      "start": 1.41,
+      "end": 1.49
+    },
+    {
+      "text": "was",
+      "start": 1.49,
+      "end": 1.7
+    },
+    {
+      "text": "convicted",
+      "start": 1.7,
+      "end": 2.38
+    },
+    {
+      "text": "on",
+      "start": 2.38,
+      "end": 2.53
+    },
+    {
+      "text": "charges",
+      "start": 2.53,
+      "end": 3.08
+    },
+    {
+      "text": "including",
+      "start": 3.08,
+      "end": 3.66
+    },
+    {
+      "text": "drug",
+      "start": 3.66,
+      "end": 3.85
+    },
+    {
+      "text": "trafficking,",
+      "start": 3.85,
+      "end": 4.72
+    },
+    {
+      "text": "money",
+      "start": 4.72,
+      "end": 4.94
+    },
+    {
+      "text": "laundering,",
+      "start": 4.94,
+      "end": 5.76
+    },
+    {
+      "text": "and",
+      "start": 5.76,
+      "end": 5.87
+    },
+    {
+      "text": "computer",
+      "start": 5.87,
+      "end": 6.4
+    },
+    {
+      "text": "hacking.",
+      "start": 6.4,
+      "end": 7.2
+    },
+    {
+      "text": "He",
+      "start": 7.2,
+      "end": 7.35
+    },
+    {
+      "text": "was",
+      "start": 7.35,
+      "end": 7.58
+    },
+    {
+      "text": "never",
+      "start": 7.58,
+      "end": 7.98
+    },
+    {
+      "text": "convicted",
+      "start": 7.98,
+      "end": 8.65
+    },
+    {
+      "text": "of",
+      "start": 8.65,
+      "end": 8.8
+    },
+    {
+      "text": "murder-for-hire,",
+      "start": 8.8,
+      "end": 10.13
+    },
+    {
+      "text": "but",
+      "start": 10.13,
+      "end": 10.33
+    },
+    {
+      "text": "the",
+      "start": 10.33,
+      "end": 10.53
+    },
+    {
+      "text": "judge",
+      "start": 10.53,
+      "end": 10.86
+    },
+    {
+      "text": "had",
+      "start": 10.86,
+      "end": 11.06
+    },
+    {
+      "text": "heard",
+      "start": 11.06,
+      "end": 11.39
+    },
+    {
+      "text": "about",
+      "start": 11.39,
+      "end": 11.72
+    },
+    {
+      "text": "the",
+      "start": 11.72,
+      "end": 11.92
+    },
+    {
+      "text": "hits.",
+      "start": 11.92,
+      "end": 12.4
+    },
+    {
+      "text": "The",
+      "start": 12.4,
+      "end": 12.65
+    },
+    {
+      "text": "sentence?",
+      "start": 12.65,
+      "end": 13.81
+    },
+    {
+      "text": "Two",
+      "start": 13.81,
+      "end": 13.86
+    },
+    {
+      "text": "life",
+      "start": 13.86,
+      "end": 14.21
+    },
+    {
+      "text": "sentences",
+      "start": 14.21,
+      "end": 15.01
+    },
+    {
+      "text": "plus",
+      "start": 15.01,
+      "end": 15.36
+    },
+    {
+      "text": "40",
+      "start": 15.36,
+      "end": 15.89
+    },
+    {
+      "text": "years.",
+      "start": 15.89,
+      "end": 16.64
+    },
+    {
+      "text": "No",
+      "start": 16.64,
+      "end": 16.88
+    },
+    {
+      "text": "parole.",
+      "start": 16.88,
+      "end": 18
+    },
+    {
+      "text": "Supporters",
+      "start": 18,
+      "end": 18.78
+    },
+    {
+      "text": "called",
+      "start": 18.78,
+      "end": 19.35
+    },
+    {
+      "text": "it",
+      "start": 19.35,
+      "end": 19.41
+    },
+    {
+      "text": "brutally",
+      "start": 19.41,
+      "end": 19.96
+    },
+    {
+      "text": "harsh",
+      "start": 19.96,
+      "end": 20.32
+    },
+    {
+      "text": "for",
+      "start": 20.32,
+      "end": 20.54
+    },
+    {
+      "text": "a",
+      "start": 20.54,
+      "end": 20.61
+    },
+    {
+      "text": "first",
+      "start": 20.61,
+      "end": 20.98
+    },
+    {
+      "text": "offense.",
+      "start": 20.98,
+      "end": 21.76
+    },
+    {
+      "text": "Critics",
+      "start": 21.76,
+      "end": 22.41
+    },
+    {
+      "text": "pointed",
+      "start": 22.41,
+      "end": 23.17
+    },
+    {
+      "text": "to",
+      "start": 23.17,
+      "end": 23.24
+    },
+    {
+      "text": "the",
+      "start": 23.24,
+      "end": 23.52
+    },
+    {
+      "text": "drugs,",
+      "start": 23.52,
+      "end": 24.17
+    },
+    {
+      "text": "the",
+      "start": 24.17,
+      "end": 24.45
+    },
+    {
+      "text": "overdoses,",
+      "start": 24.45,
+      "end": 25.47
+    },
+    {
+      "text": "and",
+      "start": 25.47,
+      "end": 25.75
+    },
+    {
+      "text": "the",
+      "start": 25.75,
+      "end": 26.06
+    },
+    {
+      "text": "hit",
+      "start": 26.06,
+      "end": 26.48
+    },
+    {
+      "text": "list.",
+      "start": 26.48,
+      "end": 27.04
+    },
+    {
+      "text": "In",
+      "start": 27.13,
+      "end": 27.2
+    },
+    {
+      "text": "January",
+      "start": 27.2,
+      "end": 27.82
+    },
+    {
+      "text": "2025,",
+      "start": 27.82,
+      "end": 28.89
+    },
+    {
+      "text": "after",
+      "start": 28.89,
+      "end": 29.32
+    },
+    {
+      "text": "more",
+      "start": 29.32,
+      "end": 29.62
+    },
+    {
+      "text": "than",
+      "start": 29.62,
+      "end": 29.93
+    },
+    {
+      "text": "11",
+      "start": 29.93,
+      "end": 30.41
+    },
+    {
+      "text": "years",
+      "start": 30.41,
+      "end": 30.81
+    },
+    {
+      "text": "in",
+      "start": 30.81,
+      "end": 30.97
+    },
+    {
+      "text": "prison,",
+      "start": 30.97,
+      "end": 31.76
+    },
+    {
+      "text": "he",
+      "start": 31.76,
+      "end": 31.82
+    },
+    {
+      "text": "was",
+      "start": 31.82,
+      "end": 32.03
+    },
+    {
+      "text": "pardoned",
+      "start": 32.03,
+      "end": 32.59
+    },
+    {
+      "text": "by",
+      "start": 32.59,
+      "end": 32.82
+    },
+    {
+      "text": "the",
+      "start": 32.82,
+      "end": 32.94
+    },
+    {
+      "text": "president.",
+      "start": 32.94,
+      "end": 33.6
+    },
+    {
+      "text": "And",
+      "start": 33.6,
+      "end": 33.96
+    },
+    {
+      "text": "he",
+      "start": 33.96,
+      "end": 34.2
+    },
+    {
+      "text": "walked",
+      "start": 34.2,
+      "end": 35.01
+    },
+    {
+      "text": "free.",
+      "start": 35.01,
+      "end": 35.76
+    },
+    {
+      "text": "So",
+      "start": 35.76,
+      "end": 35.93
+    },
+    {
+      "text": "who",
+      "start": 35.93,
+      "end": 36.19
+    },
+    {
+      "text": "was",
+      "start": 36.19,
+      "end": 36.56
+    },
+    {
+      "text": "the",
+      "start": 36.56,
+      "end": 36.71
+    },
+    {
+      "text": "real",
+      "start": 36.71,
+      "end": 37.17
+    },
+    {
+      "text": "Ross",
+      "start": 37.17,
+      "end": 37.41
+    },
+    {
+      "text": "Ulbricht?",
+      "start": 37.41,
+      "end": 38.4
+    },
+    {
+      "text": "An",
+      "start": 38.4,
+      "end": 38.56
+    },
+    {
+      "text": "idealist",
+      "start": 38.56,
+      "end": 39.21
+    },
+    {
+      "text": "who",
+      "start": 39.21,
+      "end": 39.45
+    },
+    {
+      "text": "built",
+      "start": 39.45,
+      "end": 39.86
+    },
+    {
+      "text": "a",
+      "start": 39.86,
+      "end": 39.94
+    },
+    {
+      "text": "free",
+      "start": 39.94,
+      "end": 40.27
+    },
+    {
+      "text": "market?",
+      "start": 40.27,
+      "end": 40.8
+    },
+    {
+      "text": "Or",
+      "start": 40.8,
+      "end": 40.96
+    },
+    {
+      "text": "a",
+      "start": 40.96,
+      "end": 41.04
+    },
+    {
+      "text": "man",
+      "start": 41.04,
+      "end": 41.28
+    },
+    {
+      "text": "who,",
+      "start": 41.28,
+      "end": 41.68
+    },
+    {
+      "text": "when",
+      "start": 41.68,
+      "end": 42.21
+    },
+    {
+      "text": "threatened,",
+      "start": 42.21,
+      "end": 42.97
+    },
+    {
+      "text": "reached",
+      "start": 42.97,
+      "end": 43.54
+    },
+    {
+      "text": "for",
+      "start": 43.54,
+      "end": 43.78
+    },
+    {
+      "text": "murder,",
+      "start": 43.78,
+      "end": 44.46
+    },
+    {
+      "text": "and",
+      "start": 44.46,
+      "end": 44.65
+    },
+    {
+      "text": "only",
+      "start": 44.65,
+      "end": 44.91
+    },
+    {
+      "text": "got",
+      "start": 44.91,
+      "end": 45.11
+    },
+    {
+      "text": "lucky",
+      "start": 45.11,
+      "end": 45.52
+    },
+    {
+      "text": "that",
+      "start": 45.52,
+      "end": 45.7
+    },
+    {
+      "text": "the",
+      "start": 45.7,
+      "end": 45.9
+    },
+    {
+      "text": "killer",
+      "start": 45.9,
+      "end": 46.3
+    },
+    {
+      "text": "wasn't",
+      "start": 46.3,
+      "end": 46.69
+    },
+    {
+      "text": "real?",
+      "start": 46.69,
+      "end": 47.2
+    },
+    {
+      "text": "Let",
+      "start": 47.2,
+      "end": 47.38
+    },
+    {
+      "text": "me",
+      "start": 47.38,
+      "end": 47.52
+    },
+    {
+      "text": "know",
+      "start": 47.52,
+      "end": 47.78
+    },
+    {
+      "text": "what",
+      "start": 47.78,
+      "end": 47.98
+    },
+    {
+      "text": "you",
+      "start": 47.98,
+      "end": 48.16
+    },
+    {
+      "text": "think",
+      "start": 48.16,
+      "end": 48.58
+    },
+    {
+      "text": "in",
+      "start": 48.58,
+      "end": 48.61
+    },
+    {
+      "text": "the",
+      "start": 48.61,
+      "end": 48.76
+    },
+    {
+      "text": "comments.",
+      "start": 48.76,
+      "end": 49.44
+    }
+  ]
+}

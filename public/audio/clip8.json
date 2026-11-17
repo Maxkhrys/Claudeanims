@@ -1,0 +1,566 @@
+{
+  "clip": "clip8",
+  "model": "medium.en",
+  "words": [
+    {
+      "text": "Here's",
+      "start": 0.14,
+      "end": 0.42
+    },
+    {
+      "text": "the",
+      "start": 0.42,
+      "end": 0.63
+    },
+    {
+      "text": "thing.",
+      "start": 0.63,
+      "end": 1.41
+    },
+    {
+      "text": "None",
+      "start": 1.41,
+      "end": 1.54
+    },
+    {
+      "text": "of",
+      "start": 1.54,
+      "end": 1.69
+    },
+    {
+      "text": "those",
+      "start": 1.69,
+      "end": 2.1
+    },
+    {
+      "text": "people",
+      "start": 2.1,
+      "end": 2.55
+    },
+    {
+      "text": "ever",
+      "start": 2.55,
+      "end": 2.86
+    },
+    {
+      "text": "went",
+      "start": 2.86,
+      "end": 3.17
+    },
+    {
+      "text": "missing.",
+      "start": 3.17,
+      "end": 4.03
+    },
+    {
+      "text": "No",
+      "start": 4.03,
+      "end": 4.12
+    },
+    {
+      "text": "bodies,",
+      "start": 4.12,
+      "end": 5.05
+    },
+    {
+      "text": "no",
+      "start": 5.05,
+      "end": 5.08
+    },
+    {
+      "text": "missing",
+      "start": 5.08,
+      "end": 5.52
+    },
+    {
+      "text": "person",
+      "start": 5.52,
+      "end": 5.92
+    },
+    {
+      "text": "reports,",
+      "start": 5.92,
+      "end": 6.91
+    },
+    {
+      "text": "no",
+      "start": 6.91,
+      "end": 7.12
+    },
+    {
+      "text": "sign",
+      "start": 7.12,
+      "end": 7.41
+    },
+    {
+      "text": "that",
+      "start": 7.41,
+      "end": 7.8
+    },
+    {
+      "text": "friendly",
+      "start": 7.8,
+      "end": 8.28
+    },
+    {
+      "text": "chemist",
+      "start": 8.28,
+      "end": 8.79
+    },
+    {
+      "text": "or",
+      "start": 8.79,
+      "end": 8.93
+    },
+    {
+      "text": "the",
+      "start": 8.93,
+      "end": 9.14
+    },
+    {
+      "text": "four",
+      "start": 9.14,
+      "end": 9.47
+    },
+    {
+      "text": "scammers",
+      "start": 9.47,
+      "end": 10.16
+    },
+    {
+      "text": "ever",
+      "start": 10.16,
+      "end": 10.43
+    },
+    {
+      "text": "existed",
+      "start": 10.43,
+      "end": 11.11
+    },
+    {
+      "text": "at",
+      "start": 11.11,
+      "end": 11.3
+    },
+    {
+      "text": "all.",
+      "start": 11.3,
+      "end": 11.8
+    },
+    {
+      "text": "Investigators",
+      "start": 11.8,
+      "end": 13.13
+    },
+    {
+      "text": "now",
+      "start": 13.13,
+      "end": 13.21
+    },
+    {
+      "text": "believe",
+      "start": 13.21,
+      "end": 13.71
+    },
+    {
+      "text": "it",
+      "start": 13.71,
+      "end": 13.87
+    },
+    {
+      "text": "was",
+      "start": 13.87,
+      "end": 14.12
+    },
+    {
+      "text": "most",
+      "start": 14.12,
+      "end": 14.45
+    },
+    {
+      "text": "likely",
+      "start": 14.45,
+      "end": 14.95
+    },
+    {
+      "text": "one",
+      "start": 14.95,
+      "end": 15.2
+    },
+    {
+      "text": "person",
+      "start": 15.2,
+      "end": 15.83
+    },
+    {
+      "text": "playing",
+      "start": 15.83,
+      "end": 16.28
+    },
+    {
+      "text": "every",
+      "start": 16.28,
+      "end": 16.85
+    },
+    {
+      "text": "character.",
+      "start": 16.85,
+      "end": 17.72
+    },
+    {
+      "text": "The",
+      "start": 17.72,
+      "end": 17.95
+    },
+    {
+      "text": "panicked",
+      "start": 17.95,
+      "end": 18.71
+    },
+    {
+      "text": "supplier,",
+      "start": 18.71,
+      "end": 19.16
+    },
+    {
+      "text": "the",
+      "start": 19.16,
+      "end": 19.38
+    },
+    {
+      "text": "biker",
+      "start": 19.38,
+      "end": 19.74
+    },
+    {
+      "text": "gang",
+      "start": 19.74,
+      "end": 20.03
+    },
+    {
+      "text": "enforcer,",
+      "start": 20.03,
+      "end": 20.8
+    },
+    {
+      "text": "maybe",
+      "start": 20.8,
+      "end": 21.16
+    },
+    {
+      "text": "even",
+      "start": 21.16,
+      "end": 21.45
+    },
+    {
+      "text": "the",
+      "start": 21.45,
+      "end": 21.66
+    },
+    {
+      "text": "dealer",
+      "start": 21.66,
+      "end": 22.09
+    },
+    {
+      "text": "who",
+      "start": 22.09,
+      "end": 22.3
+    },
+    {
+      "text": "vanished",
+      "start": 22.3,
+      "end": 22.88
+    },
+    {
+      "text": "in",
+      "start": 22.88,
+      "end": 23.02
+    },
+    {
+      "text": "the",
+      "start": 23.02,
+      "end": 23.18
+    },
+    {
+      "text": "first",
+      "start": 23.18,
+      "end": 24
+    },
+    {
+      "text": "place.",
+      "start": 24,
+      "end": 24.12
+    },
+    {
+      "text": "Years",
+      "start": 24.26,
+      "end": 24.49
+    },
+    {
+      "text": "later,",
+      "start": 24.49,
+      "end": 25.01
+    },
+    {
+      "text": "the",
+      "start": 25.01,
+      "end": 25.53
+    },
+    {
+      "text": "bitcoin",
+      "start": 25.53,
+      "end": 25.75
+    },
+    {
+      "text": "was",
+      "start": 25.75,
+      "end": 25.97
+    },
+    {
+      "text": "traced",
+      "start": 25.97,
+      "end": 26.42
+    },
+    {
+      "text": "through",
+      "start": 26.42,
+      "end": 26.94
+    },
+    {
+      "text": "an",
+      "start": 26.94,
+      "end": 27.09
+    },
+    {
+      "text": "exchange",
+      "start": 27.09,
+      "end": 27.69
+    },
+    {
+      "text": "to",
+      "start": 27.69,
+      "end": 27.69
+    },
+    {
+      "text": "a",
+      "start": 27.69,
+      "end": 28.13
+    },
+    {
+      "text": "man",
+      "start": 28.13,
+      "end": 28.15
+    },
+    {
+      "text": "in",
+      "start": 28.15,
+      "end": 28.28
+    },
+    {
+      "text": "Canada.",
+      "start": 28.28,
+      "end": 28.93
+    },
+    {
+      "text": "He's",
+      "start": 28.93,
+      "end": 29.25
+    },
+    {
+      "text": "never",
+      "start": 29.25,
+      "end": 29.62
+    },
+    {
+      "text": "been",
+      "start": 29.62,
+      "end": 29.92
+    },
+    {
+      "text": "convicted,",
+      "start": 29.92,
+      "end": 30.7
+    },
+    {
+      "text": "so",
+      "start": 30.7,
+      "end": 31.03
+    },
+    {
+      "text": "for",
+      "start": 31.03,
+      "end": 31.11
+    },
+    {
+      "text": "now,",
+      "start": 31.11,
+      "end": 31.48
+    },
+    {
+      "text": "this",
+      "start": 31.48,
+      "end": 31.92
+    },
+    {
+      "text": "is",
+      "start": 31.92,
+      "end": 31.93
+    },
+    {
+      "text": "still",
+      "start": 31.93,
+      "end": 32.31
+    },
+    {
+      "text": "only",
+      "start": 32.31,
+      "end": 32.6
+    },
+    {
+      "text": "alleged.",
+      "start": 32.6,
+      "end": 33.44
+    },
+    {
+      "text": "The",
+      "start": 33.44,
+      "end": 33.68
+    },
+    {
+      "text": "Dread",
+      "start": 33.68,
+      "end": 34.08
+    },
+    {
+      "text": "Pirate",
+      "start": 34.08,
+      "end": 34.85
+    },
+    {
+      "text": "Roberts,",
+      "start": 34.85,
+      "end": 35.3
+    },
+    {
+      "text": "the",
+      "start": 35.3,
+      "end": 35.54
+    },
+    {
+      "text": "most",
+      "start": 35.54,
+      "end": 35.97
+    },
+    {
+      "text": "wanted",
+      "start": 35.97,
+      "end": 36.35
+    },
+    {
+      "text": "man",
+      "start": 36.35,
+      "end": 36.59
+    },
+    {
+      "text": "on",
+      "start": 36.59,
+      "end": 36.74
+    },
+    {
+      "text": "the",
+      "start": 36.74,
+      "end": 36.96
+    },
+    {
+      "text": "dark",
+      "start": 36.96,
+      "end": 37.46
+    },
+    {
+      "text": "web,",
+      "start": 37.46,
+      "end": 37.73
+    },
+    {
+      "text": "had",
+      "start": 37.73,
+      "end": 37.95
+    },
+    {
+      "text": "been",
+      "start": 37.95,
+      "end": 38.27
+    },
+    {
+      "text": "played.",
+      "start": 38.27,
+      "end": 39.1
+    },
+    {
+      "text": "The",
+      "start": 39.1,
+      "end": 39.3
+    },
+    {
+      "text": "killer",
+      "start": 39.3,
+      "end": 39.74
+    },
+    {
+      "text": "was",
+      "start": 39.74,
+      "end": 40.25
+    },
+    {
+      "text": "fake,",
+      "start": 40.25,
+      "end": 40.39
+    },
+    {
+      "text": "the",
+      "start": 40.39,
+      "end": 40.61
+    },
+    {
+      "text": "victims",
+      "start": 40.61,
+      "end": 41.24
+    },
+    {
+      "text": "were",
+      "start": 41.24,
+      "end": 41.41
+    },
+    {
+      "text": "fake.",
+      "start": 41.41,
+      "end": 41.96
+    },
+    {
+      "text": "Only",
+      "start": 41.96,
+      "end": 42.32
+    },
+    {
+      "text": "the",
+      "start": 42.32,
+      "end": 42.59
+    },
+    {
+      "text": "money",
+      "start": 42.59,
+      "end": 43.03
+    },
+    {
+      "text": "was",
+      "start": 43.03,
+      "end": 43.3
+    },
+    {
+      "text": "real.",
+      "start": 43.3,
+      "end": 43.94
+    }
+  ]
+}

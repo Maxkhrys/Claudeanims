@@ -32,6 +32,7 @@ export const colors = {
   chemist: "#A9DDB6",
   dpr: "#1A222B",
   ross: "#8FA3B5",
+  agent: "#5B86C4",
   extras: ["#C8B08A", "#B59AC8", "#9AC8B0", "#C89A9A"],
   redandwhite: "#D7322F",
 } as const;

@@ -8,7 +8,8 @@ Ten one-minute clips, animated in code. 1920x1080, 30fps. Style: "dark web case 
 npm install
 npm run dev                      # Remotion Studio
 npm run render:clip1             # -> out/clip1.mp4
-npm run render:clip2             # -> out/clip2.mp4 (render:clip3 ... render:clip7 likewise)
+npm run render:clip2             # -> out/clip2.mp4 (render:clip3 ... render:clip10 likewise)
+npm run render:all               # all ten clips
 npm run transcribe -- clip1      # Whisper word timestamps -> public/audio/clip1.json
 npx remotion still Clip1 out/frame.png --frame=600
 ```

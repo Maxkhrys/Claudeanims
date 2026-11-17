@@ -12,7 +12,11 @@
     "render:clip4": "remotion render Clip4 out/clip4.mp4",
     "render:clip5": "remotion render Clip5 out/clip5.mp4",
     "render:clip6": "remotion render Clip6 out/clip6.mp4",
-    "render:clip7": "remotion render Clip7 out/clip7.mp4"
+    "render:clip7": "remotion render Clip7 out/clip7.mp4",
+    "render:clip8": "remotion render Clip8 out/clip8.mp4",
+    "render:clip9": "remotion render Clip9 out/clip9.mp4",
+    "render:clip10": "remotion render Clip10 out/clip10.mp4",
+    "render:all": "for n in 1 2 3 4 5 6 7 8 9 10; do remotion render Clip$n out/clip$n.mp4; done"
   },
   "keywords": [],
   "author": "",
