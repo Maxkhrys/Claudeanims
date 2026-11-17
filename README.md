@@ -55,6 +55,13 @@ New parts added for this video (all in `src/components/`): `EmailHeader`, `MapPi
 `AssetGarage` + `Car`, `SeizedStamp`, `MarketLogo` / `OnionLogo` / `CamelLogo`, and the `Cazes`, `Cop`
 and `RossBlob` cast presets. Logos are stylised on purpose, not copies of the real ones.
 
+## Vertical (TikTok / Reels)
+
+`npm run render:vertical` renders the ten Silk Road clips as 1080x1920 files in `out/vertical/`.
+`src/clips/Vertical.tsx` wraps each clip: part title on top, the original 16:9 clip scaled across
+the middle, larger captions below, and the bottom kept clear for the app's own buttons.
+Compositions: `SilkRoad-Vertical-1` ... `SilkRoad-Vertical-10`.
+
 ## Sound effects
 
 `python3 scripts/make-sfx.py` synthesizes 16 sounds into `public/sfx` (no samples). Components play

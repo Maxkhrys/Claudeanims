@@ -17,6 +17,7 @@ import { Video2, Video2Clip, video2ClipSchema, video2Schema } from "./video2/Vid
 import { VIDEO2_FRAMES, clipTimings } from "./video2/clipTimings";
 import { Thumbnail, thumbnailSchema } from "./video2/Thumbnail";
 import { V2StyleGuide } from "./video2/V2StyleGuide";
+import { VERTICAL, VerticalClip, verticalSchema } from "./clips/Vertical";
 import { StyleGuide } from "./clips/StyleGuide";
 
 /** Composition length always follows the narration audio. */
@@ -159,6 +160,20 @@ export const RemotionRoot: React.FC = () => {
           height={VIDEO.height}
           fps={VIDEO.fps}
           durationInFrames={t.endFrame - t.startFrame}
+        />
+      ))}
+      {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => (
+        <Composition
+          key={n}
+          id={`SilkRoad-Vertical-${n}`}
+          component={VerticalClip}
+          schema={verticalSchema}
+          defaultProps={{ n, showCaptions: true }}
+          width={VERTICAL.width}
+          height={VERTICAL.height}
+          fps={VIDEO.fps}
+          durationInFrames={VIDEO.fps * 50}
+          calculateMetadata={durationFromAudio(`audio/clip${n}.mp3`)}
         />
       ))}
       <Composition
