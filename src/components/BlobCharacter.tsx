@@ -263,7 +263,7 @@ export const BlobCharacter: React.FC<{
 
         {hair ? (
           <path
-            d={`M ${bx + 8} ${by + 26} C ${bx + 10} ${by - 14} ${cx + 10} ${by - 26} ${bx + bw - 6} ${by - 4} C ${cx + 30} ${by - 2} ${cx} ${by + 4} ${bx + 8} ${by + 26} Z`}
+            d={`M ${bx + 5} ${by + 40} C ${bx} ${by - 4} ${cx - 14} ${by - 15} ${cx + 18} ${by - 12} C ${bx + bw - 4} ${by - 9} ${bx + bw + 3} ${by + 12} ${bx + bw - 5} ${by + 34} C ${bx + bw - 18} ${by + 10} ${cx + 16} ${by + 4} ${cx - 4} ${by + 9} C ${bx + 34} ${by + 13} ${bx + 16} ${by + 24} ${bx + 5} ${by + 40} Z`}
             fill="#1B1F24"
           />
         ) : null}
