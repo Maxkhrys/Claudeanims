@@ -1,0 +1,280 @@
+September, twenty twenty two. A budget hotel room in England. A seventeen year old boy is staying here under police protection.
+
+He is already on bail for hacking some of the biggest companies on Earth. His laptop has been taken away. He is banned from going online.
+
+So he uses what's in the room. A streaming stick. The hotel television. And a mobile phone.
+
+With that, he breaks into the studio making the most anticipated video game in history. And he posts a message for every employee to see.
+
+I am not a Rockstar employee. I am an attacker.
+
+And this wasn't even his biggest hack.
+
+
+That night, ninety videos appeared on a gaming forum. Early, unfinished footage of Grand Theft Auto Six. A game the world had been waiting almost a decade to see.
+
+Within hours it was everywhere. One of the biggest leaks in the history of video games.
+
+But the game studio was only the latest name on a very long list. In about a year, the same group had broken into a chip giant, a phone giant, a software giant, and more.
+
+Investigators assumed they were hunting a foreign government. A professional army of hackers.
+
+They were wrong. The trail led to a bedroom in England. And a group that called itself Lapsus.
+
+
+To understand Lapsus, you have to start near Oxford, in England. With a teenage boy named Arion Kurtaj.
+
+Arion was autistic, and he went to a special school. In the real world, things were hard. Online, he was somebody else.
+
+Online, he was known as White. Or Breachbase. And he was very, very good with computers.
+
+He found his way into a corner of the internet where teenagers trade tricks for breaking into accounts. Where your reputation depends on how big your last hack was.
+
+And in that world, White was climbing fast.
+
+He was about fifteen years old.
+
+
+The first trick he mastered doesn't need any code at all. It's called SIM swapping.
+
+Think about how many of your accounts send a code to your phone. Your bank. Your email. Your crypto. Your phone number is the master key.
+
+So the attacker calls your phone company and pretends to be you. Or pays someone on the inside. And asks them to move your number to a new SIM card.
+
+If it works, every code now goes to them. They reset your passwords. And they walk straight in.
+
+No brilliant code. No secret software. Just a convincing voice on the phone.
+
+
+In the summer of twenty twenty one, White and his associates aimed that trick at something bigger. A British telecoms giant, and its mobile network.
+
+They got inside the company's systems. And then they sent a demand. Four million dollars... or the data gets released.
+
+The company didn't pay.
+
+So the group used what they had. They hijacked customers' phone numbers, and emptied their accounts.
+
+In January, twenty twenty two, police arrested Arion. He was questioned. And then he was released while the investigation continued.
+
+Most people would have stopped right there.
+
+He was just getting started.
+
+
+Because by then, White had new friends. A loose crew of young hackers, some in Britain, some in Brazil. They gave themselves a name. Lapsus.
+
+In December, twenty twenty one, they announced themselves. Brazil's Ministry of Health was hacked, and its COVID vaccination records were knocked offline.
+
+And then they did something almost no criminal group does. They went public. They opened a channel on a messaging app, and invited the whole world to watch.
+
+They posted screenshots from inside their victims' systems. They taunted companies. They joked with their fans.
+
+Most hackers hide. Lapsus wanted an audience.
+
+
+So how does a group of teenagers break into some of the best defended companies on the planet?
+
+Step one. Buy a password. Stolen employee logins are sold online, sometimes for a few dollars each.
+
+Or skip that, and buy the employee. Lapsus openly advertised for insiders. Staff at phone companies and tech firms, willing to sell their access.
+
+But a password isn't enough. Most companies also ask you to approve the login on your phone. So Lapsus sent the request again. And again. And again. In the middle of the night.
+
+Until somebody, half asleep, just wanted it to stop... and tapped yes.
+
+
+In February, twenty twenty two, Lapsus went after one of the most valuable chip makers in the world. And they took nearly a terabyte of its secrets. Designs. Software. Employee logins.
+
+Then came the ransom demand. And it was not what anyone expected.
+
+They didn't ask for money. They asked the company to change its graphics cards... so they'd be better at mining cryptocurrency.
+
+And then they demanded it publish the software for its chips. For free. For everyone. Forever.
+
+It was a ransom note written like a teenager's wish list.
+
+The company refused. So Lapsus started leaking.
+
+
+And then March, twenty twenty two, turned into the wildest month the security world had seen in years.
+
+March fourth. A phone giant. A hundred and ninety gigabytes of data, including source code for its flagship phones. Dumped online.
+
+More names followed. A games publisher. A telecoms company. An online marketplace.
+
+March twenty first. One of the biggest software companies on Earth. Lapsus posted source code from its search engine and its voice assistant.
+
+The company later said its own team caught the hackers in the act... and cut them off halfway through.
+
+But the next target was the one that truly frightened people.
+
+
+There's a kind of company most people have never heard of. It doesn't make phones or games. It runs the login page for thousands of other companies.
+
+Banks. Hospitals. Governments. If you break into the company that guards the doors... you might get every door at once.
+
+On March twenty second, Lapsus posted screenshots from inside exactly that kind of company.
+
+Security teams everywhere dropped what they were doing. Nobody knew how far it went.
+
+The truth was smaller, and stranger. Lapsus had got in through one laptop. It belonged to a support worker at an outside contractor. They'd had access for five days, back in January.
+
+In the end, the damage was limited. But the message was not.
+
+
+So what was the point of all this?
+
+Sometimes they asked for money. But investigators kept noticing the same thing. This group wasn't acting like a business. It was acting like it wanted to be famous.
+
+In several attacks, the hackers didn't just steal data and leave. They stayed. They joined the company's own emergency calls, and listened to the staff trying to throw them out.
+
+They read the internal chat about themselves. In real time.
+
+Then they went back to their channel, and told their followers all about it.
+
+It worked. Everyone was watching. Including the wrong people.
+
+
+Because White had made enemies. The year before, he had bought a website. A notorious one, used for posting people's private information. Their names. Their addresses.
+
+By most accounts, he ran it badly. The site's users turned on him. Eventually he gave up control of it.
+
+But on his way out, he leaked the site's own data.
+
+That was a mistake. He had just picked a fight with a community whose entire hobby... was exposing people.
+
+So they exposed him. His real name. His home address. Details about his family.
+
+They even claimed he was sitting on a fortune in Bitcoin. That number was never confirmed.
+
+
+Security researchers had been quietly tracking White for months. They'd connected his usernames. His mistakes. His digital fingerprints.
+
+And on March twenty third, twenty twenty two, the story went public. The suspected leader of Lapsus was a sixteen year old. Living with his mother. Near Oxford.
+
+His family said they had no idea. They thought he was just playing on his computer.
+
+One day later, British police announced seven arrests. All of them between sixteen and twenty one years old.
+
+All seven were released while the investigation continued.
+
+And for a little while... Lapsus went quiet.
+
+
+Arion and a second teenager were charged. The second boy was seventeen, and legally can't be named.
+
+Arion was given bail, with strict conditions. He was not allowed to use the internet.
+
+But there was another problem. His address had been posted online by his rivals. Police believed he wasn't safe at home.
+
+So they moved him. To a budget hotel. For his own protection.
+
+No laptop. No computer. Just a bed, a kettle... and a television on the wall.
+
+You already know what happens next.
+
+
+But first, a warm up. September fifteenth, twenty twenty two. One of the biggest ride hailing companies in the world.
+
+The attacker had a contractor's password, bought online. Then came the flood of login requests to the contractor's phone.
+
+When that didn't work, the attacker sent a message pretending to be the company's own tech support. Just approve it, and the alerts will stop.
+
+The contractor approved it. And the attacker was inside.
+
+Then they announced it. In the company's own chat. Some employees reportedly thought it was a joke.
+
+It was not a joke. And a few days later... the same attacker had a new target.
+
+
+From that hotel room, using a streaming stick, a television, and a phone, Arion got into the internal chat of the studio behind Grand Theft Auto.
+
+He sent a message to every employee. I am not a Rockstar employee. I am an attacker.
+
+And he threatened to release the game's source code, unless the company contacted him.
+
+Then, under a new username, he posted ninety clips of the unfinished game on a fan forum.
+
+The studio confirmed it the next day. Years of secret work, seen by the entire world. In its roughest, most unfinished form.
+
+But this time, the police knew exactly where to find him.
+
+
+Days later, police arrested a seventeen year old in Oxfordshire.
+
+It was Arion. In the hotel room. With the streaming stick, and the phone.
+
+Look at that timeline again. Arrested. Released. Hacked again. Arrested. Released. Hacked again.
+
+This time there would be no bail. He was held in custody until trial.
+
+The channel went silent. The leaks stopped. Lapsus, as the world knew it, was finished.
+
+By then, according to prosecutors, the group's attacks had cost its victims close to ten million dollars.
+
+But the case that came next was unlike almost any hacking trial before it.
+
+
+The trial began in London, in the summer of twenty twenty three. And it started with an unusual decision.
+
+Psychiatrists had assessed Arion. Because of his autism, they found he was not fit to stand trial.
+
+So the jury was given a different job. Not to decide if he was guilty. Only to decide whether he had done the things he was accused of.
+
+For weeks, they heard the evidence. The ransom demand. The stolen data. The hotel room.
+
+In August, the jury gave its answer. Arion had carried out twelve offences, including blackmail, fraud, and computer misuse.
+
+The seventeen year old was found guilty of his part in the attacks.
+
+
+In December, twenty twenty three, the judge passed sentence. And it wasn't prison.
+
+Arion was given an indefinite hospital order. He would be held in a secure hospital. Not for a fixed number of years. For as long as doctors and a tribunal believe he's a danger.
+
+The judge said his skills, and his desire to keep committing cybercrime, meant he remained a high risk to the public.
+
+The court heard that he had made it clear. He wanted to go back to hacking as soon as he could.
+
+The younger defendant avoided custody. He was given a youth rehabilitation order, with close supervision.
+
+Arion was eighteen years old. And nobody can say when he'll be released.
+
+
+For the game studio, the leak was a nightmare. Years of secrecy gone. Staff pulled off their work to deal with the damage.
+
+But here's the strange part. A little over a year later, the studio released the first official trailer for the game.
+
+It became one of the most watched trailers in the history of the internet.
+
+The leak didn't kill the hype. If anything, it proved how badly people wanted it.
+
+The bigger change happened quietly, inside thousands of companies. Lapsus had shown how weak the standard defences were. Text message codes. Tap to approve.
+
+The United States government even ordered an official review of how a group of teenagers had done it.
+
+
+And that review reached an uncomfortable conclusion. Lapsus hadn't used secret weapons. They used simple tricks. Cheap ones. Tricks that had been known for years.
+
+A phone call. A bribe. A notification sent a hundred times.
+
+The companies had spent billions on firewalls and encryption. And the hackers walked around all of it... by asking a tired human to say yes.
+
+If you've watched this channel before, that should sound familiar. It's the same lesson. Every time.
+
+The weakest part of any system isn't the code. It's a person.
+
+And Lapsus was not the last. Other groups of young hackers have copied the same playbook since.
+
+
+So what do we make of Arion Kurtaj?
+
+To some people, he's a dangerous criminal. He blackmailed companies, stole from victims, and didn't stop even when he was caught. Twice.
+
+To others, he's a vulnerable teenager. Autistic. Isolated. Pulled into an online world that rewarded him for every bigger and riskier hack... until there was no way back.
+
+Maybe both are true.
+
+What's the right punishment for a brilliant kid who can't stop? Prison? Hospital? A job in cybersecurity?
+
+Let me know what you think in the comments.
