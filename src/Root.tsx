@@ -15,6 +15,7 @@ import { Clip10, clip10Schema } from "./clips/Clip10";
 import { ChapterCard, EndScreen, chapterSchema } from "./clips/Extras";
 import { Video2, Video2Clip, video2ClipSchema, video2Schema } from "./video2/Video2";
 import { VIDEO2_FRAMES, clipTimings } from "./video2/clipTimings";
+import { Thumbnail, thumbnailSchema } from "./video2/Thumbnail";
 import { V2StyleGuide } from "./video2/V2StyleGuide";
 import { StyleGuide } from "./clips/StyleGuide";
 
@@ -178,6 +179,19 @@ export const RemotionRoot: React.FC = () => {
         fps={VIDEO.fps}
         durationInFrames={VIDEO.fps * 15}
       />
+      {(["email", "mistake"] as const).map((variant) => (
+        <Composition
+          key={variant}
+          id={`V2-Thumb-${variant}`}
+          component={Thumbnail}
+          schema={thumbnailSchema}
+          defaultProps={{ variant }}
+          width={VIDEO.width}
+          height={VIDEO.height}
+          fps={VIDEO.fps}
+          durationInFrames={1}
+        />
+      ))}
       <Composition id="V2StyleGuide" component={V2StyleGuide} width={VIDEO.width} height={VIDEO.height} fps={VIDEO.fps} durationInFrames={VIDEO.fps * 5} />
       <Composition
         id="StyleGuide"

@@ -19,7 +19,8 @@
     "render:all": "for n in 1 2 3 4 5 6 7 8 9 10; do remotion render Clip$n out/clip$n.mp4; done",
     "build:full": "node scripts/build-full.mjs",
     "timings:video2": "node scripts/clip-timings.mjs",
-    "render:video2": "remotion render Video2 out/video2.mp4"
+    "render:video2": "remotion render Video2 out/video2.mp4",
+    "thumb:video2": "for v in email mistake; do remotion still V2-Thumb-$v out/thumb-$v.png && ffmpeg -y -loglevel error -i out/thumb-$v.png -vf scale=1280:720 -q:v 2 out/thumb-$v.jpg; done"
   },
   "keywords": [],
   "author": "",
