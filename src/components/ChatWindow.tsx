@@ -2,6 +2,7 @@ import React from "react";
 import { useCurrentFrame, useVideoConfig, random, interpolate } from "remotion";
 import { colors, fonts, springs } from "../theme";
 import { sp } from "../lib/timing";
+import { Sfx } from "./Sfx";
 
 export type ChatMessage = {
   text: string;
@@ -92,6 +93,8 @@ export const ChatWindow: React.FC<{
   /** message text size */
   fontSize?: number;
   ownColor?: string;
+  /** notification on entry and key clicks while messages type */
+  sound?: boolean;
   style?: React.CSSProperties;
 }> = ({
   width = 1080,
@@ -105,6 +108,7 @@ export const ChatWindow: React.FC<{
   enterAt = 0,
   fontSize = 34,
   ownColor = colors.green,
+  sound = true,
   style,
 }) => {
   const frame = useCurrentFrame();
@@ -138,6 +142,21 @@ export const ChatWindow: React.FC<{
         ...style,
       }}
     >
+      {sound ? (
+        <>
+          <Sfx name="notify" at={enterAt} />
+          {messages.map((m, i) => (
+            <Sfx
+              key={`sfx-${i}`}
+              name="type"
+              at={m.at}
+              durationInFrames={Math.round((m.text.length / (m.cps ?? 40)) * fps)}
+              loop
+              volume={0.8}
+            />
+          ))}
+        </>
+      ) : null}
       {/* title bar */}
       <div
         style={{

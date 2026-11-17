@@ -3,6 +3,7 @@ import { useCurrentFrame, useVideoConfig, random, interpolate } from "remotion";
 import { colors, fonts, springs } from "../theme";
 import { sp } from "../lib/timing";
 import { Glitch } from "./GlitchTransition";
+import { Sfx, type SfxName } from "./Sfx";
 
 /** Big text that slams in with a shake and a glitch. Position it with `style`. */
 export const TitleSlam: React.FC<{
@@ -16,6 +17,8 @@ export const TitleSlam: React.FC<{
   /** extra glitch 0..1 driven from outside, e.g. for a later hit */
   extraGlitch?: number;
   underline?: boolean;
+  /** impact sound; false for silent */
+  sound?: SfxName | false;
   style?: React.CSSProperties;
 }> = ({
   text,
@@ -26,6 +29,7 @@ export const TitleSlam: React.FC<{
   glitch = true,
   extraGlitch = 0,
   underline = false,
+  sound = "slam",
   style,
 }) => {
   const frame = useCurrentFrame();
@@ -58,6 +62,7 @@ export const TitleSlam: React.FC<{
         ...style,
       }}
     >
+      {sound ? <Sfx name={sound} at={at} /> : null}
       <div style={{ transform: `translate(${dx}px, ${dy}px) scale(${scale})`, opacity }}>
         <Glitch amount={amount} seed={`ts-${text}`}>
           <div

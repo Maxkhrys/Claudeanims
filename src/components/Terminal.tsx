@@ -1,6 +1,7 @@
 import React from "react";
 import { useCurrentFrame } from "remotion";
 import { colors, fonts } from "../theme";
+import { Sfx } from "./Sfx";
 
 export type TerminalLine = {
   text: string;
@@ -22,6 +23,8 @@ export const Terminal: React.FC<{
   cursorColor?: string;
   align?: "left" | "center";
   showCursor?: boolean;
+  /** key clicks while typing */
+  sound?: boolean;
   style?: React.CSSProperties;
 }> = ({
   lines,
@@ -30,6 +33,7 @@ export const Terminal: React.FC<{
   cursorColor,
   align = "left",
   showCursor = true,
+  sound = true,
   style,
 }) => {
   const f = useCurrentFrame();
@@ -52,6 +56,17 @@ export const Terminal: React.FC<{
         ...style,
       }}
     >
+      {sound
+        ? lines.map((l, i) => (
+            <Sfx
+              key={`sfx-${i}`}
+              name="type"
+              at={l.at}
+              durationInFrames={l.durationInFrames ?? Math.max(1, Math.round((l.text.length / 22) * 30))}
+              loop
+            />
+          ))
+        : null}
       {lines.map((l, i) => {
         if (i > active) return null;
         const dur = l.durationInFrames ?? Math.max(1, Math.round((l.text.length / 22) * 30));

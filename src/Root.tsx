@@ -13,6 +13,9 @@ import { Clip8, clip8Schema } from "./clips/Clip8";
 import { Clip9, clip9Schema } from "./clips/Clip9";
 import { Clip10, clip10Schema } from "./clips/Clip10";
 import { ChapterCard, EndScreen, chapterSchema } from "./clips/Extras";
+import { Video2, Video2Clip, video2ClipSchema, video2Schema } from "./video2/Video2";
+import { VIDEO2_FRAMES, clipTimings } from "./video2/clipTimings";
+import { V2StyleGuide } from "./video2/V2StyleGuide";
 import { StyleGuide } from "./clips/StyleGuide";
 
 /** Composition length always follows the narration audio. */
@@ -135,6 +138,29 @@ export const RemotionRoot: React.FC = () => {
         calculateMetadata={durationFromAudio("audio/clip10.mp3")}
       />
       <Composition
+        id="Video2"
+        component={Video2}
+        schema={video2Schema}
+        defaultProps={{ showCaptions: true }}
+        width={VIDEO.width}
+        height={VIDEO.height}
+        fps={VIDEO.fps}
+        durationInFrames={VIDEO2_FRAMES}
+      />
+      {clipTimings.map((t) => (
+        <Composition
+          key={t.n}
+          id={`V2-Clip${t.n}`}
+          component={Video2Clip}
+          schema={video2ClipSchema}
+          defaultProps={{ n: t.n, showCaptions: true }}
+          width={VIDEO.width}
+          height={VIDEO.height}
+          fps={VIDEO.fps}
+          durationInFrames={t.endFrame - t.startFrame}
+        />
+      ))}
+      <Composition
         id="ChapterCard"
         component={ChapterCard}
         schema={chapterSchema}
@@ -152,6 +178,7 @@ export const RemotionRoot: React.FC = () => {
         fps={VIDEO.fps}
         durationInFrames={VIDEO.fps * 15}
       />
+      <Composition id="V2StyleGuide" component={V2StyleGuide} width={VIDEO.width} height={VIDEO.height} fps={VIDEO.fps} durationInFrames={VIDEO.fps * 5} />
       <Composition
         id="StyleGuide"
         component={StyleGuide}

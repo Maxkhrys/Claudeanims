@@ -1,6 +1,7 @@
 import React from "react";
 import { AbsoluteFill, useCurrentFrame, random, interpolate } from "remotion";
 import { colors } from "../theme";
+import { Sfx } from "./Sfx";
 
 /**
  * Applies an RGB split and horizontal slice tearing to its children.
@@ -98,8 +99,9 @@ export const GlitchTransition: React.FC<{
   durationInFrames?: number;
   mode?: "in" | "out" | "pulse";
   seed?: string;
+  sound?: boolean;
   children: React.ReactNode;
-}> = ({ at, durationInFrames = 12, mode = "in", seed = "gt", children }) => {
+}> = ({ at, durationInFrames = 12, mode = "in", seed = "gt", sound = true, children }) => {
   const f = useCurrentFrame();
   const t = (f - at) / durationInFrames; // 0..1 during the transition
   const active = t >= 0 && t < 1;
@@ -124,6 +126,7 @@ export const GlitchTransition: React.FC<{
 
   return (
     <AbsoluteFill>
+      {sound ? <Sfx name="glitch" at={at} volume={0.8} /> : null}
       <Glitch amount={amount} seed={seed} style={{ position: "absolute", inset: 0, opacity }}>
         {children}
       </Glitch>

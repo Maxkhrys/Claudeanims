@@ -8,6 +8,7 @@ import { Glitch, GlitchTransition } from "./GlitchTransition";
 import { BlobCharacter } from "./BlobCharacter";
 import { AvatarBadge } from "./Icons";
 import { TitleSlam } from "./TitleSlam";
+import { Sfx, type SfxName } from "./Sfx";
 
 /** Audio + background + captions. Every clip from 3 onward is wrapped in this. */
 export const ClipShell: React.FC<{
@@ -58,9 +59,11 @@ export const Pop: React.FC<{
   from?: "scale" | "left" | "right" | "up" | "slam";
   config?: Partial<SpringConfig>;
   origin?: string;
+  /** optional sound when it appears */
+  sound?: SfxName;
   style?: React.CSSProperties;
   children: React.ReactNode;
-}> = ({ at, from = "scale", config, origin = "center center", style, children }) => {
+}> = ({ at, from = "scale", config, origin = "center center", sound, style, children }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   if (frame < at) return null;
@@ -85,6 +88,7 @@ export const Pop: React.FC<{
         opacity: from === "scale" ? 1 : Math.min(1, s * 2.5),
       }}
     >
+      {sound ? <Sfx name={sound} at={at} /> : null}
       {children}
     </div>
   );
@@ -97,9 +101,12 @@ export const Vanish: React.FC<{ at: number; children: React.ReactNode }> = ({ at
   if (t >= 9) return null;
   if (t < 0) return <>{children}</>;
   return (
+    <>
+    <Sfx name="glitch" at={at} volume={0.7} />
     <Glitch amount={0.5 + t / 18} seed={`vanish-${at}`} style={{ opacity: t % 3 === 2 ? 0.2 : 1 - t / 12 }}>
       {children}
     </Glitch>
+    </>
   );
 };
 
@@ -111,9 +118,10 @@ export const Chip: React.FC<{
   filled?: boolean;
   fontSize?: number;
   origin?: string;
+  sound?: SfxName | false;
   style?: React.CSSProperties;
-}> = ({ at, text, color = colors.amber, filled = false, fontSize = 32, origin = "left center", style }) => (
-  <Pop at={at} origin={origin} style={style}>
+}> = ({ at, text, color = colors.amber, filled = false, fontSize = 32, origin = "left center", sound = "pop", style }) => (
+  <Pop at={at} origin={origin} style={style} sound={sound || undefined}>
     <div
       style={{
         display: "inline-block",
@@ -145,7 +153,7 @@ export const Stamp: React.FC<{
   top?: number;
 }> = ({ at, text, color = colors.red, fontSize = 300, rotate = -9, top = 300 }) => (
   <div style={{ position: "absolute", inset: 0, transform: `rotate(${rotate}deg)`, pointerEvents: "none" }}>
-    <TitleSlam text={text} color={color} fontSize={fontSize} at={at} style={{ top }} />
+    <TitleSlam text={text} color={color} fontSize={fontSize} at={at} style={{ top }} sound="stamp" />
   </div>
 );
 
@@ -188,6 +196,8 @@ export const Crosshair: React.FC<{ at: number; size?: number; color?: string; st
   if (frame < at) return null;
   const s = sp(frame, fps, at, springs.snappy);
   return (
+    <>
+    <Sfx name="click" at={at} />
     <svg
       width={size}
       height={size}
@@ -207,6 +217,7 @@ export const Crosshair: React.FC<{ at: number; size?: number; color?: string; st
         <path key={a} d="M 50 2 V 24" stroke={color} strokeWidth={4} strokeLinecap="round" transform={`rotate(${a} 50 50)`} />
       ))}
     </svg>
+    </>
   );
 };
 
@@ -222,6 +233,17 @@ export const Dpr: React.FC<BlobProps> = (p) => (
 export const RedWhite: React.FC<BlobProps> = (p) => (
   <BlobCharacter color={colors.redandwhite} accessory="bikerVest" bulk={1.35} seed={3} {...p} />
 );
+
+/** Alexandre Cazes / Alpha02: gold, sharper silhouette, optional sunglasses. */
+export const Cazes: React.FC<BlobProps> = (p) => (
+  <BlobCharacter color={colors.cazes} cornerRadius={54} hair seed={11} {...p} />
+);
+/** Police / FBI / Dutch police: navy with a badge. Pass `moustache` for the Hansa disguise. */
+export const Cop: React.FC<BlobProps> = (p) => (
+  <BlobCharacter color={colors.police} badge={colors.gold} seed={12} {...p} />
+);
+/** Ross Ulbricht out of the hoodie (video 1 callbacks). */
+export const RossBlob: React.FC<BlobProps> = (p) => <BlobCharacter color={colors.ross} seed={1} {...p} />;
 
 export const NameTag: React.FC<{ text: string; color?: string; fontSize?: number }> = ({
   text,

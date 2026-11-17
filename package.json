@@ -17,7 +17,9 @@
     "render:clip9": "remotion render Clip9 out/clip9.mp4",
     "render:clip10": "remotion render Clip10 out/clip10.mp4",
     "render:all": "for n in 1 2 3 4 5 6 7 8 9 10; do remotion render Clip$n out/clip$n.mp4; done",
-    "build:full": "node scripts/build-full.mjs"
+    "build:full": "node scripts/build-full.mjs",
+    "timings:video2": "node scripts/clip-timings.mjs",
+    "render:video2": "remotion render Video2 out/video2.mp4"
   },
   "keywords": [],
   "author": "",

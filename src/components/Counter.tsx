@@ -2,6 +2,7 @@ import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import { colors, fonts, springs } from "../theme";
 import { sp } from "../lib/timing";
+import { Sfx } from "./Sfx";
 
 /** Animated number ticker with spring easing. */
 export const Counter: React.FC<{
@@ -17,6 +18,8 @@ export const Counter: React.FC<{
   fontSize?: number;
   /** custom number formatting; default adds thousands separators */
   format?: (n: number) => string;
+  /** ticking while counting plus a landing sound; false for silent */
+  sound?: boolean;
   style?: React.CSSProperties;
 }> = ({
   from = 0,
@@ -28,6 +31,7 @@ export const Counter: React.FC<{
   color = colors.green,
   fontSize = 160,
   format,
+  sound = true,
   style,
 }) => {
   const frame = useCurrentFrame();
@@ -54,6 +58,12 @@ export const Counter: React.FC<{
         ...style,
       }}
     >
+      {sound ? (
+        <>
+          <Sfx name="tick" at={at} durationInFrames={durationInFrames - 4} loop volume={0.8} />
+          <Sfx name={/[$]|BTC/.test(prefix + suffix) ? "coin" : "pop"} at={at + durationInFrames - 4} />
+        </>
+      ) : null}
       {prefix}
       {format ? format(value) : value.toLocaleString("en-US")}
       {suffix ? (

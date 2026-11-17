@@ -1,5 +1,6 @@
 // Generates word-level timestamps for a clip's narration with whisper.cpp.
-// Usage: node scripts/transcribe.mjs clip1   ->  public/audio/clip1.json
+// Usage: node scripts/transcribe.mjs clip1          ->  public/audio/clip1.json
+//        node scripts/transcribe.mjs video2/full    ->  public/audio/video2/full.json
 import path from "node:path";
 import fs from "node:fs";
 import { execSync } from "node:child_process";
@@ -31,7 +32,7 @@ await installWhisperCpp({ to: whisperPath, version });
 await downloadWhisperModel({ model, folder: whisperPath });
 
 // whisper.cpp needs 16 kHz mono WAV
-const wav = path.join(whisperPath, `${clip}.wav`);
+const wav = path.join(whisperPath, `${clip.replace(/[\/\\]/g, "_")}.wav`);
 execSync(`ffmpeg -y -loglevel error -i "${mp3}" -ar 16000 -ac 1 "${wav}"`);
 
 const whisperCppOutput = await transcribe({

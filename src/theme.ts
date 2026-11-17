@@ -33,6 +33,11 @@ export const colors = {
   dpr: "#1A222B",
   ross: "#8FA3B5",
   agent: "#5B86C4",
+  // video 2
+  cazes: "#E3B455",
+  police: "#2C4C86",
+  gold: "#F5C84C",
+  dutch: "#FF8A1F",
   extras: ["#C8B08A", "#B59AC8", "#9AC8B0", "#C89A9A"],
   redandwhite: "#D7322F",
 } as const;

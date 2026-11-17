@@ -28,6 +28,14 @@ export const BlobCharacter: React.FC<{
   /** coloured light hitting the character from below/front (e.g. a laptop screen) */
   lightColor?: string;
   lightAmount?: number;
+  /** body corner radius; lower = sharper, boxier silhouette (default 75) */
+  cornerRadius?: number;
+  /** small swept quiff on top */
+  hair?: boolean;
+  sunglasses?: boolean;
+  moustache?: boolean;
+  /** badge colour; shows a small shield on the chest */
+  badge?: string;
   /** offsets blink and idle phase so characters don't move in unison */
   seed?: number;
   style?: React.CSSProperties;
@@ -44,6 +52,11 @@ export const BlobCharacter: React.FC<{
   look = { x: 0, y: 0 },
   lightColor,
   lightAmount = 0,
+  cornerRadius = 75,
+  hair = false,
+  sunglasses = false,
+  moustache = false,
+  badge,
   seed = 0,
   style,
 }) => {
@@ -58,7 +71,7 @@ export const BlobCharacter: React.FC<{
   const bx = cx - bw / 2;
   const by = 46;
   const bh = 214;
-  const rx = Math.min(bw / 2, 75);
+  const rx = Math.min(bw / 2, cornerRadius);
   const baseY = by + bh;
 
   // idle
@@ -248,6 +261,25 @@ export const BlobCharacter: React.FC<{
           </g>
         ) : null}
 
+        {hair ? (
+          <path
+            d={`M ${bx + 8} ${by + 26} C ${bx + 10} ${by - 14} ${cx + 10} ${by - 26} ${bx + bw - 6} ${by - 4} C ${cx + 30} ${by - 2} ${cx} ${by + 4} ${bx + 8} ${by + 26} Z`}
+            fill="#1B1F24"
+          />
+        ) : null}
+        {badge ? (
+          <g>
+            <path
+              d={`M ${cx + 22} 190 h 30 v 16 q 0 14 -15 20 q -15 -6 -15 -20 Z`}
+              fill={badge}
+              stroke="#07090B"
+              strokeOpacity={0.35}
+              strokeWidth={2}
+            />
+            <circle cx={cx + 37} cy={205} r={5} fill="#07090B" opacity={0.45} />
+          </g>
+        ) : null}
+
         {/* eyes */}
         {hooded ? (
           <g filter={`url(#${glow})`} opacity={0.7}>
@@ -255,8 +287,23 @@ export const BlobCharacter: React.FC<{
             <circle cx={cx + eyeDx + lx} cy={eyeY + ly} r={9} fill={lightColor ?? eyeFill} />
           </g>
         ) : null}
-        {eye(-1)}
-        {eye(1)}
+        {sunglasses ? null : eye(-1)}
+        {sunglasses ? null : eye(1)}
+        {sunglasses ? (
+          <g>
+            <path d={`M ${bx - 2} ${eyeY - 6} H ${bx + bw + 2}`} stroke="#07090B" strokeWidth={5} />
+            <rect x={cx - eyeDx - 21} y={eyeY - 14} width={42} height={27} rx={9} fill="#07090B" />
+            <rect x={cx + eyeDx - 21} y={eyeY - 14} width={42} height={27} rx={9} fill="#07090B" />
+            <path d={`M ${cx - eyeDx - 12} ${eyeY - 8} l 12 0`} stroke="#fff" strokeOpacity={0.35} strokeWidth={3} strokeLinecap="round" />
+            <path d={`M ${cx + eyeDx - 12} ${eyeY - 8} l 12 0`} stroke="#fff" strokeOpacity={0.35} strokeWidth={3} strokeLinecap="round" />
+          </g>
+        ) : null}
+        {moustache ? (
+          <path
+            d={`M ${cx} ${eyeY + 30} C ${cx - 12} ${eyeY + 22} ${cx - 34} ${eyeY + 26} ${cx - 42} ${eyeY + 40} C ${cx - 26} ${eyeY + 44} ${cx - 10} ${eyeY + 42} ${cx} ${eyeY + 36} C ${cx + 10} ${eyeY + 42} ${cx + 26} ${eyeY + 44} ${cx + 42} ${eyeY + 40} C ${cx + 34} ${eyeY + 26} ${cx + 12} ${eyeY + 22} ${cx} ${eyeY + 30} Z`}
+            fill="#14100C"
+          />
+        ) : null}
 
         {showSweat ? (
           <g>
