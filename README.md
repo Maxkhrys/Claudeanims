@@ -10,6 +10,7 @@ npm run dev                      # Remotion Studio
 npm run render:clip1             # -> out/clip1.mp4
 npm run render:clip2             # -> out/clip2.mp4 (render:clip3 ... render:clip10 likewise)
 npm run render:all               # all ten clips
+npm run build:full               # -> out/full.mp4: all clips + chapter cards + end screen (about 8:15)
 npm run transcribe -- clip1      # Whisper word timestamps -> public/audio/clip1.json
 npx remotion still Clip1 out/frame.png --frame=600
 ```
@@ -22,6 +23,14 @@ npx remotion render Clip1 out/clip1-nocaps.mp4 --props='{"showCaptions":false}'
 
 In Studio, captions toggle with the `showCaptions` checkbox in the props panel.
 The `StyleGuide` composition shows every character, avatar and colour on one frame.
+
+## Full video
+
+`npm run build:full` renders anything missing in `out/`, then joins: clip 1, a 2-second chapter
+card before each of clips 2 to 10, and a 15-second end screen. Add `-- --rerender` to render every
+clip again first. Card titles live in `scripts/build-full.mjs`; the card and end-screen designs
+are in `src/clips/Extras.tsx`. The dashed boxes on the end screen mark where YouTube's
+suggested-video and subscribe elements go.
 
 ## Layout
 

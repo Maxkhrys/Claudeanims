@@ -12,6 +12,7 @@ import { Clip7, clip7Schema } from "./clips/Clip7";
 import { Clip8, clip8Schema } from "./clips/Clip8";
 import { Clip9, clip9Schema } from "./clips/Clip9";
 import { Clip10, clip10Schema } from "./clips/Clip10";
+import { ChapterCard, EndScreen, chapterSchema } from "./clips/Extras";
 import { StyleGuide } from "./clips/StyleGuide";
 
 /** Composition length always follows the narration audio. */
@@ -132,6 +133,24 @@ export const RemotionRoot: React.FC = () => {
         fps={VIDEO.fps}
         durationInFrames={VIDEO.fps * 50}
         calculateMetadata={durationFromAudio("audio/clip10.mp3")}
+      />
+      <Composition
+        id="ChapterCard"
+        component={ChapterCard}
+        schema={chapterSchema}
+        defaultProps={{ part: 2, title: "THE IDEALIST" }}
+        width={VIDEO.width}
+        height={VIDEO.height}
+        fps={VIDEO.fps}
+        durationInFrames={VIDEO.fps * 2}
+      />
+      <Composition
+        id="EndScreen"
+        component={EndScreen}
+        width={VIDEO.width}
+        height={VIDEO.height}
+        fps={VIDEO.fps}
+        durationInFrames={VIDEO.fps * 15}
       />
       <Composition
         id="StyleGuide"
