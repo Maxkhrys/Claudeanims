@@ -1,0 +1,561 @@
+{
+  "clip": "clip7",
+  "model": "medium.en",
+  "words": [
+    {
+      "text": "A",
+      "start": 0.06,
+      "end": 0.09
+    },
+    {
+      "text": "few",
+      "start": 0.09,
+      "end": 0.36
+    },
+    {
+      "text": "days",
+      "start": 0.36,
+      "end": 0.72
+    },
+    {
+      "text": "later,",
+      "start": 0.72,
+      "end": 1.33
+    },
+    {
+      "text": "a",
+      "start": 1.33,
+      "end": 1.5
+    },
+    {
+      "text": "photo",
+      "start": 1.5,
+      "end": 1.85
+    },
+    {
+      "text": "arrives.",
+      "start": 1.85,
+      "end": 3
+    },
+    {
+      "text": "The",
+      "start": 3,
+      "end": 3.25
+    },
+    {
+      "text": "Dread",
+      "start": 3.25,
+      "end": 3.68
+    },
+    {
+      "text": "Pirate",
+      "start": 3.68,
+      "end": 4.26
+    },
+    {
+      "text": "Roberts",
+      "start": 4.26,
+      "end": 4.79
+    },
+    {
+      "text": "looks",
+      "start": 4.79,
+      "end": 5.22
+    },
+    {
+      "text": "at",
+      "start": 5.22,
+      "end": 5.56
+    },
+    {
+      "text": "it,",
+      "start": 5.56,
+      "end": 5.98
+    },
+    {
+      "text": "deletes",
+      "start": 5.98,
+      "end": 6.4
+    },
+    {
+      "text": "it,",
+      "start": 6.4,
+      "end": 6.74
+    },
+    {
+      "text": "and",
+      "start": 6.74,
+      "end": 6.91
+    },
+    {
+      "text": "thanks",
+      "start": 6.91,
+      "end": 7.33
+    },
+    {
+      "text": "Red",
+      "start": 7.33,
+      "end": 7.54
+    },
+    {
+      "text": "and",
+      "start": 7.54,
+      "end": 7.75
+    },
+    {
+      "text": "White",
+      "start": 7.75,
+      "end": 7.88
+    },
+    {
+      "text": "for",
+      "start": 7.88,
+      "end": 8.47
+    },
+    {
+      "text": "his",
+      "start": 8.47,
+      "end": 8.52
+    },
+    {
+      "text": "swift",
+      "start": 8.52,
+      "end": 8.88
+    },
+    {
+      "text": "action.",
+      "start": 8.88,
+      "end": 10.16
+    },
+    {
+      "text": "But",
+      "start": 10.16,
+      "end": 10.4
+    },
+    {
+      "text": "Red",
+      "start": 10.4,
+      "end": 10.64
+    },
+    {
+      "text": "and",
+      "start": 10.64,
+      "end": 10.88
+    },
+    {
+      "text": "White",
+      "start": 10.88,
+      "end": 11.41
+    },
+    {
+      "text": "has",
+      "start": 11.41,
+      "end": 11.52
+    },
+    {
+      "text": "more",
+      "start": 11.52,
+      "end": 11.84
+    },
+    {
+      "text": "news.",
+      "start": 11.84,
+      "end": 12.44
+    },
+    {
+      "text": "He",
+      "start": 12.44,
+      "end": 12.62
+    },
+    {
+      "text": "says",
+      "start": 12.62,
+      "end": 12.93
+    },
+    {
+      "text": "before",
+      "start": 12.93,
+      "end": 13.43
+    },
+    {
+      "text": "Friendly",
+      "start": 13.43,
+      "end": 14.09
+    },
+    {
+      "text": "Chemist",
+      "start": 14.09,
+      "end": 14.67
+    },
+    {
+      "text": "died,",
+      "start": 14.67,
+      "end": 15.32
+    },
+    {
+      "text": "he",
+      "start": 15.32,
+      "end": 15.42
+    },
+    {
+      "text": "talked.",
+      "start": 15.42,
+      "end": 16.12
+    },
+    {
+      "text": "He",
+      "start": 16.12,
+      "end": 16.3
+    },
+    {
+      "text": "named",
+      "start": 16.3,
+      "end": 16.65
+    },
+    {
+      "text": "the",
+      "start": 16.65,
+      "end": 16.87
+    },
+    {
+      "text": "man",
+      "start": 16.87,
+      "end": 17.09
+    },
+    {
+      "text": "who",
+      "start": 17.09,
+      "end": 17.38
+    },
+    {
+      "text": "taught",
+      "start": 17.38,
+      "end": 17.76
+    },
+    {
+      "text": "him",
+      "start": 17.76,
+      "end": 17.97
+    },
+    {
+      "text": "how",
+      "start": 17.97,
+      "end": 18.2
+    },
+    {
+      "text": "to",
+      "start": 18.2,
+      "end": 18.35
+    },
+    {
+      "text": "scam",
+      "start": 18.35,
+      "end": 18.58
+    },
+    {
+      "text": "Silk",
+      "start": 18.58,
+      "end": 19.1
+    },
+    {
+      "text": "Road,",
+      "start": 19.1,
+      "end": 19.4
+    },
+    {
+      "text": "a",
+      "start": 19.4,
+      "end": 19.52
+    },
+    {
+      "text": "serial",
+      "start": 19.52,
+      "end": 19.92
+    },
+    {
+      "text": "scammer",
+      "start": 19.92,
+      "end": 20.44
+    },
+    {
+      "text": "with",
+      "start": 20.44,
+      "end": 20.74
+    },
+    {
+      "text": "a",
+      "start": 20.74,
+      "end": 20.8
+    },
+    {
+      "text": "string",
+      "start": 20.8,
+      "end": 21.4
+    },
+    {
+      "text": "of",
+      "start": 21.4,
+      "end": 21.58
+    },
+    {
+      "text": "fake",
+      "start": 21.58,
+      "end": 21.92
+    },
+    {
+      "text": "dealer",
+      "start": 21.92,
+      "end": 22.45
+    },
+    {
+      "text": "accounts.",
+      "start": 22.45,
+      "end": 23.44
+    },
+    {
+      "text": "And",
+      "start": 23.44,
+      "end": 23.69
+    },
+    {
+      "text": "that",
+      "start": 23.69,
+      "end": 24.04
+    },
+    {
+      "text": "man",
+      "start": 24.04,
+      "end": 24.27
+    },
+    {
+      "text": "lived",
+      "start": 24.27,
+      "end": 24.7
+    },
+    {
+      "text": "with",
+      "start": 24.7,
+      "end": 25.02
+    },
+    {
+      "text": "three",
+      "start": 25.02,
+      "end": 25.44
+    },
+    {
+      "text": "others,",
+      "start": 25.44,
+      "end": 26.35
+    },
+    {
+      "text": "all",
+      "start": 26.35,
+      "end": 26.42
+    },
+    {
+      "text": "in",
+      "start": 26.42,
+      "end": 26.51
+    },
+    {
+      "text": "on",
+      "start": 26.51,
+      "end": 26.67
+    },
+    {
+      "text": "it.",
+      "start": 26.67,
+      "end": 27.14
+    },
+    {
+      "text": "The",
+      "start": 27.2,
+      "end": 27.37
+    },
+    {
+      "text": "Dread",
+      "start": 27.37,
+      "end": 27.76
+    },
+    {
+      "text": "Pirate",
+      "start": 27.76,
+      "end": 28.4
+    },
+    {
+      "text": "Roberts",
+      "start": 28.4,
+      "end": 28.78
+    },
+    {
+      "text": "wants",
+      "start": 28.78,
+      "end": 29.17
+    },
+    {
+      "text": "him",
+      "start": 29.17,
+      "end": 29.4
+    },
+    {
+      "text": "gone.",
+      "start": 29.4,
+      "end": 30
+    },
+    {
+      "text": "Then",
+      "start": 30,
+      "end": 30.34
+    },
+    {
+      "text": "Red",
+      "start": 30.34,
+      "end": 30.6
+    },
+    {
+      "text": "and",
+      "start": 30.6,
+      "end": 30.86
+    },
+    {
+      "text": "White",
+      "start": 30.86,
+      "end": 31.29
+    },
+    {
+      "text": "pushes.",
+      "start": 31.29,
+      "end": 32.08
+    },
+    {
+      "text": "Why",
+      "start": 32.08,
+      "end": 32.39
+    },
+    {
+      "text": "not",
+      "start": 32.39,
+      "end": 32.7
+    },
+    {
+      "text": "all",
+      "start": 32.7,
+      "end": 33.01
+    },
+    {
+      "text": "four?",
+      "start": 33.01,
+      "end": 33.74
+    },
+    {
+      "text": "He",
+      "start": 33.74,
+      "end": 33.95
+    },
+    {
+      "text": "agrees.",
+      "start": 33.95,
+      "end": 34.92
+    },
+    {
+      "text": "He",
+      "start": 34.92,
+      "end": 35.1
+    },
+    {
+      "text": "sends",
+      "start": 35.1,
+      "end": 35.46
+    },
+    {
+      "text": "3,000",
+      "start": 35.46,
+      "end": 36.55
+    },
+    {
+      "text": "more",
+      "start": 36.55,
+      "end": 36.86
+    },
+    {
+      "text": "Bitcoin,",
+      "start": 36.86,
+      "end": 37.9
+    },
+    {
+      "text": "roughly",
+      "start": 37.9,
+      "end": 38.11
+    },
+    {
+      "text": "half",
+      "start": 38.11,
+      "end": 38.42
+    },
+    {
+      "text": "a",
+      "start": 38.42,
+      "end": 38.5
+    },
+    {
+      "text": "million",
+      "start": 38.5,
+      "end": 39.04
+    },
+    {
+      "text": "dollars.",
+      "start": 39.04,
+      "end": 39.92
+    },
+    {
+      "text": "In",
+      "start": 39.92,
+      "end": 40.06
+    },
+    {
+      "text": "his",
+      "start": 40.06,
+      "end": 40.27
+    },
+    {
+      "text": "mind,",
+      "start": 40.27,
+      "end": 40.69
+    },
+    {
+      "text": "he",
+      "start": 40.69,
+      "end": 40.83
+    },
+    {
+      "text": "has",
+      "start": 40.83,
+      "end": 41.17
+    },
+    {
+      "text": "just",
+      "start": 41.17,
+      "end": 41.42
+    },
+    {
+      "text": "ordered",
+      "start": 41.42,
+      "end": 41.82
+    },
+    {
+      "text": "five",
+      "start": 41.82,
+      "end": 42.08
+    },
+    {
+      "text": "people",
+      "start": 42.08,
+      "end": 42.9
+    },
+    {
+      "text": "killed.",
+      "start": 42.9,
+      "end": 43.24
+    }
+  ]
+}

@@ -19,6 +19,8 @@ export const IconFlood: React.FC<{
   /** 0..1, tints everything `dangerColor` */
   danger?: number;
   dangerColor?: string;
+  /** frame when the flood starts */
+  at?: number;
   /** skip the pop-in */
   instant?: boolean;
   seed?: string;
@@ -33,6 +35,7 @@ export const IconFlood: React.FC<{
   highlightRatio = 0.12,
   danger = 0,
   dangerColor = colors.red,
+  at = 0,
   instant = false,
   seed = "flood",
   style,
@@ -66,7 +69,7 @@ export const IconFlood: React.FC<{
       {cells.map((cell, i) => {
         const pop = instant
           ? 1
-          : spring({ frame: frame - cell.delay, fps, config: springs.pop });
+          : spring({ frame: frame - at - cell.delay, fps, config: springs.pop });
         if (pop <= 0.001) return null;
         const hl =
           cell.hl && highlightAt !== undefined

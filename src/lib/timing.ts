@@ -63,3 +63,21 @@ export const sp = (
   config: Partial<SpringConfig>,
   durationInFrames?: number,
 ) => spring({ frame: frame - at, fps, config, durationInFrames });
+
+import { useMemo } from "react";
+import { useVideoConfig } from "remotion";
+
+/** Hook form of createCues: `c("word")` gives the frame a word starts. */
+export const useCues = (words: Word[]) => {
+  const { fps, durationInFrames } = useVideoConfig();
+  const cue = useMemo(() => createCues(words, fps), [words, fps]);
+  return { c: cue.at, ce: cue.end, fps, D: durationInFrames };
+};
+
+/** Caption words with the character names joined up. */
+export const captionNames = (words: Word[]) =>
+  [
+    ["Friendly Chemist's", "FriendlyChemist's"],
+    ["Friendly Chemist", "FriendlyChemist"],
+    ["Red and White", "Redandwhite"],
+  ].reduce((w, [from, to]) => replacePhrase(w, from, to), words);

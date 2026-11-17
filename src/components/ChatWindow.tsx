@@ -11,6 +11,10 @@ export type ChatMessage = {
   typingFrom?: number;
   /** characters per second */
   cps?: number;
+  /** a reply from the other side: right-aligned, in `ownColor` */
+  own?: boolean;
+  /** small name shown above the bubble */
+  label?: string;
 };
 
 const SCRAMBLE = "abcdefghijkmnopqrstuvwxyz0123456789#$%&@";
@@ -83,6 +87,11 @@ export const ChatWindow: React.FC<{
   subject?: { text: string; urgent?: boolean; at?: number };
   messages: ChatMessage[];
   minBodyHeight?: number;
+  /** frame when the window pops in */
+  enterAt?: number;
+  /** message text size */
+  fontSize?: number;
+  ownColor?: string;
   style?: React.CSSProperties;
 }> = ({
   width = 1080,
@@ -93,20 +102,25 @@ export const ChatWindow: React.FC<{
   subject,
   messages,
   minBodyHeight = 260,
+  enterAt = 0,
+  fontSize = 34,
+  ownColor = colors.green,
   style,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const enter = sp(frame, fps, 0, springs.snappy);
+  const enter = sp(frame, fps, enterAt, springs.snappy);
   const accent = sender.color ?? colors.green;
-  const revealAt = sender.revealAt ?? 0;
+  const revealAt = sender.revealAt ?? enterAt;
   const revealed = frame >= revealAt;
   const avatarPop = sender.revealAt === undefined ? 1 : sp(frame, fps, revealAt, springs.pop);
 
-  const subjAt = subject?.at ?? 0;
+  const subjAt = subject?.at ?? enterAt;
   const subjIn = sp(frame, fps, subjAt, springs.snappy);
   const subjColor = subject?.urgent ? colors.red : colors.dim;
   const urgentPulse = subject?.urgent ? 0.75 + 0.25 * Math.sin((frame - subjAt) / 4) : 1;
+
+  if (frame < enterAt) return null;
 
   return (
     <div
@@ -236,6 +250,8 @@ export const ChatWindow: React.FC<{
         }}
       >
         {messages.map((m, i) => {
+          const isLatest = !messages.some((o, j) => j > i && frame >= o.at);
+          const mAccent = m.own ? ownColor : accent;
           const dots = m.typingFrom !== undefined && frame >= m.typingFrom && frame < m.at;
           if (dots) {
             const dIn = sp(frame, fps, m.typingFrom!, springs.pop);
@@ -248,10 +264,11 @@ export const ChatWindow: React.FC<{
                   border: `2px solid ${colors.line}`,
                   borderRadius: 14,
                   transform: `scale(${dIn})`,
-                  transformOrigin: "left bottom",
+                  transformOrigin: m.own ? "right bottom" : "left bottom",
+                  alignSelf: m.own ? "flex-end" : "flex-start",
                 }}
               >
-                <TypingDots color={accent} />
+                <TypingDots color={mAccent} />
               </div>
             );
           }
@@ -266,23 +283,31 @@ export const ChatWindow: React.FC<{
                 padding: "20px 26px",
                 background: colors.panelLight,
                 border: `2px solid ${colors.line}`,
-                borderLeft: `4px solid ${accent}`,
+                borderLeft: m.own ? `2px solid ${colors.line}` : `4px solid ${accent}`,
+                borderRight: m.own ? `4px solid ${ownColor}` : `2px solid ${colors.line}`,
                 borderRadius: 10,
-                fontSize: 34,
+                fontSize,
                 lineHeight: 1.45,
                 whiteSpace: "pre-wrap",
+                alignSelf: m.own ? "flex-end" : "flex-start",
+                maxWidth: "92%",
               }}
             >
+              {m.label ? (
+                <div style={{ fontSize: fontSize * 0.6, color: mAccent, marginBottom: 4, fontWeight: 700 }}>
+                  {m.label}
+                </div>
+              ) : null}
               <span>{m.text.slice(0, chars)}</span>
               <span
                 style={{
                   display: "inline-block",
-                  width: 18,
-                  height: 36,
-                  verticalAlign: "-6px",
+                  width: fontSize * 0.52,
+                  height: fontSize * 1.05,
+                  verticalAlign: "-0.18em",
                   marginLeft: 2,
-                  background: accent,
-                  opacity: typing || Math.floor(frame / 8) % 2 === 0 ? 1 : 0,
+                  background: mAccent,
+                  opacity: typing || (isLatest && Math.floor(frame / 8) % 2 === 0) ? 1 : 0,
                 }}
               />
               {/* reserve final size so the bubble doesn't reflow while typing */}

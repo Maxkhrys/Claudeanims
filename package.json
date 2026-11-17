@@ -7,7 +7,12 @@
     "render:clip1": "remotion render Clip1 out/clip1.mp4",
     "transcribe": "node scripts/transcribe.mjs",
     "typecheck": "tsc --noEmit",
-    "render:clip2": "remotion render Clip2 out/clip2.mp4"
+    "render:clip2": "remotion render Clip2 out/clip2.mp4",
+    "render:clip3": "remotion render Clip3 out/clip3.mp4",
+    "render:clip4": "remotion render Clip4 out/clip4.mp4",
+    "render:clip5": "remotion render Clip5 out/clip5.mp4",
+    "render:clip6": "remotion render Clip6 out/clip6.mp4",
+    "render:clip7": "remotion render Clip7 out/clip7.mp4"
   },
   "keywords": [],
   "author": "",

@@ -9,3 +9,4 @@ export * from "./Icons";
 export * from "./IconFlood";
 export * from "./Captions";
 export * from "./ShopWindow";
+export * from "./Kit";

@@ -8,7 +8,7 @@ Ten one-minute clips, animated in code. 1920x1080, 30fps. Style: "dark web case 
 npm install
 npm run dev                      # Remotion Studio
 npm run render:clip1             # -> out/clip1.mp4
-npm run render:clip2             # -> out/clip2.mp4
+npm run render:clip2             # -> out/clip2.mp4 (render:clip3 ... render:clip7 likewise)
 npm run transcribe -- clip1      # Whisper word timestamps -> public/audio/clip1.json
 npx remotion still Clip1 out/frame.png --frame=600
 ```
@@ -57,8 +57,8 @@ voiceover fails loudly instead of drifting out of sync.
 
 1. Drop the narration at `public/audio/clipN.mp3` (examples below use clip 3).
 2. `npm run transcribe -- clip3` and skim `clip3.json` for misheard words.
-3. Copy `src/clips/Clip1.tsx` to `Clip3.tsx`. Change the transcript import and
-   the audio path, rewrite `useBeats` with the new cue words, and replace the scenes.
+3. Copy `src/clips/Clip5.tsx` to `ClipN.tsx`. Change the transcript import and
+   the audio path, and replace the scenes, timing each element with `c("spoken word")`.
 4. Register it in `src/Root.tsx`:
 
    ```tsx
@@ -74,6 +74,24 @@ voiceover fails loudly instead of drifting out of sync.
    ```
 
 5. Add `"render:clip3": "remotion render Clip3 out/clip3.mp4"` to `package.json`.
+
+## Clips 3 onward: the scene kit
+
+Clips 3 to 7 use `src/components/Kit.tsx`, which makes a clip much shorter to write:
+
+- `ClipShell`: audio + `Background` + `Captions` in one wrapper.
+- `useCues(words)`: returns `c("word")` (start frame) and `ce("word")` (end frame).
+- `Scene from to exit="fade|glitch|cut"`: shows children between two frames **without shifting time**,
+  so everything inside uses composition frames and you pass `at={c("word")}` directly.
+- `Pop`, `Chip`, `Stamp`, `Vanish`, `Card`, `Crosshair`, `Parcel`: small animated building blocks.
+- `Chemist`, `Dpr`, `RedWhite`, `DprDesk`, `NameTag`, `SENDERS`: the cast and their chat headers.
+- `captionNames(words)`: joins "Friendly Chemist" / "Red and White" into one caption word.
+
+Use `Clip5.tsx` as the template for new clips. `Clip1.tsx` and `Clip2.tsx` use the older
+`<Sequence>` pattern with local frames; both approaches work.
+
+Chat text in clips 4 to 7 is quoted from the trial-exhibit message transcript. `[...]` marks a cut
+inside a message. Names of alleged private individuals are redacted on screen.
 
 ## Components
 

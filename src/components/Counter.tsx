@@ -64,7 +64,7 @@ export const Counter: React.FC<{
             transformOrigin: "left center",
           }}
         >
-          {suffix}
+          {suffix.replace(/^ /, "\u00a0")}
         </span>
       ) : null}
     </div>
