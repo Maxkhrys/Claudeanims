@@ -6,7 +6,7 @@ import { clipTimings } from "./clipTimings";
 
 // Whisper's spellings of names, corrected for captions and cue lookups.
 const NAME_FIXES: [RegExp, string][] = [
-  [/^(Caz|Cazez|Kazez|Cazes)(?=[.,?!']|$)/, "Cazes"],
+  [/^(Caz|Cazez|Kazez|Kaysis|Cazes)(?=[.,?!']|$)/, "Cazes"],
   [/^(Alexander|Alexandra)(?=[.,?!']|$)/, "Alexandre"],
 ];
 const fixName = (text: string) => NAME_FIXES.reduce((t, [re, to]) => t.replace(re, to), text);
