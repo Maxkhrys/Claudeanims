@@ -179,10 +179,10 @@ export const RemotionRoot: React.FC = () => {
         fps={VIDEO.fps}
         durationInFrames={VIDEO.fps * 15}
       />
-      {(["email", "mistake"] as const).map((variant) => (
+      {(["email", "mistake", "silkroad"] as const).map((variant) => (
         <Composition
           key={variant}
-          id={`V2-Thumb-${variant}`}
+          id={variant === "silkroad" ? "V1-Thumb" : `V2-Thumb-${variant}`}
           component={Thumbnail}
           schema={thumbnailSchema}
           defaultProps={{ variant }}

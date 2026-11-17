@@ -2,9 +2,9 @@ import React from "react";
 import { AbsoluteFill } from "remotion";
 import { z } from "zod";
 import { colors, fonts } from "../theme";
-import { Car, Cazes, Dpr, Grain, MarketLogo, SeizedStamp, Vignette } from "../components";
+import { CamelLogo, Car, Cazes, Dpr, Grain, MarketLogo, SeizedStamp, Vignette } from "../components";
 
-export const thumbnailSchema = z.object({ variant: z.enum(["email", "mistake"]) });
+export const thumbnailSchema = z.object({ variant: z.enum(["email", "mistake", "silkroad"]) });
 
 const big = (size: number, color: string): React.CSSProperties => ({
   fontFamily: fonts.display,
@@ -37,10 +37,29 @@ const EmailTag: React.FC<{ text: string; color: string; size?: number; rotate?: 
   </div>
 );
 
-/** YouTube thumbnail for video 2. Render with `npm run thumb:video2`. */
+/** YouTube thumbnails. Render with `npm run thumb:video2` or `npm run thumb:video1`. */
 export const Thumbnail: React.FC<z.infer<typeof thumbnailSchema>> = ({ variant }) => (
   <AbsoluteFill style={{ backgroundColor: "#06080A", overflow: "hidden" }}>
-    {variant === "email" ? (
+    {variant === "silkroad" ? (
+      <>
+        <AbsoluteFill style={{ background: "radial-gradient(ellipse at 80% 55%, rgba(255,59,59,0.40), rgba(0,0,0,0) 58%)" }} />
+        <AbsoluteFill style={{ background: "radial-gradient(ellipse at 15% 20%, rgba(57,255,136,0.18), rgba(0,0,0,0) 55%)" }} />
+        <div style={{ position: "absolute", left: 1150, top: 150 }}>
+          <Dpr size={900} idle={0} expression="angry" lightColor={colors.red} lightAmount={1} />
+        </div>
+        <div style={{ position: "absolute", left: 1350, top: 40, display: "flex", alignItems: "center", gap: 18 }}>
+          <CamelLogo size={120} />
+          <span style={{ ...big(92, colors.green), textShadow: "none" }}>SILK ROAD</span>
+        </div>
+        <div style={{ position: "absolute", left: 70, top: 70, ...big(350, colors.text) }}>HE PAID FOR</div>
+        <div style={{ position: "absolute", left: 80, top: 430 }}>
+          <EmailTag text={'"Your problem has been taken care of."'} color={colors.green} size={43} />
+        </div>
+        <div style={{ position: "absolute", left: 70, top: 610, ...big(260, colors.red) }}>5 MURDERS</div>
+        <div style={{ position: "absolute", left: 70, top: 830, ...big(260, colors.gold) }}>ALL FAKE</div>
+        <SeizedStamp at={-60} text="SCAMMED" fontSize={120} rotate={-10} sound={false} style={{ left: 1250, top: 760 }} />
+      </>
+    ) : variant === "email" ? (
       <>
         <AbsoluteFill style={{ background: "radial-gradient(ellipse at 80% 55%, rgba(245,200,76,0.42), rgba(0,0,0,0) 58%)" }} />
         <AbsoluteFill style={{ background: "radial-gradient(ellipse at 15% 20%, rgba(57,255,136,0.16), rgba(0,0,0,0) 55%)" }} />

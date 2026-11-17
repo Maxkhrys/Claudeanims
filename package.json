@@ -20,7 +20,8 @@
     "build:full": "node scripts/build-full.mjs",
     "timings:video2": "node scripts/clip-timings.mjs",
     "render:video2": "remotion render Video2 out/video2.mp4",
-    "thumb:video2": "for v in email mistake; do remotion still V2-Thumb-$v out/thumb-$v.png && ffmpeg -y -loglevel error -i out/thumb-$v.png -vf scale=1280:720 -q:v 2 out/thumb-$v.jpg; done"
+    "thumb:video2": "for v in email mistake; do remotion still V2-Thumb-$v out/thumb-$v.png && ffmpeg -y -loglevel error -i out/thumb-$v.png -vf scale=1280:720 -q:v 2 out/thumb-$v.jpg; done",
+    "thumb:video1": "remotion still V1-Thumb out/thumb-silkroad.png && ffmpeg -y -loglevel error -i out/thumb-silkroad.png -vf scale=1280:720 -q:v 2 out/thumb-silkroad.jpg"
   },
   "keywords": [],
   "author": "",
