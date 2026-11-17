@@ -109,3 +109,27 @@ export const Thumbnail: React.FC<z.infer<typeof thumbnailSchema>> = ({ variant }
     <Vignette strength={0.55} />
   </AbsoluteFill>
 );
+
+/** 9:16 cover for the vertical Silk Road parts (TikTok / Reels). Key content stays in the centre, which is what the profile grid shows. */
+export const VerticalCover: React.FC = () => (
+  <AbsoluteFill style={{ backgroundColor: "#06080A", overflow: "hidden" }}>
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 68%, rgba(255,59,59,0.46), rgba(0,0,0,0) 55%)" }} />
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 18%, rgba(57,255,136,0.20), rgba(0,0,0,0) 50%)" }} />
+    <div style={{ position: "absolute", left: 0, right: 0, top: 270, display: "flex", justifyContent: "center", alignItems: "center", gap: 20 }}>
+      <CamelLogo size={130} />
+      <span style={{ ...big(104, colors.green), textShadow: "none" }}>SILK ROAD</span>
+    </div>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 440, textAlign: "center", ...big(262, colors.text) }}>HE PAID FOR</div>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 680, textAlign: "center", ...big(272, colors.red) }}>5 MURDERS</div>
+    <div style={{ position: "absolute", left: 540 - 290, top: 960 }}>
+      <Dpr size={670} idle={0} expression="angry" lightColor={colors.red} lightAmount={1} />
+    </div>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 1400, textAlign: "center" }}>
+      <div style={{ display: "inline-block", transform: "rotate(-4deg)", background: "rgba(6,8,10,0.9)", padding: "18px 60px 0", borderRadius: 18, border: `8px solid ${colors.gold}` }}>
+        <div style={big(270, colors.gold)}>ALL FAKE</div>
+      </div>
+    </div>
+    <Grain opacity={0.05} />
+    <Vignette strength={0.55} />
+  </AbsoluteFill>
+);
