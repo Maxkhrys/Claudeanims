@@ -1,6 +1,6 @@
 # The Onion Archive — Lapsus$: The Teenagers Who Hacked Everyone
 
-22 clips, ~140 words each = about 16 to 17 minutes. [VISUAL] = animation cue. Same style as videos 1 and 2.
+22 clips, ~100 words each = about 2,270 words, roughly 12 minutes at the AlphaBay narration pace. [VISUAL] = animation cue. Same style as videos 1 and 2.
 
 Narration notes: "Lapsus$" is written "Lapsus" in the narration so the voice reads it cleanly. Numbers are spelled out. Lines marked in the fact-check list at the bottom must be confirmed before recording.
 
