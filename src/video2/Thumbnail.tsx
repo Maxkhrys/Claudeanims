@@ -55,7 +55,7 @@ export const Thumbnail: React.FC<z.infer<typeof thumbnailSchema>> = ({ variant }
         <div style={{ position: "absolute", left: 80, top: 430 }}>
           <EmailTag text={'"Your problem has been taken care of."'} color={colors.green} size={43} />
         </div>
-        <div style={{ position: "absolute", left: 70, top: 610, ...big(260, colors.red) }}>5 MURDERS</div>
+        <div style={{ position: "absolute", left: 70, top: 610, ...big(260, colors.red) }}>5 HITS</div>
         <div style={{ position: "absolute", left: 70, top: 830, ...big(260, colors.gold) }}>ALL FAKE</div>
         <SeizedStamp at={-60} text="SCAMMED" fontSize={120} rotate={-10} sound={false} style={{ left: 1250, top: 760 }} />
       </>
@@ -120,7 +120,7 @@ export const VerticalCover: React.FC = () => (
       <span style={{ ...big(104, colors.green), textShadow: "none" }}>SILK ROAD</span>
     </div>
     <div style={{ position: "absolute", left: 0, right: 0, top: 440, textAlign: "center", ...big(262, colors.text) }}>HE PAID FOR</div>
-    <div style={{ position: "absolute", left: 0, right: 0, top: 680, textAlign: "center", ...big(272, colors.red) }}>5 MURDERS</div>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 668, textAlign: "center", ...big(370, colors.red) }}>5 HITS</div>
     <div style={{ position: "absolute", left: 540 - 290, top: 960 }}>
       <Dpr size={670} idle={0} expression="angry" lightColor={colors.red} lightAmount={1} />
     </div>
