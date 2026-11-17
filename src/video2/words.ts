@@ -4,8 +4,15 @@ import transcript from "../../public/audio/video2/full.json";
 import { createCues, type Word } from "../lib/timing";
 import { clipTimings } from "./clipTimings";
 
+// Whisper's spellings of names, corrected for captions and cue lookups.
+const NAME_FIXES: [RegExp, string][] = [
+  [/^(Caz|Cazez|Kazez|Cazes)(?=[.,?!']|$)/, "Cazes"],
+  [/^(Alexander|Alexandra)(?=[.,?!']|$)/, "Alexandre"],
+];
+const fixName = (text: string) => NAME_FIXES.reduce((t, [re, to]) => t.replace(re, to), text);
+
 /** Every word of the video 2 narration, timed from the start of the full audio. */
-export const fullWords = transcript.words as Word[];
+export const fullWords = (transcript.words as Word[]).map((w) => ({ ...w, text: fixName(w.text) }));
 
 /** The words of clip `n` (1-based), re-timed so 0 is the start of that clip. */
 export const clipWords = (n: number): Word[] => {

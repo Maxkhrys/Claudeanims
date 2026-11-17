@@ -133,8 +133,8 @@ export const EmailHeader: React.FC<{
         <div style={{ padding: "4px 34px 18px", borderBottom: `2px solid ${colors.line}` }}>
           <div style={row}>
             <span style={label}>FROM</span>
-            <span style={{ fontSize: 30 }}>{fromName}</span>
-            <span style={{ fontSize: 36, fontWeight: 700, color: colors.green, filter: blur > 0.01 ? `blur(${blur * 10}px)` : undefined, textShadow: `0 0 22px ${colors.green}55` }}>
+            <span style={{ fontSize: 30, whiteSpace: "nowrap" }}>{fromName}</span>
+            <span style={{ fontSize: 36, fontWeight: 700, whiteSpace: "nowrap", color: colors.green, filter: blur > 0.01 ? `blur(${blur * 10}px)` : undefined, textShadow: `0 0 22px ${colors.green}55` }}>
               &lt;{runs}
               {chars >= fromAddress.length ? ">" : <span style={{ opacity: Math.floor(frame / 6) % 2 ? 0.2 : 1 }}>▌</span>}
             </span>

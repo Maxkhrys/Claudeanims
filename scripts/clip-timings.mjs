@@ -51,6 +51,9 @@ for (const clip of clips) {
     if (tokens[i] === want[0]) score += 1.5;
     if (score > best.score) best = { score, i };
   }
+  // Whisper may misspell a name that opens the line ("Cazes" -> "Kazez"):
+  // if the match began on the line's second word, step back to include the first.
+  if (tokens[best.i] !== want[0] && tokens[best.i] === want[1] && best.i > from) best.i -= 1;
   clip.wordIndex = best.i;
   clip.confidence = +(best.score / (want.length + 1.5)).toFixed(2);
   clip.firstWordSec = words[best.i].start;
