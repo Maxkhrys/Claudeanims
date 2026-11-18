@@ -60,7 +60,7 @@ export const HotelRoom: React.FC<{
   return (
     <AbsoluteFill>
       {/* wall and floor */}
-      <AbsoluteFill style={{ background: "linear-gradient(to bottom, #0E1319 0%, #121922 64%, #0A0D11 64%, #07090B 100%)" }} />
+      <AbsoluteFill style={{ background: "linear-gradient(to bottom, #131A23 0%, #1A2430 64%, #0D1116 64%, #07090B 100%)" }} />
       <div style={{ position: "absolute", left: 0, right: 0, top: 688, height: 6, background: "#1B242E" }} />
       {/* window with curtains */}
       <div style={{ position: "absolute", left: 120, top: 120, width: 360, height: 400, background: "linear-gradient(to bottom, #0B1220, #131C2E)", border: "10px solid #1C2530" }}>
@@ -82,13 +82,15 @@ export const HotelRoom: React.FC<{
           <div style={{ position: "absolute", right: 10, top: 8, width: 8, height: 8, borderRadius: 4, background: colors.amber, boxShadow: `0 0 12px ${colors.amber}`, opacity: 0.5 + 0.5 * Math.sin(frame / 5) }} />
         </div>
       ) : null}
+      {/* warm pool of light from the bedside lamp */}
+      <div style={{ position: "absolute", left: 764 - 420, top: 500 - 330, width: 840, height: 760, background: "radial-gradient(ellipse at 50% 42%, rgba(255,181,71,0.5), rgba(0,0,0,0) 62%)", opacity: 0.3 }} />
       {/* bedside table, lamp, kettle */}
       <div style={{ position: "absolute", left: 620, top: 600, width: 210, height: 190, background: "#171E26", border: "3px solid #232C36", borderRadius: 6 }} />
       <div style={{ position: "absolute", left: 660, top: 530, width: 62, height: 70, borderRadius: "10px 10px 14px 14px", background: "#2A333D" }}>
         <div style={{ position: "absolute", right: -22, top: 14, width: 26, height: 34, border: "6px solid #2A333D", borderLeft: "none", borderRadius: "0 14px 14px 0" }} />
       </div>
       <div style={{ position: "absolute", left: 760, top: 500, width: 8, height: 100, background: "#2A333D" }} />
-      <div style={{ position: "absolute", left: 730, top: 460, width: 68, height: 50, borderRadius: "12px 12px 4px 4px", background: "#3A2F22" }} />
+      <div style={{ position: "absolute", left: 730, top: 460, width: 68, height: 50, borderRadius: "12px 12px 4px 4px", background: "#C99A52", boxShadow: "0 0 40px rgba(255,181,71,0.55)" }} />
       {/* bed */}
       <div style={{ position: "absolute", left: 60, top: 610, width: 540, height: 90, borderRadius: "14px 14px 0 0", background: "#1E2630" }} />
       <div style={{ position: "absolute", left: 40, top: 690, width: 620, height: 170, borderRadius: 14, background: "linear-gradient(to bottom, #2B3643, #1B232C)", boxShadow: "0 24px 40px rgba(0,0,0,0.6)" }} />
@@ -132,6 +134,8 @@ export const PhoneBuzz: React.FC<{
         <div style={{ textAlign: "center", marginTop: size * 0.1, fontFamily: fonts.mono, fontSize: size * 0.2, fontWeight: 700, color: colors.text }}>{time}</div>
         <div style={{ position: "absolute", left: size * 0.07, right: size * 0.07, top: size * 0.44, display: "flex", flexDirection: "column", gap: size * 0.035 }}>
           {new Array(shown).fill(0).map((_, i) => {
+            // only the newest few fit on the screen; older ones scroll off the top
+            if (i < shown - 5) return null;
             const p = sp(frame, fps, at + i * interval, springs.snappy);
             const last = i === shown - 1;
             const good = approved && last;
