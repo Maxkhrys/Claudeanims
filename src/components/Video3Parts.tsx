@@ -132,7 +132,7 @@ export const PhoneBuzz: React.FC<{
       {approveAt !== undefined ? <Sfx name="click" at={approveAt} /> : null}
       <div style={{ position: "absolute", inset: 0, borderRadius: size * 0.14, background: "#0B0F13", border: `${size * 0.03}px solid #2A343D`, boxShadow: `0 30px 70px rgba(0,0,0,0.7), 0 0 60px ${approved ? colors.green : colors.amber}22`, overflow: "hidden" }}>
         <div style={{ textAlign: "center", marginTop: size * 0.1, fontFamily: fonts.mono, fontSize: size * 0.2, fontWeight: 700, color: colors.text }}>{time}</div>
-        <div style={{ position: "absolute", left: size * 0.07, right: size * 0.07, top: size * 0.44, display: "flex", flexDirection: "column", gap: size * 0.035 }}>
+        <div style={{ position: "absolute", left: size * 0.05, right: size * 0.05, top: size * 0.44, display: "flex", flexDirection: "column", gap: size * 0.035 }}>
           {new Array(shown).fill(0).map((_, i) => {
             // only the newest few fit on the screen; older ones scroll off the top
             if (i < shown - 5) return null;
@@ -148,7 +148,7 @@ export const PhoneBuzz: React.FC<{
                   background: good ? "rgba(57,255,136,0.18)" : colors.panelLight,
                   border: `2px solid ${good ? colors.green : colors.line}`,
                   fontFamily: fonts.mono,
-                  fontSize: size * 0.066,
+                  fontSize: size * 0.084,
                   fontWeight: 700,
                   color: good ? colors.green : colors.text,
                   transform: `scale(${good ? 1 + 0.08 * (1 - ok) : p})`,
