@@ -9,6 +9,7 @@ const FIXES: [RegExp, string][] = [
   [/^(Lapsis|Lapses|Lapsus|Lapsys|Lapsos)(?=[.,?!']|$)/i, "Lapsus"],
   [/^(Kurtai|Kurtaj|Kurtay|Curtai|Curtaj|Kertaj)(?=[.,?!']|$)/i, "Kurtaj"],
   [/^(Aryan|Arian|Arion|Aaron)(?=[.,?!']|$)/, "Arion"],
+  [/^(Docksbin|Doxbin|Docsbin|Doxxbin|Dockspin)(?=[.,?!']|$)/i, "Doxbin"],
 ];
 const fix = (text: string) => FIXES.reduce((t, [re, to]) => t.replace(re, to), text);
 
