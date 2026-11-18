@@ -2,7 +2,7 @@ import React from "react";
 import { AbsoluteFill } from "remotion";
 import { z } from "zod";
 import { colors, fonts } from "../theme";
-import { CamelLogo, Car, Cazes, Dpr, Grain, MarketLogo, SeizedStamp, Vignette } from "../components";
+import { CamelLogo, Car, Cazes, Dpr, Grain, MarketLogo, SeizedStamp, Vignette, White } from "../components";
 
 export const thumbnailSchema = z.object({ variant: z.enum(["email", "mistake", "silkroad"]) });
 
@@ -154,6 +154,74 @@ export const VerticalCoverAlphaBay: React.FC = () => (
       <div style={{ display: "inline-block", transform: "rotate(-3deg)", background: "rgba(6,8,10,0.92)", padding: "22px 44px 6px", borderRadius: 18, border: `8px solid ${colors.gold}` }}>
         <div style={big(212, colors.gold)}>ENDED A $1B</div>
         <div style={big(250, colors.red)}>EMPIRE</div>
+      </div>
+    </div>
+    <Grain opacity={0.05} />
+    <Vignette strength={0.55} />
+  </AbsoluteFill>
+);
+
+/** The hotel TV with the attacker's message, used on the Lapsus$ thumbnails. */
+const HackedTv: React.FC<{ width: number }> = ({ width }) => {
+  const h = width * 0.56;
+  return (
+    <div style={{ position: "relative", width, height: h }}>
+      <div style={{ position: "absolute", inset: -40, background: "radial-gradient(ellipse at 50% 50%, rgba(255,59,59,0.5), rgba(0,0,0,0) 68%)" }} />
+      <div style={{ position: "absolute", inset: 0, borderRadius: 18, background: "#07090B", border: "10px solid #232C36", boxShadow: "0 0 80px rgba(255,59,59,0.45), 0 24px 50px rgba(0,0,0,0.8)", padding: `${h * 0.12}px ${width * 0.06}px`, display: "flex", flexDirection: "column", justifyContent: "center", gap: h * 0.06 }}>
+        <div style={{ fontFamily: fonts.mono, fontSize: width * 0.04, color: colors.dim, letterSpacing: "0.1em" }}>TO: ALL STAFF</div>
+        <div style={{ fontFamily: fonts.mono, fontWeight: 700, fontSize: width * 0.062, lineHeight: 1.3, color: colors.red, textShadow: "0 0 24px rgba(255,59,59,0.6)" }}>
+          I am not a Rockstar
+          <br />
+          employee, I am an
+          <br />
+          attacker.
+        </div>
+      </div>
+      {/* the streaming stick */}
+      <div style={{ position: "absolute", right: -width * 0.11, top: h * 0.6, width: width * 0.12, height: h * 0.1, borderRadius: 8, background: "#1A2027", border: "3px solid #3A4753" }}>
+        <div style={{ position: "absolute", right: 10, top: "28%", width: 12, height: 12, borderRadius: 6, background: colors.amber, boxShadow: `0 0 14px ${colors.amber}` }} />
+      </div>
+    </div>
+  );
+};
+
+/** 16:9 thumbnail for video 3 (Lapsus$). */
+export const ThumbnailLapsus: React.FC = () => (
+  <AbsoluteFill style={{ backgroundColor: "#06080A", overflow: "hidden" }}>
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse at 80% 50%, rgba(255,59,59,0.34), rgba(0,0,0,0) 58%)" }} />
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse at 15% 20%, rgba(57,255,136,0.16), rgba(0,0,0,0) 55%)" }} />
+    <div style={{ position: "absolute", left: 1215, top: 80 }}>
+      <HackedTv width={600} />
+    </div>
+    <div style={{ position: "absolute", left: 1330, top: 520 }}>
+      <White size={500} idle={0} look={{ x: 0, y: -0.6 }} />
+    </div>
+    <div style={{ position: "absolute", left: 70, top: 60, ...big(310, colors.text) }}>HE HACKED</div>
+    <div style={{ position: "absolute", left: 70, top: 340, ...big(430, colors.amber) }}>GTA 6</div>
+    <div style={{ position: "absolute", left: 70, top: 760, ...big(205, colors.red) }}>FROM A HOTEL TV</div>
+    <SeizedStamp at={-60} text="AGE 17" fontSize={100} rotate={-9} sound={false} style={{ left: 870, top: 520 }} />
+    <Grain opacity={0.05} />
+    <Vignette strength={0.55} />
+  </AbsoluteFill>
+);
+
+/** 9:16 cover for video 3 (Lapsus$). */
+export const VerticalCoverLapsus: React.FC = () => (
+  <AbsoluteFill style={{ backgroundColor: "#06080A", overflow: "hidden" }}>
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 58%, rgba(255,59,59,0.38), rgba(0,0,0,0) 55%)" }} />
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 16%, rgba(57,255,136,0.18), rgba(0,0,0,0) 50%)" }} />
+    <div style={{ position: "absolute", left: 0, right: 0, top: 270, textAlign: "center", ...big(262, colors.text) }}>HE HACKED</div>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 500, textAlign: "center", ...big(430, colors.amber) }}>GTA 6</div>
+    <div style={{ position: "absolute", left: 540 - 300, top: 900 }}>
+      <HackedTv width={600} />
+    </div>
+    <div style={{ position: "absolute", left: 60, top: 1140 }}>
+      <White size={330} idle={0} look={{ x: 0.8, y: -0.7 }} />
+    </div>
+    <SeizedStamp at={-60} text="AGE 17" fontSize={92} rotate={8} sound={false} style={{ left: 700, top: 1250 }} />
+    <div style={{ position: "absolute", left: 0, right: 0, top: 1440, textAlign: "center" }}>
+      <div style={{ display: "inline-block", transform: "rotate(-3deg)", background: "rgba(6,8,10,0.92)", padding: "20px 40px 4px", borderRadius: 18, border: `8px solid ${colors.red}` }}>
+        <div style={big(178, colors.red)}>FROM A HOTEL TV</div>
       </div>
     </div>
     <Grain opacity={0.05} />
