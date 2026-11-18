@@ -113,7 +113,7 @@ export const PhoneBuzz: React.FC<{
   time?: string;
   size?: number;
   style?: React.CSSProperties;
-}> = ({ at, prompts = 6, interval = 9, approveAt, time = "01:07", size = 300, style }) => {
+}> = ({ at, prompts = 6, interval = 9, approveAt, time = "", size = 300, style }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   if (frame < at) return null;
