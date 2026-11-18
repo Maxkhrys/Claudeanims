@@ -7,7 +7,7 @@ import { clipTimings } from "./clipTimings";
 // Whisper's spellings, corrected for captions and cue lookups.
 const FIXES: [RegExp, string][] = [
   [/^(Lapsis|Lapses|Lapsus|Lapsys|Lapsos)(?=[.,?!']|$)/i, "Lapsus"],
-  [/^(Kurtai|Kurtaj|Kurtay|Curtai|Curtaj|Kertaj)(?=[.,?!']|$)/i, "Kurtaj"],
+  [/^(Kurtai|Kurtaj|Kurtay|Curtai|Curtaj|Kertaj|Kirtaj|Kirtai|Kurtage)(?=[.,?!']|$)/i, "Kurtaj"],
   [/^(Aryan|Arian|Arion|Aaron)(?=[.,?!']|$)/, "Arion"],
   [/^(Docksbin|Doxbin|Docsbin|Doxxbin|Dockspin)(?=[.,?!']|$)/i, "Doxbin"],
 ];
