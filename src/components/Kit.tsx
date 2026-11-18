@@ -408,3 +408,22 @@ export const Parcel: React.FC<{ size?: number; color?: string }> = ({ size = 60,
     <div style={{ position: "absolute", left: "42%", top: 0, bottom: 0, width: "16%", background: color, opacity: 0.55 }} />
   </div>
 );
+
+/**
+ * Silent fade-in for the quiet beats (sentencing, the cell): no spring pop, no sound.
+ * Absolutely positioned via `style`; `out` is an optional frame to fade away again.
+ */
+export const FadeIn: React.FC<{
+  at: number;
+  durationInFrames?: number;
+  out?: number;
+  style?: React.CSSProperties;
+  children: React.ReactNode;
+}> = ({ at, durationInFrames = 24, out, style, children }) => {
+  const frame = useCurrentFrame();
+  if (frame < at) return null;
+  const a = Math.min(1, (frame - at) / durationInFrames);
+  const b = out === undefined ? 1 : Math.max(0, 1 - (frame - out) / durationInFrames);
+  if (b <= 0) return null;
+  return <div style={{ position: "absolute", ...style, opacity: Math.min(a, b) }}>{children}</div>;
+};
