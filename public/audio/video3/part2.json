@@ -1,0 +1,4826 @@
+{
+  "clip": "video3/part2",
+  "model": "medium.en",
+  "words": [
+    {
+      "text": "Nvidia",
+      "start": 0.11,
+      "end": 0.74
+    },
+    {
+      "text": "refused.",
+      "start": 0.74,
+      "end": 2.09
+    },
+    {
+      "text": "So,",
+      "start": 2.09,
+      "end": 2.28
+    },
+    {
+      "text": "Lapsys",
+      "start": 2.28,
+      "end": 2.71
+    },
+    {
+      "text": "started",
+      "start": 2.71,
+      "end": 3.22
+    },
+    {
+      "text": "leaking.",
+      "start": 3.22,
+      "end": 3.99
+    },
+    {
+      "text": "And",
+      "start": 3.99,
+      "end": 4.69
+    },
+    {
+      "text": "March",
+      "start": 4.69,
+      "end": 4.96
+    },
+    {
+      "text": "2022",
+      "start": 4.96,
+      "end": 6.57
+    },
+    {
+      "text": "turned",
+      "start": 6.57,
+      "end": 6.72
+    },
+    {
+      "text": "into",
+      "start": 6.72,
+      "end": 6.95
+    },
+    {
+      "text": "the",
+      "start": 6.95,
+      "end": 7.2
+    },
+    {
+      "text": "wildest",
+      "start": 7.2,
+      "end": 7.76
+    },
+    {
+      "text": "month",
+      "start": 7.76,
+      "end": 8.08
+    },
+    {
+      "text": "the",
+      "start": 8.08,
+      "end": 8.39
+    },
+    {
+      "text": "security",
+      "start": 8.39,
+      "end": 9.22
+    },
+    {
+      "text": "world",
+      "start": 9.22,
+      "end": 10.05
+    },
+    {
+      "text": "had",
+      "start": 10.05,
+      "end": 10.19
+    },
+    {
+      "text": "seen",
+      "start": 10.19,
+      "end": 10.46
+    },
+    {
+      "text": "in",
+      "start": 10.46,
+      "end": 10.78
+    },
+    {
+      "text": "years.",
+      "start": 10.78,
+      "end": 11.52
+    },
+    {
+      "text": "March",
+      "start": 11.52,
+      "end": 12.1
+    },
+    {
+      "text": "4.",
+      "start": 12.1,
+      "end": 12.77
+    },
+    {
+      "text": "Samsung.",
+      "start": 12.77,
+      "end": 13.85
+    },
+    {
+      "text": "190",
+      "start": 13.85,
+      "end": 14.65
+    },
+    {
+      "text": "gigabytes",
+      "start": 14.65,
+      "end": 15.36
+    },
+    {
+      "text": "of",
+      "start": 15.36,
+      "end": 15.52
+    },
+    {
+      "text": "data,",
+      "start": 15.52,
+      "end": 16
+    },
+    {
+      "text": "including",
+      "start": 16,
+      "end": 16.62
+    },
+    {
+      "text": "source",
+      "start": 16.62,
+      "end": 17.04
+    },
+    {
+      "text": "code",
+      "start": 17.04,
+      "end": 17.3
+    },
+    {
+      "text": "for",
+      "start": 17.3,
+      "end": 17.48
+    },
+    {
+      "text": "its",
+      "start": 17.48,
+      "end": 18.08
+    },
+    {
+      "text": "Galaxy",
+      "start": 18.08,
+      "end": 18.11
+    },
+    {
+      "text": "phones,",
+      "start": 18.11,
+      "end": 18.7
+    },
+    {
+      "text": "dumped",
+      "start": 18.7,
+      "end": 19.06
+    },
+    {
+      "text": "online",
+      "start": 19.06,
+      "end": 19.47
+    },
+    {
+      "text": "for",
+      "start": 19.47,
+      "end": 19.67
+    },
+    {
+      "text": "anyone",
+      "start": 19.67,
+      "end": 20.08
+    },
+    {
+      "text": "to",
+      "start": 20.08,
+      "end": 20.69
+    },
+    {
+      "text": "download.",
+      "start": 20.69,
+      "end": 21.04
+    },
+    {
+      "text": "March",
+      "start": 21.04,
+      "end": 21.57
+    },
+    {
+      "text": "21.",
+      "start": 21.57,
+      "end": 23.13
+    },
+    {
+      "text": "Microsoft.",
+      "start": 23.13,
+      "end": 23.78
+    },
+    {
+      "text": "Lapsys",
+      "start": 23.78,
+      "end": 24.41
+    },
+    {
+      "text": "posted",
+      "start": 24.41,
+      "end": 25.03
+    },
+    {
+      "text": "source",
+      "start": 25.03,
+      "end": 25.73
+    },
+    {
+      "text": "code",
+      "start": 25.73,
+      "end": 26.18
+    },
+    {
+      "text": "from",
+      "start": 26.18,
+      "end": 26.48
+    },
+    {
+      "text": "Bing,",
+      "start": 26.48,
+      "end": 26.96
+    },
+    {
+      "text": "from",
+      "start": 26.96,
+      "end": 27.36
+    },
+    {
+      "text": "Bing",
+      "start": 27.36,
+      "end": 27.76
+    },
+    {
+      "text": "Maps,",
+      "start": 27.76,
+      "end": 28.24
+    },
+    {
+      "text": "and",
+      "start": 28.24,
+      "end": 28.37
+    },
+    {
+      "text": "from",
+      "start": 28.37,
+      "end": 28.56
+    },
+    {
+      "text": "its",
+      "start": 28.56,
+      "end": 28.8
+    },
+    {
+      "text": "voice",
+      "start": 28.8,
+      "end": 29.04
+    },
+    {
+      "text": "assistant,",
+      "start": 29.15,
+      "end": 30.04
+    },
+    {
+      "text": "Cortana.",
+      "start": 30.04,
+      "end": 31.13
+    },
+    {
+      "text": "Three",
+      "start": 31.13,
+      "end": 31.2
+    },
+    {
+      "text": "of",
+      "start": 31.2,
+      "end": 31.36
+    },
+    {
+      "text": "the",
+      "start": 31.36,
+      "end": 31.74
+    },
+    {
+      "text": "biggest",
+      "start": 31.74,
+      "end": 32.19
+    },
+    {
+      "text": "technology",
+      "start": 32.19,
+      "end": 33.03
+    },
+    {
+      "text": "companies",
+      "start": 33.03,
+      "end": 33.78
+    },
+    {
+      "text": "on",
+      "start": 33.78,
+      "end": 33.94
+    },
+    {
+      "text": "earth,",
+      "start": 33.94,
+      "end": 34.52
+    },
+    {
+      "text": "in",
+      "start": 34.52,
+      "end": 34.68
+    },
+    {
+      "text": "three",
+      "start": 34.68,
+      "end": 35.1
+    },
+    {
+      "text": "weeks,",
+      "start": 35.1,
+      "end": 35.71
+    },
+    {
+      "text": "by",
+      "start": 35.71,
+      "end": 35.84
+    },
+    {
+      "text": "a",
+      "start": 35.84,
+      "end": 35.9
+    },
+    {
+      "text": "group",
+      "start": 35.9,
+      "end": 36.24
+    },
+    {
+      "text": "that",
+      "start": 36.24,
+      "end": 36.48
+    },
+    {
+      "text": "announced",
+      "start": 36.48,
+      "end": 37.22
+    },
+    {
+      "text": "every",
+      "start": 37.22,
+      "end": 37.65
+    },
+    {
+      "text": "move",
+      "start": 37.65,
+      "end": 37.95
+    },
+    {
+      "text": "in",
+      "start": 37.95,
+      "end": 38.14
+    },
+    {
+      "text": "a",
+      "start": 38.14,
+      "end": 38.57
+    },
+    {
+      "text": "public",
+      "start": 38.57,
+      "end": 38.72
+    },
+    {
+      "text": "chat.",
+      "start": 38.72,
+      "end": 39.3
+    },
+    {
+      "text": "Inside",
+      "start": 39.3,
+      "end": 39.85
+    },
+    {
+      "text": "every",
+      "start": 39.85,
+      "end": 40.22
+    },
+    {
+      "text": "large",
+      "start": 40.22,
+      "end": 41.17
+    },
+    {
+      "text": "company,",
+      "start": 41.17,
+      "end": 41.44
+    },
+    {
+      "text": "security",
+      "start": 41.44,
+      "end": 41.98
+    },
+    {
+      "text": "teams",
+      "start": 41.98,
+      "end": 42.32
+    },
+    {
+      "text": "were",
+      "start": 42.32,
+      "end": 42.59
+    },
+    {
+      "text": "now",
+      "start": 42.59,
+      "end": 42.8
+    },
+    {
+      "text": "watching",
+      "start": 42.8,
+      "end": 43.37
+    },
+    {
+      "text": "that",
+      "start": 43.37,
+      "end": 43.65
+    },
+    {
+      "text": "channel",
+      "start": 43.65,
+      "end": 44.11
+    },
+    {
+      "text": "and",
+      "start": 44.11,
+      "end": 44.79
+    },
+    {
+      "text": "asking",
+      "start": 44.79,
+      "end": 44.91
+    },
+    {
+      "text": "the",
+      "start": 44.91,
+      "end": 45
+    },
+    {
+      "text": "same",
+      "start": 45,
+      "end": 45.5
+    },
+    {
+      "text": "question.",
+      "start": 45.5,
+      "end": 46.06
+    },
+    {
+      "text": "Are",
+      "start": 46.06,
+      "end": 46.27
+    },
+    {
+      "text": "we",
+      "start": 46.27,
+      "end": 46.4
+    },
+    {
+      "text": "next?",
+      "start": 46.4,
+      "end": 47.35
+    },
+    {
+      "text": "And",
+      "start": 47.35,
+      "end": 47.49
+    },
+    {
+      "text": "then",
+      "start": 47.49,
+      "end": 47.87
+    },
+    {
+      "text": "came",
+      "start": 47.87,
+      "end": 48.39
+    },
+    {
+      "text": "the",
+      "start": 48.39,
+      "end": 48.85
+    },
+    {
+      "text": "one",
+      "start": 48.85,
+      "end": 48.96
+    },
+    {
+      "text": "that",
+      "start": 48.96,
+      "end": 49.37
+    },
+    {
+      "text": "scared",
+      "start": 49.37,
+      "end": 49.68
+    },
+    {
+      "text": "everybody.",
+      "start": 49.68,
+      "end": 50.49
+    },
+    {
+      "text": "There's",
+      "start": 50.49,
+      "end": 50.96
+    },
+    {
+      "text": "a",
+      "start": 50.96,
+      "end": 51.01
+    },
+    {
+      "text": "company",
+      "start": 51.01,
+      "end": 51.75
+    },
+    {
+      "text": "most",
+      "start": 51.75,
+      "end": 51.79
+    },
+    {
+      "text": "people",
+      "start": 51.79,
+      "end": 52.38
+    },
+    {
+      "text": "have",
+      "start": 52.38,
+      "end": 52.44
+    },
+    {
+      "text": "never",
+      "start": 52.44,
+      "end": 52.78
+    },
+    {
+      "text": "heard",
+      "start": 52.78,
+      "end": 53.12
+    },
+    {
+      "text": "of,",
+      "start": 53.12,
+      "end": 53.44
+    },
+    {
+      "text": "called",
+      "start": 53.44,
+      "end": 53.88
+    },
+    {
+      "text": "Okta.",
+      "start": 53.88,
+      "end": 54.72
+    },
+    {
+      "text": "It",
+      "start": 54.72,
+      "end": 54.82
+    },
+    {
+      "text": "doesn't",
+      "start": 54.82,
+      "end": 55.12
+    },
+    {
+      "text": "make",
+      "start": 55.12,
+      "end": 55.44
+    },
+    {
+      "text": "phones",
+      "start": 55.55,
+      "end": 55.91
+    },
+    {
+      "text": "or",
+      "start": 55.91,
+      "end": 56.06
+    },
+    {
+      "text": "games.",
+      "start": 56.06,
+      "end": 56.68
+    },
+    {
+      "text": "It",
+      "start": 56.68,
+      "end": 56.83
+    },
+    {
+      "text": "runs",
+      "start": 56.83,
+      "end": 57.01
+    },
+    {
+      "text": "the",
+      "start": 57.01,
+      "end": 57.55
+    },
+    {
+      "text": "login",
+      "start": 57.55,
+      "end": 57.76
+    },
+    {
+      "text": "page",
+      "start": 57.76,
+      "end": 58.14
+    },
+    {
+      "text": "for",
+      "start": 58.14,
+      "end": 58.3
+    },
+    {
+      "text": "thousands",
+      "start": 58.3,
+      "end": 59
+    },
+    {
+      "text": "of",
+      "start": 59,
+      "end": 59.15
+    },
+    {
+      "text": "other",
+      "start": 59.15,
+      "end": 60.13
+    },
+    {
+      "text": "companies,",
+      "start": 60.13,
+      "end": 60.48
+    },
+    {
+      "text": "banks,",
+      "start": 60.48,
+      "end": 61.2
+    },
+    {
+      "text": "hospitals,",
+      "start": 61.2,
+      "end": 62.08
+    },
+    {
+      "text": "governments.",
+      "start": 62.08,
+      "end": 63.1
+    },
+    {
+      "text": "Break",
+      "start": 63.1,
+      "end": 63.36
+    },
+    {
+      "text": "into",
+      "start": 63.36,
+      "end": 63.84
+    },
+    {
+      "text": "the",
+      "start": 63.84,
+      "end": 64.17
+    },
+    {
+      "text": "company",
+      "start": 64.17,
+      "end": 64.32
+    },
+    {
+      "text": "that",
+      "start": 64.32,
+      "end": 64.78
+    },
+    {
+      "text": "guards",
+      "start": 64.78,
+      "end": 65
+    },
+    {
+      "text": "the",
+      "start": 65,
+      "end": 65.2
+    },
+    {
+      "text": "doors,",
+      "start": 65.2,
+      "end": 65.67
+    },
+    {
+      "text": "and",
+      "start": 65.67,
+      "end": 65.87
+    },
+    {
+      "text": "you",
+      "start": 65.87,
+      "end": 66.07
+    },
+    {
+      "text": "might",
+      "start": 66.07,
+      "end": 66.28
+    },
+    {
+      "text": "get",
+      "start": 66.28,
+      "end": 66.77
+    },
+    {
+      "text": "every",
+      "start": 66.77,
+      "end": 66.95
+    },
+    {
+      "text": "door",
+      "start": 66.95,
+      "end": 67.22
+    },
+    {
+      "text": "at",
+      "start": 67.22,
+      "end": 67.41
+    },
+    {
+      "text": "once.",
+      "start": 67.41,
+      "end": 67.92
+    },
+    {
+      "text": "On",
+      "start": 67.92,
+      "end": 68.1
+    },
+    {
+      "text": "March",
+      "start": 68.1,
+      "end": 68.56
+    },
+    {
+      "text": "22,",
+      "start": 68.56,
+      "end": 69.29
+    },
+    {
+      "text": "Lapsys",
+      "start": 69.29,
+      "end": 70.03
+    },
+    {
+      "text": "posted",
+      "start": 70.03,
+      "end": 70.38
+    },
+    {
+      "text": "screenshots",
+      "start": 70.38,
+      "end": 71.39
+    },
+    {
+      "text": "from",
+      "start": 71.39,
+      "end": 71.81
+    },
+    {
+      "text": "inside",
+      "start": 71.81,
+      "end": 72.49
+    },
+    {
+      "text": "Okta's",
+      "start": 72.49,
+      "end": 72.85
+    },
+    {
+      "text": "systems.",
+      "start": 72.85,
+      "end": 73.84
+    },
+    {
+      "text": "Security",
+      "start": 73.84,
+      "end": 74.96
+    },
+    {
+      "text": "teams",
+      "start": 74.96,
+      "end": 75.44
+    },
+    {
+      "text": "everywhere",
+      "start": 75.44,
+      "end": 76
+    },
+    {
+      "text": "dropped",
+      "start": 76,
+      "end": 76.44
+    },
+    {
+      "text": "what",
+      "start": 76.44,
+      "end": 76.69
+    },
+    {
+      "text": "they",
+      "start": 76.69,
+      "end": 77.04
+    },
+    {
+      "text": "were",
+      "start": 77.04,
+      "end": 77.19
+    },
+    {
+      "text": "doing.",
+      "start": 77.19,
+      "end": 78.05
+    },
+    {
+      "text": "Nobody",
+      "start": 78.05,
+      "end": 78.11
+    },
+    {
+      "text": "knew",
+      "start": 78.11,
+      "end": 78.3
+    },
+    {
+      "text": "how",
+      "start": 78.3,
+      "end": 78.66
+    },
+    {
+      "text": "far",
+      "start": 78.66,
+      "end": 78.7
+    },
+    {
+      "text": "it",
+      "start": 78.7,
+      "end": 78.78
+    },
+    {
+      "text": "went.",
+      "start": 78.78,
+      "end": 79.28
+    },
+    {
+      "text": "The",
+      "start": 79.28,
+      "end": 79.7
+    },
+    {
+      "text": "truth",
+      "start": 79.7,
+      "end": 80.69
+    },
+    {
+      "text": "was",
+      "start": 80.69,
+      "end": 80.82
+    },
+    {
+      "text": "smaller",
+      "start": 80.82,
+      "end": 81.8
+    },
+    {
+      "text": "and",
+      "start": 81.8,
+      "end": 82.24
+    },
+    {
+      "text": "stranger.",
+      "start": 82.24,
+      "end": 82.8
+    },
+    {
+      "text": "Lapsys",
+      "start": 83.51,
+      "end": 83.86
+    },
+    {
+      "text": "had",
+      "start": 83.86,
+      "end": 84.07
+    },
+    {
+      "text": "got",
+      "start": 84.07,
+      "end": 84.28
+    },
+    {
+      "text": "in",
+      "start": 84.28,
+      "end": 84.44
+    },
+    {
+      "text": "through",
+      "start": 84.44,
+      "end": 84.91
+    },
+    {
+      "text": "a",
+      "start": 84.91,
+      "end": 84.97
+    },
+    {
+      "text": "single",
+      "start": 84.97,
+      "end": 85.55
+    },
+    {
+      "text": "laptop.",
+      "start": 85.55,
+      "end": 86.14
+    },
+    {
+      "text": "It",
+      "start": 86.14,
+      "end": 86.17
+    },
+    {
+      "text": "belonged",
+      "start": 86.17,
+      "end": 86.73
+    },
+    {
+      "text": "to",
+      "start": 86.73,
+      "end": 86.87
+    },
+    {
+      "text": "a",
+      "start": 86.87,
+      "end": 86.94
+    },
+    {
+      "text": "support",
+      "start": 86.94,
+      "end": 87.43
+    },
+    {
+      "text": "worker",
+      "start": 87.43,
+      "end": 88.04
+    },
+    {
+      "text": "at",
+      "start": 88.04,
+      "end": 88.13
+    },
+    {
+      "text": "an",
+      "start": 88.13,
+      "end": 88.24
+    },
+    {
+      "text": "outside",
+      "start": 88.24,
+      "end": 88.72
+    },
+    {
+      "text": "contractor.",
+      "start": 88.72,
+      "end": 89.78
+    },
+    {
+      "text": "They'd",
+      "start": 89.78,
+      "end": 90.25
+    },
+    {
+      "text": "had",
+      "start": 90.25,
+      "end": 90.82
+    },
+    {
+      "text": "access",
+      "start": 90.82,
+      "end": 90.99
+    },
+    {
+      "text": "for",
+      "start": 90.99,
+      "end": 91.42
+    },
+    {
+      "text": "five",
+      "start": 91.42,
+      "end": 91.55
+    },
+    {
+      "text": "days,",
+      "start": 91.55,
+      "end": 92.09
+    },
+    {
+      "text": "back",
+      "start": 92.09,
+      "end": 92.35
+    },
+    {
+      "text": "in",
+      "start": 92.35,
+      "end": 92.51
+    },
+    {
+      "text": "January.",
+      "start": 92.51,
+      "end": 93.41
+    },
+    {
+      "text": "In",
+      "start": 93.41,
+      "end": 93.48
+    },
+    {
+      "text": "the",
+      "start": 93.48,
+      "end": 93.72
+    },
+    {
+      "text": "end,",
+      "start": 93.72,
+      "end": 94.24
+    },
+    {
+      "text": "only",
+      "start": 94.24,
+      "end": 94.6
+    },
+    {
+      "text": "two",
+      "start": 94.6,
+      "end": 94.88
+    },
+    {
+      "text": "customers",
+      "start": 94.88,
+      "end": 95.44
+    },
+    {
+      "text": "were",
+      "start": 95.44,
+      "end": 95.6
+    },
+    {
+      "text": "affected.",
+      "start": 95.6,
+      "end": 96.4
+    },
+    {
+      "text": "But",
+      "start": 96.4,
+      "end": 96.62
+    },
+    {
+      "text": "the",
+      "start": 96.62,
+      "end": 96.84
+    },
+    {
+      "text": "lesson",
+      "start": 96.84,
+      "end": 97.68
+    },
+    {
+      "text": "landed.",
+      "start": 97.68,
+      "end": 97.94
+    },
+    {
+      "text": "If",
+      "start": 97.94,
+      "end": 98.3
+    },
+    {
+      "text": "teenagers",
+      "start": 98.3,
+      "end": 98.74
+    },
+    {
+      "text": "could",
+      "start": 98.74,
+      "end": 99.1
+    },
+    {
+      "text": "get",
+      "start": 99.1,
+      "end": 99.32
+    },
+    {
+      "text": "that",
+      "start": 99.32,
+      "end": 99.61
+    },
+    {
+      "text": "close",
+      "start": 99.61,
+      "end": 99.8
+    },
+    {
+      "text": "to",
+      "start": 99.8,
+      "end": 100.29
+    },
+    {
+      "text": "the",
+      "start": 100.29,
+      "end": 100.33
+    },
+    {
+      "text": "master",
+      "start": 100.33,
+      "end": 100.76
+    },
+    {
+      "text": "key,",
+      "start": 100.76,
+      "end": 101.2
+    },
+    {
+      "text": "nothing",
+      "start": 101.2,
+      "end": 102.24
+    },
+    {
+      "text": "was",
+      "start": 102.24,
+      "end": 102.49
+    },
+    {
+      "text": "safe.",
+      "start": 102.49,
+      "end": 103.07
+    },
+    {
+      "text": "So",
+      "start": 103.07,
+      "end": 103.24
+    },
+    {
+      "text": "what",
+      "start": 103.24,
+      "end": 103.55
+    },
+    {
+      "text": "was",
+      "start": 103.55,
+      "end": 104.06
+    },
+    {
+      "text": "the",
+      "start": 104.06,
+      "end": 104.34
+    },
+    {
+      "text": "point",
+      "start": 104.34,
+      "end": 104.48
+    },
+    {
+      "text": "of",
+      "start": 104.48,
+      "end": 104.64
+    },
+    {
+      "text": "all",
+      "start": 104.64,
+      "end": 104.94
+    },
+    {
+      "text": "this?",
+      "start": 104.94,
+      "end": 105.52
+    },
+    {
+      "text": "Sometimes",
+      "start": 105.52,
+      "end": 106.3
+    },
+    {
+      "text": "they",
+      "start": 106.3,
+      "end": 106.93
+    },
+    {
+      "text": "asked",
+      "start": 106.93,
+      "end": 107.1
+    },
+    {
+      "text": "for",
+      "start": 107.1,
+      "end": 107.38
+    },
+    {
+      "text": "money.",
+      "start": 107.38,
+      "end": 108.08
+    },
+    {
+      "text": "But",
+      "start": 108.08,
+      "end": 108.29
+    },
+    {
+      "text": "investigators",
+      "start": 108.29,
+      "end": 109.12
+    },
+    {
+      "text": "kept",
+      "start": 109.23,
+      "end": 109.4
+    },
+    {
+      "text": "noticing",
+      "start": 109.4,
+      "end": 109.97
+    },
+    {
+      "text": "the",
+      "start": 109.97,
+      "end": 110.18
+    },
+    {
+      "text": "same",
+      "start": 110.18,
+      "end": 110.43
+    },
+    {
+      "text": "thing.",
+      "start": 110.43,
+      "end": 111.21
+    },
+    {
+      "text": "This",
+      "start": 111.21,
+      "end": 111.3
+    },
+    {
+      "text": "group",
+      "start": 111.3,
+      "end": 111.82
+    },
+    {
+      "text": "wasn't",
+      "start": 111.82,
+      "end": 112.07
+    },
+    {
+      "text": "behaving",
+      "start": 112.07,
+      "end": 112.64
+    },
+    {
+      "text": "like",
+      "start": 112.64,
+      "end": 112.92
+    },
+    {
+      "text": "a",
+      "start": 112.92,
+      "end": 113
+    },
+    {
+      "text": "business.",
+      "start": 113,
+      "end": 113.81
+    },
+    {
+      "text": "It",
+      "start": 113.81,
+      "end": 113.91
+    },
+    {
+      "text": "was",
+      "start": 113.91,
+      "end": 114.12
+    },
+    {
+      "text": "behaving",
+      "start": 114.12,
+      "end": 114.69
+    },
+    {
+      "text": "like",
+      "start": 114.69,
+      "end": 115.04
+    },
+    {
+      "text": "it",
+      "start": 115.04,
+      "end": 115.18
+    },
+    {
+      "text": "wanted",
+      "start": 115.18,
+      "end": 115.62
+    },
+    {
+      "text": "to",
+      "start": 115.62,
+      "end": 115.76
+    },
+    {
+      "text": "be",
+      "start": 115.76,
+      "end": 115.9
+    },
+    {
+      "text": "famous.",
+      "start": 115.9,
+      "end": 116.7
+    },
+    {
+      "text": "In",
+      "start": 116.7,
+      "end": 116.7
+    },
+    {
+      "text": "some",
+      "start": 116.7,
+      "end": 117.15
+    },
+    {
+      "text": "attacks,",
+      "start": 117.15,
+      "end": 117.74
+    },
+    {
+      "text": "the",
+      "start": 117.74,
+      "end": 117.86
+    },
+    {
+      "text": "hackers",
+      "start": 117.86,
+      "end": 118.41
+    },
+    {
+      "text": "didn't",
+      "start": 118.41,
+      "end": 118.8
+    },
+    {
+      "text": "just",
+      "start": 118.8,
+      "end": 119.09
+    },
+    {
+      "text": "steal",
+      "start": 119.09,
+      "end": 119.67
+    },
+    {
+      "text": "the",
+      "start": 119.67,
+      "end": 119.73
+    },
+    {
+      "text": "data",
+      "start": 119.73,
+      "end": 119.96
+    },
+    {
+      "text": "and",
+      "start": 119.96,
+      "end": 120.18
+    },
+    {
+      "text": "leave.",
+      "start": 120.18,
+      "end": 120.88
+    },
+    {
+      "text": "They",
+      "start": 120.88,
+      "end": 121.17
+    },
+    {
+      "text": "stayed.",
+      "start": 121.17,
+      "end": 121.92
+    },
+    {
+      "text": "They",
+      "start": 121.92,
+      "end": 122.1
+    },
+    {
+      "text": "slipped",
+      "start": 122.1,
+      "end": 122.9
+    },
+    {
+      "text": "into",
+      "start": 122.9,
+      "end": 122.99
+    },
+    {
+      "text": "the",
+      "start": 122.99,
+      "end": 123.11
+    },
+    {
+      "text": "company's",
+      "start": 123.11,
+      "end": 123.76
+    },
+    {
+      "text": "own",
+      "start": 123.76,
+      "end": 123.97
+    },
+    {
+      "text": "emergency",
+      "start": 123.97,
+      "end": 124.62
+    },
+    {
+      "text": "calls",
+      "start": 124.62,
+      "end": 125.19
+    },
+    {
+      "text": "and",
+      "start": 125.19,
+      "end": 125.57
+    },
+    {
+      "text": "listened",
+      "start": 125.57,
+      "end": 125.58
+    },
+    {
+      "text": "to",
+      "start": 125.58,
+      "end": 125.68
+    },
+    {
+      "text": "the",
+      "start": 125.68,
+      "end": 125.84
+    },
+    {
+      "text": "staff",
+      "start": 125.84,
+      "end": 126.32
+    },
+    {
+      "text": "trying",
+      "start": 126.32,
+      "end": 126.48
+    },
+    {
+      "text": "to",
+      "start": 126.48,
+      "end": 126.61
+    },
+    {
+      "text": "throw",
+      "start": 126.61,
+      "end": 126.94
+    },
+    {
+      "text": "them",
+      "start": 126.94,
+      "end": 127.2
+    },
+    {
+      "text": "out.",
+      "start": 127.2,
+      "end": 127.58
+    },
+    {
+      "text": "They",
+      "start": 127.58,
+      "end": 127.84
+    },
+    {
+      "text": "read",
+      "start": 127.84,
+      "end": 128.29
+    },
+    {
+      "text": "the",
+      "start": 128.29,
+      "end": 128.59
+    },
+    {
+      "text": "internal",
+      "start": 128.59,
+      "end": 128.82
+    },
+    {
+      "text": "chats",
+      "start": 128.82,
+      "end": 129.18
+    },
+    {
+      "text": "about",
+      "start": 129.18,
+      "end": 129.48
+    },
+    {
+      "text": "themselves,",
+      "start": 129.48,
+      "end": 130.27
+    },
+    {
+      "text": "as",
+      "start": 130.27,
+      "end": 130.4
+    },
+    {
+      "text": "it",
+      "start": 130.4,
+      "end": 130.53
+    },
+    {
+      "text": "was",
+      "start": 130.53,
+      "end": 131.17
+    },
+    {
+      "text": "happening.",
+      "start": 131.17,
+      "end": 131.62
+    },
+    {
+      "text": "Then",
+      "start": 131.62,
+      "end": 132.56
+    },
+    {
+      "text": "they",
+      "start": 132.56,
+      "end": 132.72
+    },
+    {
+      "text": "went",
+      "start": 132.72,
+      "end": 132.98
+    },
+    {
+      "text": "back",
+      "start": 132.98,
+      "end": 133.24
+    },
+    {
+      "text": "to",
+      "start": 133.24,
+      "end": 133.37
+    },
+    {
+      "text": "their",
+      "start": 133.37,
+      "end": 133.72
+    },
+    {
+      "text": "channel",
+      "start": 133.72,
+      "end": 134.16
+    },
+    {
+      "text": "and",
+      "start": 134.16,
+      "end": 134.34
+    },
+    {
+      "text": "told",
+      "start": 134.34,
+      "end": 134.83
+    },
+    {
+      "text": "their",
+      "start": 134.83,
+      "end": 134.96
+    },
+    {
+      "text": "followers",
+      "start": 134.96,
+      "end": 135.56
+    },
+    {
+      "text": "all",
+      "start": 135.56,
+      "end": 135.75
+    },
+    {
+      "text": "about",
+      "start": 135.75,
+      "end": 136.09
+    },
+    {
+      "text": "it.",
+      "start": 136.09,
+      "end": 136.42
+    },
+    {
+      "text": "They",
+      "start": 136.42,
+      "end": 136.68
+    },
+    {
+      "text": "weren't",
+      "start": 136.68,
+      "end": 137.41
+    },
+    {
+      "text": "hiding.",
+      "start": 137.41,
+      "end": 137.86
+    },
+    {
+      "text": "They",
+      "start": 137.86,
+      "end": 138.05
+    },
+    {
+      "text": "were",
+      "start": 138.05,
+      "end": 138.24
+    },
+    {
+      "text": "performing.",
+      "start": 138.35,
+      "end": 139.3
+    },
+    {
+      "text": "And",
+      "start": 139.3,
+      "end": 139.54
+    },
+    {
+      "text": "everyone",
+      "start": 139.54,
+      "end": 140.35
+    },
+    {
+      "text": "was",
+      "start": 140.35,
+      "end": 140.43
+    },
+    {
+      "text": "watching.",
+      "start": 140.43,
+      "end": 141.33
+    },
+    {
+      "text": "Including",
+      "start": 141.33,
+      "end": 142.05
+    },
+    {
+      "text": "some",
+      "start": 142.05,
+      "end": 142.86
+    },
+    {
+      "text": "people",
+      "start": 142.86,
+      "end": 142.93
+    },
+    {
+      "text": "White",
+      "start": 142.93,
+      "end": 143.27
+    },
+    {
+      "text": "had",
+      "start": 143.27,
+      "end": 143.57
+    },
+    {
+      "text": "made",
+      "start": 143.57,
+      "end": 143.83
+    },
+    {
+      "text": "very",
+      "start": 143.83,
+      "end": 144.24
+    },
+    {
+      "text": "angry.",
+      "start": 144.24,
+      "end": 144.81
+    },
+    {
+      "text": "Because",
+      "start": 144.81,
+      "end": 145.6
+    },
+    {
+      "text": "the",
+      "start": 145.6,
+      "end": 145.83
+    },
+    {
+      "text": "year",
+      "start": 145.83,
+      "end": 146.13
+    },
+    {
+      "text": "before,",
+      "start": 146.13,
+      "end": 146.74
+    },
+    {
+      "text": "White",
+      "start": 146.74,
+      "end": 147.11
+    },
+    {
+      "text": "had",
+      "start": 147.11,
+      "end": 147.69
+    },
+    {
+      "text": "bought",
+      "start": 147.69,
+      "end": 147.81
+    },
+    {
+      "text": "a",
+      "start": 147.81,
+      "end": 147.88
+    },
+    {
+      "text": "website.",
+      "start": 147.88,
+      "end": 148.63
+    },
+    {
+      "text": "A",
+      "start": 148.63,
+      "end": 148.71
+    },
+    {
+      "text": "notorious",
+      "start": 148.71,
+      "end": 149.4
+    },
+    {
+      "text": "one,",
+      "start": 149.4,
+      "end": 150.24
+    },
+    {
+      "text": "called",
+      "start": 150.24,
+      "end": 150.29
+    },
+    {
+      "text": "Docksbin.",
+      "start": 150.29,
+      "end": 151.07
+    },
+    {
+      "text": "A",
+      "start": 151.07,
+      "end": 151.14
+    },
+    {
+      "text": "place",
+      "start": 151.14,
+      "end": 151.65
+    },
+    {
+      "text": "for",
+      "start": 151.65,
+      "end": 151.84
+    },
+    {
+      "text": "posting",
+      "start": 151.84,
+      "end": 152.33
+    },
+    {
+      "text": "people's",
+      "start": 152.33,
+      "end": 152.89
+    },
+    {
+      "text": "private",
+      "start": 152.89,
+      "end": 153.93
+    },
+    {
+      "text": "information.",
+      "start": 153.93,
+      "end": 154.54
+    },
+    {
+      "text": "Their",
+      "start": 154.54,
+      "end": 154.71
+    },
+    {
+      "text": "names,",
+      "start": 154.71,
+      "end": 155.21
+    },
+    {
+      "text": "their",
+      "start": 155.21,
+      "end": 155.55
+    },
+    {
+      "text": "addresses.",
+      "start": 155.55,
+      "end": 156.53
+    },
+    {
+      "text": "By",
+      "start": 156.53,
+      "end": 156.53
+    },
+    {
+      "text": "most",
+      "start": 156.53,
+      "end": 156.81
+    },
+    {
+      "text": "accounts,",
+      "start": 156.81,
+      "end": 157.56
+    },
+    {
+      "text": "he",
+      "start": 157.56,
+      "end": 157.76
+    },
+    {
+      "text": "ran",
+      "start": 157.76,
+      "end": 158
+    },
+    {
+      "text": "it",
+      "start": 158,
+      "end": 158.16
+    },
+    {
+      "text": "badly.",
+      "start": 158.16,
+      "end": 158.78
+    },
+    {
+      "text": "The",
+      "start": 158.78,
+      "end": 159.01
+    },
+    {
+      "text": "site's",
+      "start": 159.01,
+      "end": 159.46
+    },
+    {
+      "text": "users",
+      "start": 159.46,
+      "end": 160.25
+    },
+    {
+      "text": "turned",
+      "start": 160.25,
+      "end": 160.32
+    },
+    {
+      "text": "on",
+      "start": 160.32,
+      "end": 160.47
+    },
+    {
+      "text": "him.",
+      "start": 160.47,
+      "end": 160.93
+    },
+    {
+      "text": "In",
+      "start": 160.93,
+      "end": 161.08
+    },
+    {
+      "text": "January,",
+      "start": 161.08,
+      "end": 161.77
+    },
+    {
+      "text": "he",
+      "start": 161.77,
+      "end": 161.92
+    },
+    {
+      "text": "gave",
+      "start": 161.92,
+      "end": 162.23
+    },
+    {
+      "text": "up",
+      "start": 162.23,
+      "end": 162.85
+    },
+    {
+      "text": "control",
+      "start": 162.85,
+      "end": 162.92
+    },
+    {
+      "text": "of",
+      "start": 162.92,
+      "end": 163.07
+    },
+    {
+      "text": "it.",
+      "start": 163.07,
+      "end": 163.49
+    },
+    {
+      "text": "But",
+      "start": 163.49,
+      "end": 163.68
+    },
+    {
+      "text": "on",
+      "start": 163.68,
+      "end": 163.82
+    },
+    {
+      "text": "his",
+      "start": 163.82,
+      "end": 164.06
+    },
+    {
+      "text": "way",
+      "start": 164.06,
+      "end": 164.29
+    },
+    {
+      "text": "out,",
+      "start": 164.29,
+      "end": 164.8
+    },
+    {
+      "text": "he",
+      "start": 164.91,
+      "end": 164.98
+    },
+    {
+      "text": "leaked",
+      "start": 164.98,
+      "end": 165.53
+    },
+    {
+      "text": "the",
+      "start": 165.53,
+      "end": 165.8
+    },
+    {
+      "text": "site's",
+      "start": 165.8,
+      "end": 166.33
+    },
+    {
+      "text": "own",
+      "start": 166.33,
+      "end": 166.89
+    },
+    {
+      "text": "data.",
+      "start": 166.89,
+      "end": 167.24
+    },
+    {
+      "text": "That",
+      "start": 167.24,
+      "end": 167.6
+    },
+    {
+      "text": "was",
+      "start": 167.6,
+      "end": 167.86
+    },
+    {
+      "text": "a",
+      "start": 167.86,
+      "end": 167.96
+    },
+    {
+      "text": "mistake.",
+      "start": 167.96,
+      "end": 169.08
+    },
+    {
+      "text": "He",
+      "start": 169.08,
+      "end": 169.08
+    },
+    {
+      "text": "had",
+      "start": 169.08,
+      "end": 169.49
+    },
+    {
+      "text": "just",
+      "start": 169.49,
+      "end": 169.52
+    },
+    {
+      "text": "picked",
+      "start": 169.52,
+      "end": 169.89
+    },
+    {
+      "text": "a",
+      "start": 169.89,
+      "end": 169.96
+    },
+    {
+      "text": "fight",
+      "start": 169.96,
+      "end": 170.32
+    },
+    {
+      "text": "with",
+      "start": 170.32,
+      "end": 170.52
+    },
+    {
+      "text": "a",
+      "start": 170.52,
+      "end": 170.56
+    },
+    {
+      "text": "community",
+      "start": 170.56,
+      "end": 171.37
+    },
+    {
+      "text": "whose",
+      "start": 171.37,
+      "end": 171.52
+    },
+    {
+      "text": "entire",
+      "start": 171.52,
+      "end": 172.12
+    },
+    {
+      "text": "hobby",
+      "start": 172.12,
+      "end": 172.62
+    },
+    {
+      "text": "was",
+      "start": 172.62,
+      "end": 172.92
+    },
+    {
+      "text": "exposing",
+      "start": 172.92,
+      "end": 173.73
+    },
+    {
+      "text": "people.",
+      "start": 173.73,
+      "end": 174.63
+    },
+    {
+      "text": "So",
+      "start": 174.63,
+      "end": 174.89
+    },
+    {
+      "text": "they",
+      "start": 174.89,
+      "end": 175.23
+    },
+    {
+      "text": "exposed",
+      "start": 175.23,
+      "end": 176.21
+    },
+    {
+      "text": "him.",
+      "start": 176.21,
+      "end": 176.54
+    },
+    {
+      "text": "His",
+      "start": 176.54,
+      "end": 176.85
+    },
+    {
+      "text": "real",
+      "start": 176.85,
+      "end": 177.24
+    },
+    {
+      "text": "name,",
+      "start": 177.24,
+      "end": 178.09
+    },
+    {
+      "text": "his",
+      "start": 178.09,
+      "end": 178.17
+    },
+    {
+      "text": "home",
+      "start": 178.17,
+      "end": 178.51
+    },
+    {
+      "text": "address,",
+      "start": 178.51,
+      "end": 179.28
+    },
+    {
+      "text": "details",
+      "start": 179.28,
+      "end": 179.78
+    },
+    {
+      "text": "about",
+      "start": 179.78,
+      "end": 180.14
+    },
+    {
+      "text": "his",
+      "start": 180.14,
+      "end": 180.35
+    },
+    {
+      "text": "family.",
+      "start": 180.35,
+      "end": 181.27
+    },
+    {
+      "text": "They",
+      "start": 181.27,
+      "end": 181.39
+    },
+    {
+      "text": "even",
+      "start": 181.39,
+      "end": 181.55
+    },
+    {
+      "text": "claimed",
+      "start": 181.55,
+      "end": 182.05
+    },
+    {
+      "text": "he",
+      "start": 182.05,
+      "end": 182.19
+    },
+    {
+      "text": "was",
+      "start": 182.19,
+      "end": 182.4
+    },
+    {
+      "text": "sitting",
+      "start": 182.4,
+      "end": 182.9
+    },
+    {
+      "text": "on",
+      "start": 182.9,
+      "end": 183.04
+    },
+    {
+      "text": "a",
+      "start": 183.04,
+      "end": 183.09
+    },
+    {
+      "text": "fortune",
+      "start": 183.09,
+      "end": 183.48
+    },
+    {
+      "text": "in",
+      "start": 183.48,
+      "end": 183.97
+    },
+    {
+      "text": "Bitcoin.",
+      "start": 183.97,
+      "end": 184.61
+    },
+    {
+      "text": "That",
+      "start": 184.61,
+      "end": 184.8
+    },
+    {
+      "text": "number",
+      "start": 184.8,
+      "end": 185.2
+    },
+    {
+      "text": "has",
+      "start": 185.2,
+      "end": 185.43
+    },
+    {
+      "text": "never",
+      "start": 185.43,
+      "end": 185.81
+    },
+    {
+      "text": "been",
+      "start": 185.81,
+      "end": 186.2
+    },
+    {
+      "text": "confirmed.",
+      "start": 186.2,
+      "end": 187.24
+    },
+    {
+      "text": "The",
+      "start": 187.24,
+      "end": 187.31
+    },
+    {
+      "text": "boy",
+      "start": 187.31,
+      "end": 187.47
+    },
+    {
+      "text": "who",
+      "start": 187.47,
+      "end": 187.9
+    },
+    {
+      "text": "exposed",
+      "start": 187.9,
+      "end": 188.23
+    },
+    {
+      "text": "companies",
+      "start": 188.23,
+      "end": 188.91
+    },
+    {
+      "text": "had",
+      "start": 188.91,
+      "end": 189.14
+    },
+    {
+      "text": "been",
+      "start": 189.14,
+      "end": 189.89
+    },
+    {
+      "text": "exposed",
+      "start": 189.89,
+      "end": 189.97
+    },
+    {
+      "text": "himself.",
+      "start": 189.97,
+      "end": 190.8
+    },
+    {
+      "text": "Security",
+      "start": 190.8,
+      "end": 192.16
+    },
+    {
+      "text": "researchers",
+      "start": 192.27,
+      "end": 192.89
+    },
+    {
+      "text": "had",
+      "start": 192.89,
+      "end": 193.2
+    },
+    {
+      "text": "been",
+      "start": 193.2,
+      "end": 193.35
+    },
+    {
+      "text": "quietly",
+      "start": 193.35,
+      "end": 194.25
+    },
+    {
+      "text": "tracking",
+      "start": 194.25,
+      "end": 194.34
+    },
+    {
+      "text": "White",
+      "start": 194.34,
+      "end": 194.86
+    },
+    {
+      "text": "for",
+      "start": 194.86,
+      "end": 194.87
+    },
+    {
+      "text": "months.",
+      "start": 194.87,
+      "end": 195.53
+    },
+    {
+      "text": "They'd",
+      "start": 195.53,
+      "end": 195.86
+    },
+    {
+      "text": "connected",
+      "start": 195.86,
+      "end": 196.36
+    },
+    {
+      "text": "his",
+      "start": 196.36,
+      "end": 196.79
+    },
+    {
+      "text": "usernames,",
+      "start": 196.79,
+      "end": 197.44
+    },
+    {
+      "text": "his",
+      "start": 197.44,
+      "end": 197.68
+    },
+    {
+      "text": "habits,",
+      "start": 197.68,
+      "end": 198.48
+    },
+    {
+      "text": "his",
+      "start": 198.48,
+      "end": 198.57
+    },
+    {
+      "text": "mistakes.",
+      "start": 198.57,
+      "end": 199.55
+    },
+    {
+      "text": "And",
+      "start": 199.55,
+      "end": 199.71
+    },
+    {
+      "text": "on",
+      "start": 199.71,
+      "end": 199.87
+    },
+    {
+      "text": "March",
+      "start": 199.87,
+      "end": 200.28
+    },
+    {
+      "text": "23,",
+      "start": 200.28,
+      "end": 200.93
+    },
+    {
+      "text": "2022,",
+      "start": 200.93,
+      "end": 202.13
+    },
+    {
+      "text": "the",
+      "start": 202.13,
+      "end": 202.32
+    },
+    {
+      "text": "story",
+      "start": 202.32,
+      "end": 202.77
+    },
+    {
+      "text": "went",
+      "start": 202.77,
+      "end": 203.06
+    },
+    {
+      "text": "public.",
+      "start": 203.06,
+      "end": 204.01
+    },
+    {
+      "text": "The",
+      "start": 204.01,
+      "end": 204.26
+    },
+    {
+      "text": "suspected",
+      "start": 204.26,
+      "end": 205.29
+    },
+    {
+      "text": "leader",
+      "start": 205.29,
+      "end": 205.69
+    },
+    {
+      "text": "of",
+      "start": 205.69,
+      "end": 205.84
+    },
+    {
+      "text": "lapses",
+      "start": 205.84,
+      "end": 206.31
+    },
+    {
+      "text": "was",
+      "start": 206.31,
+      "end": 206.55
+    },
+    {
+      "text": "a",
+      "start": 206.55,
+      "end": 206.63
+    },
+    {
+      "text": "16-year-old,",
+      "start": 206.63,
+      "end": 207.95
+    },
+    {
+      "text": "living",
+      "start": 207.95,
+      "end": 208.54
+    },
+    {
+      "text": "with",
+      "start": 208.54,
+      "end": 208.72
+    },
+    {
+      "text": "his",
+      "start": 208.72,
+      "end": 208.96
+    },
+    {
+      "text": "mother",
+      "start": 208.96,
+      "end": 209.43
+    },
+    {
+      "text": "near",
+      "start": 209.43,
+      "end": 209.75
+    },
+    {
+      "text": "Oxford.",
+      "start": 209.75,
+      "end": 210.53
+    },
+    {
+      "text": "The",
+      "start": 210.53,
+      "end": 210.69
+    },
+    {
+      "text": "world's",
+      "start": 210.69,
+      "end": 211.26
+    },
+    {
+      "text": "most",
+      "start": 211.26,
+      "end": 211.56
+    },
+    {
+      "text": "talked",
+      "start": 211.56,
+      "end": 212.16
+    },
+    {
+      "text": "about",
+      "start": 212.16,
+      "end": 212.48
+    },
+    {
+      "text": "hacking",
+      "start": 212.48,
+      "end": 212.88
+    },
+    {
+      "text": "group,",
+      "start": 212.88,
+      "end": 213.41
+    },
+    {
+      "text": "traced",
+      "start": 213.41,
+      "end": 213.92
+    },
+    {
+      "text": "to",
+      "start": 213.92,
+      "end": 214.01
+    },
+    {
+      "text": "a",
+      "start": 214.01,
+      "end": 214.08
+    },
+    {
+      "text": "teenager's",
+      "start": 214.08,
+      "end": 214.99
+    },
+    {
+      "text": "bedroom.",
+      "start": 214.99,
+      "end": 215.59
+    },
+    {
+      "text": "One",
+      "start": 215.59,
+      "end": 215.82
+    },
+    {
+      "text": "day",
+      "start": 215.82,
+      "end": 216.05
+    },
+    {
+      "text": "later,",
+      "start": 216.05,
+      "end": 216.58
+    },
+    {
+      "text": "British",
+      "start": 216.58,
+      "end": 217.56
+    },
+    {
+      "text": "police",
+      "start": 217.56,
+      "end": 217.57
+    },
+    {
+      "text": "announced",
+      "start": 217.57,
+      "end": 218.32
+    },
+    {
+      "text": "seven",
+      "start": 218.32,
+      "end": 218.64
+    },
+    {
+      "text": "arrests.",
+      "start": 218.64,
+      "end": 219.52
+    },
+    {
+      "text": "All",
+      "start": 219.63,
+      "end": 219.76
+    },
+    {
+      "text": "of",
+      "start": 219.76,
+      "end": 219.92
+    },
+    {
+      "text": "them",
+      "start": 219.92,
+      "end": 220.24
+    },
+    {
+      "text": "between",
+      "start": 220.24,
+      "end": 220.79
+    },
+    {
+      "text": "16",
+      "start": 220.79,
+      "end": 221.5
+    },
+    {
+      "text": "and",
+      "start": 221.5,
+      "end": 221.63
+    },
+    {
+      "text": "21",
+      "start": 221.63,
+      "end": 221.97
+    },
+    {
+      "text": "years",
+      "start": 221.97,
+      "end": 222.36
+    },
+    {
+      "text": "old.",
+      "start": 222.36,
+      "end": 222.89
+    },
+    {
+      "text": "And",
+      "start": 222.89,
+      "end": 223.07
+    },
+    {
+      "text": "on",
+      "start": 223.07,
+      "end": 223.23
+    },
+    {
+      "text": "March",
+      "start": 223.23,
+      "end": 223.6
+    },
+    {
+      "text": "30th,",
+      "start": 223.6,
+      "end": 224.39
+    },
+    {
+      "text": "Arion",
+      "start": 224.39,
+      "end": 224.85
+    },
+    {
+      "text": "was",
+      "start": 224.85,
+      "end": 225.02
+    },
+    {
+      "text": "arrested",
+      "start": 225.02,
+      "end": 225.76
+    },
+    {
+      "text": "again,",
+      "start": 225.76,
+      "end": 226.56
+    },
+    {
+      "text": "for",
+      "start": 226.56,
+      "end": 226.81
+    },
+    {
+      "text": "the",
+      "start": 226.81,
+      "end": 227.06
+    },
+    {
+      "text": "second",
+      "start": 227.06,
+      "end": 227.56
+    },
+    {
+      "text": "time",
+      "start": 227.56,
+      "end": 227.87
+    },
+    {
+      "text": "in",
+      "start": 227.87,
+      "end": 228.04
+    },
+    {
+      "text": "10",
+      "start": 228.04,
+      "end": 228.67
+    },
+    {
+      "text": "weeks.",
+      "start": 228.67,
+      "end": 229.26
+    },
+    {
+      "text": "This",
+      "start": 229.26,
+      "end": 229.55
+    },
+    {
+      "text": "time,",
+      "start": 229.55,
+      "end": 230.04
+    },
+    {
+      "text": "he",
+      "start": 230.04,
+      "end": 230.2
+    },
+    {
+      "text": "was",
+      "start": 230.2,
+      "end": 230.44
+    },
+    {
+      "text": "charged.",
+      "start": 230.44,
+      "end": 231.29
+    },
+    {
+      "text": "And",
+      "start": 231.29,
+      "end": 231.54
+    },
+    {
+      "text": "this",
+      "start": 231.54,
+      "end": 231.89
+    },
+    {
+      "text": "time,",
+      "start": 231.89,
+      "end": 232.48
+    },
+    {
+      "text": "the",
+      "start": 232.48,
+      "end": 232.69
+    },
+    {
+      "text": "court",
+      "start": 232.69,
+      "end": 233.13
+    },
+    {
+      "text": "set",
+      "start": 233.13,
+      "end": 233.36
+    },
+    {
+      "text": "rules.",
+      "start": 233.36,
+      "end": 233.76
+    },
+    {
+      "text": "He",
+      "start": 233.76,
+      "end": 233.92
+    },
+    {
+      "text": "was",
+      "start": 233.92,
+      "end": 234.16
+    },
+    {
+      "text": "released",
+      "start": 234.16,
+      "end": 234.82
+    },
+    {
+      "text": "on",
+      "start": 234.82,
+      "end": 234.98
+    },
+    {
+      "text": "bail,",
+      "start": 234.98,
+      "end": 235.8
+    },
+    {
+      "text": "with",
+      "start": 235.8,
+      "end": 235.87
+    },
+    {
+      "text": "strict",
+      "start": 235.87,
+      "end": 236.46
+    },
+    {
+      "text": "conditions.",
+      "start": 236.46,
+      "end": 237.35
+    },
+    {
+      "text": "He",
+      "start": 237.35,
+      "end": 237.51
+    },
+    {
+      "text": "was",
+      "start": 237.51,
+      "end": 237.75
+    },
+    {
+      "text": "not",
+      "start": 237.75,
+      "end": 238.45
+    },
+    {
+      "text": "allowed",
+      "start": 238.45,
+      "end": 238.57
+    },
+    {
+      "text": "to",
+      "start": 238.57,
+      "end": 238.73
+    },
+    {
+      "text": "own",
+      "start": 238.73,
+      "end": 238.97
+    },
+    {
+      "text": "a",
+      "start": 238.97,
+      "end": 239.1
+    },
+    {
+      "text": "smartphone.",
+      "start": 239.1,
+      "end": 240.33
+    },
+    {
+      "text": "But",
+      "start": 240.33,
+      "end": 240.4
+    },
+    {
+      "text": "there",
+      "start": 240.4,
+      "end": 240.56
+    },
+    {
+      "text": "was",
+      "start": 240.56,
+      "end": 240.78
+    },
+    {
+      "text": "a",
+      "start": 240.78,
+      "end": 240.85
+    },
+    {
+      "text": "second",
+      "start": 240.85,
+      "end": 241.29
+    },
+    {
+      "text": "problem.",
+      "start": 241.29,
+      "end": 242.03
+    },
+    {
+      "text": "His",
+      "start": 242.03,
+      "end": 242.57
+    },
+    {
+      "text": "home",
+      "start": 242.57,
+      "end": 242.67
+    },
+    {
+      "text": "address",
+      "start": 242.67,
+      "end": 243.26
+    },
+    {
+      "text": "had",
+      "start": 243.26,
+      "end": 243.32
+    },
+    {
+      "text": "been",
+      "start": 243.32,
+      "end": 243.62
+    },
+    {
+      "text": "posted",
+      "start": 243.62,
+      "end": 244.07
+    },
+    {
+      "text": "online",
+      "start": 244.07,
+      "end": 244.52
+    },
+    {
+      "text": "by",
+      "start": 244.52,
+      "end": 244.65
+    },
+    {
+      "text": "his",
+      "start": 244.65,
+      "end": 245.25
+    },
+    {
+      "text": "rivals.",
+      "start": 245.25,
+      "end": 245.7
+    },
+    {
+      "text": "And",
+      "start": 245.7,
+      "end": 245.89
+    },
+    {
+      "text": "those",
+      "start": 245.89,
+      "end": 246.16
+    },
+    {
+      "text": "rivals",
+      "start": 246.16,
+      "end": 246.8
+    },
+    {
+      "text": "were",
+      "start": 246.8,
+      "end": 247.04
+    },
+    {
+      "text": "not",
+      "start": 247.15,
+      "end": 247.28
+    },
+    {
+      "text": "finished",
+      "start": 247.28,
+      "end": 248.08
+    },
+    {
+      "text": "with",
+      "start": 248.08,
+      "end": 248.24
+    },
+    {
+      "text": "him.",
+      "start": 248.24,
+      "end": 248.61
+    },
+    {
+      "text": "So",
+      "start": 248.61,
+      "end": 249.15
+    },
+    {
+      "text": "police",
+      "start": 249.15,
+      "end": 249.36
+    },
+    {
+      "text": "moved",
+      "start": 249.36,
+      "end": 249.76
+    },
+    {
+      "text": "him,",
+      "start": 249.76,
+      "end": 250.16
+    },
+    {
+      "text": "out",
+      "start": 250.16,
+      "end": 250.41
+    },
+    {
+      "text": "of",
+      "start": 250.41,
+      "end": 250.56
+    },
+    {
+      "text": "his",
+      "start": 250.56,
+      "end": 250.8
+    },
+    {
+      "text": "home",
+      "start": 250.8,
+      "end": 251.12
+    },
+    {
+      "text": "and",
+      "start": 251.12,
+      "end": 251.68
+    },
+    {
+      "text": "into",
+      "start": 251.68,
+      "end": 251.73
+    },
+    {
+      "text": "a",
+      "start": 251.73,
+      "end": 251.76
+    },
+    {
+      "text": "budget",
+      "start": 251.76,
+      "end": 252.24
+    },
+    {
+      "text": "hotel,",
+      "start": 252.24,
+      "end": 252.88
+    },
+    {
+      "text": "for",
+      "start": 252.88,
+      "end": 253.09
+    },
+    {
+      "text": "his",
+      "start": 253.09,
+      "end": 253.28
+    },
+    {
+      "text": "own",
+      "start": 253.28,
+      "end": 253.44
+    },
+    {
+      "text": "protection.",
+      "start": 253.44,
+      "end": 254.48
+    },
+    {
+      "text": "No",
+      "start": 254.48,
+      "end": 254.62
+    },
+    {
+      "text": "laptop,",
+      "start": 254.62,
+      "end": 255.4
+    },
+    {
+      "text": "no",
+      "start": 255.4,
+      "end": 255.54
+    },
+    {
+      "text": "computer.",
+      "start": 255.54,
+      "end": 256.26
+    },
+    {
+      "text": "Just",
+      "start": 256.26,
+      "end": 256.58
+    },
+    {
+      "text": "a",
+      "start": 256.58,
+      "end": 256.66
+    },
+    {
+      "text": "bed,",
+      "start": 256.66,
+      "end": 257.05
+    },
+    {
+      "text": "a",
+      "start": 257.05,
+      "end": 257.13
+    },
+    {
+      "text": "kettle,",
+      "start": 257.13,
+      "end": 257.75
+    },
+    {
+      "text": "and",
+      "start": 257.75,
+      "end": 258.07
+    },
+    {
+      "text": "a",
+      "start": 258.07,
+      "end": 258.13
+    },
+    {
+      "text": "television",
+      "start": 258.13,
+      "end": 258.86
+    },
+    {
+      "text": "on",
+      "start": 258.86,
+      "end": 259.02
+    },
+    {
+      "text": "the",
+      "start": 259.02,
+      "end": 259.26
+    },
+    {
+      "text": "wall.",
+      "start": 259.26,
+      "end": 260.01
+    },
+    {
+      "text": "For",
+      "start": 260.01,
+      "end": 260.4
+    },
+    {
+      "text": "months,",
+      "start": 260.4,
+      "end": 261.36
+    },
+    {
+      "text": "it",
+      "start": 261.36,
+      "end": 261.51
+    },
+    {
+      "text": "seemed",
+      "start": 261.51,
+      "end": 261.95
+    },
+    {
+      "text": "to",
+      "start": 261.95,
+      "end": 262.1
+    },
+    {
+      "text": "work.",
+      "start": 262.1,
+      "end": 262.61
+    },
+    {
+      "text": "Lapses",
+      "start": 262.61,
+      "end": 263.33
+    },
+    {
+      "text": "went",
+      "start": 263.33,
+      "end": 263.47
+    },
+    {
+      "text": "quiet.",
+      "start": 263.47,
+      "end": 264.06
+    },
+    {
+      "text": "The",
+      "start": 264.06,
+      "end": 264.14
+    },
+    {
+      "text": "channel",
+      "start": 264.14,
+      "end": 264.66
+    },
+    {
+      "text": "stopped",
+      "start": 264.66,
+      "end": 265.17
+    },
+    {
+      "text": "posting.",
+      "start": 265.17,
+      "end": 266.05
+    },
+    {
+      "text": "The",
+      "start": 266.05,
+      "end": 266.14
+    },
+    {
+      "text": "headlines",
+      "start": 266.14,
+      "end": 266.81
+    },
+    {
+      "text": "moved",
+      "start": 266.81,
+      "end": 267.28
+    },
+    {
+      "text": "on.",
+      "start": 267.28,
+      "end": 268
+    },
+    {
+      "text": "But",
+      "start": 268,
+      "end": 268.32
+    },
+    {
+      "text": "inside",
+      "start": 268.32,
+      "end": 268.85
+    },
+    {
+      "text": "that",
+      "start": 268.85,
+      "end": 269.36
+    },
+    {
+      "text": "hotel",
+      "start": 269.36,
+      "end": 269.63
+    },
+    {
+      "text": "room,",
+      "start": 269.63,
+      "end": 270.16
+    },
+    {
+      "text": "a",
+      "start": 270.16,
+      "end": 270.41
+    },
+    {
+      "text": "boy",
+      "start": 270.41,
+      "end": 270.5
+    },
+    {
+      "text": "with",
+      "start": 270.5,
+      "end": 271.02
+    },
+    {
+      "text": "nothing",
+      "start": 271.02,
+      "end": 271.46
+    },
+    {
+      "text": "to",
+      "start": 271.46,
+      "end": 271.69
+    },
+    {
+      "text": "do",
+      "start": 271.69,
+      "end": 271.8
+    },
+    {
+      "text": "and",
+      "start": 271.8,
+      "end": 272.06
+    },
+    {
+      "text": "one",
+      "start": 272.06,
+      "end": 272.31
+    },
+    {
+      "text": "very",
+      "start": 272.31,
+      "end": 273.01
+    },
+    {
+      "text": "particular",
+      "start": 273.01,
+      "end": 273.55
+    },
+    {
+      "text": "talent",
+      "start": 273.55,
+      "end": 274.08
+    },
+    {
+      "text": "was",
+      "start": 274.08,
+      "end": 274.33
+    },
+    {
+      "text": "getting",
+      "start": 274.33,
+      "end": 275.04
+    },
+    {
+      "text": "bored.",
+      "start": 275.04,
+      "end": 275.44
+    },
+    {
+      "text": "September",
+      "start": 276.51,
+      "end": 277.26
+    },
+    {
+      "text": "2022.",
+      "start": 277.26,
+      "end": 278.74
+    },
+    {
+      "text": "Uber.",
+      "start": 278.74,
+      "end": 279.44
+    },
+    {
+      "text": "One",
+      "start": 279.44,
+      "end": 279.62
+    },
+    {
+      "text": "of",
+      "start": 279.62,
+      "end": 279.77
+    },
+    {
+      "text": "the",
+      "start": 279.77,
+      "end": 279.92
+    },
+    {
+      "text": "biggest",
+      "start": 279.92,
+      "end": 280.35
+    },
+    {
+      "text": "ride-hailing",
+      "start": 280.35,
+      "end": 281.12
+    },
+    {
+      "text": "companies",
+      "start": 281.12,
+      "end": 281.6
+    },
+    {
+      "text": "in",
+      "start": 281.6,
+      "end": 281.76
+    },
+    {
+      "text": "the",
+      "start": 281.76,
+      "end": 282
+    },
+    {
+      "text": "world.",
+      "start": 282,
+      "end": 282.64
+    },
+    {
+      "text": "The",
+      "start": 282.64,
+      "end": 282.85
+    },
+    {
+      "text": "attacker",
+      "start": 282.85,
+      "end": 283.4
+    },
+    {
+      "text": "had",
+      "start": 283.4,
+      "end": 283.68
+    },
+    {
+      "text": "a",
+      "start": 283.68,
+      "end": 283.69
+    },
+    {
+      "text": "contractor's",
+      "start": 283.69,
+      "end": 284.75
+    },
+    {
+      "text": "password,",
+      "start": 284.75,
+      "end": 285.34
+    },
+    {
+      "text": "bought",
+      "start": 285.34,
+      "end": 285.65
+    },
+    {
+      "text": "online.",
+      "start": 285.65,
+      "end": 286.32
+    },
+    {
+      "text": "Then",
+      "start": 286.32,
+      "end": 286.61
+    },
+    {
+      "text": "came",
+      "start": 286.61,
+      "end": 286.86
+    },
+    {
+      "text": "the",
+      "start": 286.86,
+      "end": 287.33
+    },
+    {
+      "text": "flood",
+      "start": 287.33,
+      "end": 287.52
+    },
+    {
+      "text": "of",
+      "start": 287.52,
+      "end": 287.67
+    },
+    {
+      "text": "login",
+      "start": 287.67,
+      "end": 288.08
+    },
+    {
+      "text": "requests",
+      "start": 288.08,
+      "end": 288.69
+    },
+    {
+      "text": "to",
+      "start": 288.69,
+      "end": 288.8
+    },
+    {
+      "text": "the",
+      "start": 288.8,
+      "end": 288.99
+    },
+    {
+      "text": "contractor's",
+      "start": 288.99,
+      "end": 289.84
+    },
+    {
+      "text": "phone.",
+      "start": 289.84,
+      "end": 290.24
+    },
+    {
+      "text": "When",
+      "start": 290.24,
+      "end": 290.37
+    },
+    {
+      "text": "that",
+      "start": 290.37,
+      "end": 290.9
+    },
+    {
+      "text": "didn't",
+      "start": 290.9,
+      "end": 291.11
+    },
+    {
+      "text": "work,",
+      "start": 291.11,
+      "end": 291.5
+    },
+    {
+      "text": "the",
+      "start": 291.5,
+      "end": 291.67
+    },
+    {
+      "text": "attacker",
+      "start": 291.67,
+      "end": 292.17
+    },
+    {
+      "text": "sent",
+      "start": 292.17,
+      "end": 292.42
+    },
+    {
+      "text": "a",
+      "start": 292.42,
+      "end": 292.48
+    },
+    {
+      "text": "message,",
+      "start": 292.48,
+      "end": 293.49
+    },
+    {
+      "text": "pretending",
+      "start": 293.49,
+      "end": 293.71
+    },
+    {
+      "text": "to",
+      "start": 293.71,
+      "end": 293.84
+    },
+    {
+      "text": "be",
+      "start": 293.84,
+      "end": 294
+    },
+    {
+      "text": "Uber's",
+      "start": 294,
+      "end": 294.48
+    },
+    {
+      "text": "own",
+      "start": 294.48,
+      "end": 294.69
+    },
+    {
+      "text": "tech",
+      "start": 294.69,
+      "end": 294.97
+    },
+    {
+      "text": "support.",
+      "start": 294.97,
+      "end": 295.68
+    },
+    {
+      "text": "Just",
+      "start": 295.68,
+      "end": 295.95
+    },
+    {
+      "text": "approve",
+      "start": 295.95,
+      "end": 296.57
+    },
+    {
+      "text": "it,",
+      "start": 296.57,
+      "end": 296.74
+    },
+    {
+      "text": "and",
+      "start": 296.74,
+      "end": 296.95
+    },
+    {
+      "text": "the",
+      "start": 296.95,
+      "end": 297.18
+    },
+    {
+      "text": "alerts",
+      "start": 297.18,
+      "end": 297.59
+    },
+    {
+      "text": "will",
+      "start": 297.59,
+      "end": 297.87
+    },
+    {
+      "text": "stop.",
+      "start": 297.87,
+      "end": 298.37
+    },
+    {
+      "text": "The",
+      "start": 298.37,
+      "end": 298.57
+    },
+    {
+      "text": "contractor",
+      "start": 298.57,
+      "end": 299.28
+    },
+    {
+      "text": "approved",
+      "start": 299.28,
+      "end": 299.9
+    },
+    {
+      "text": "it,",
+      "start": 299.9,
+      "end": 300.24
+    },
+    {
+      "text": "and",
+      "start": 300.24,
+      "end": 300.4
+    },
+    {
+      "text": "the",
+      "start": 300.4,
+      "end": 300.56
+    },
+    {
+      "text": "attacker",
+      "start": 300.67,
+      "end": 301.2
+    },
+    {
+      "text": "was",
+      "start": 301.2,
+      "end": 301.58
+    },
+    {
+      "text": "inside.",
+      "start": 301.58,
+      "end": 302.48
+    },
+    {
+      "text": "Then",
+      "start": 302.48,
+      "end": 302.67
+    },
+    {
+      "text": "came",
+      "start": 302.67,
+      "end": 302.8
+    },
+    {
+      "text": "the",
+      "start": 302.8,
+      "end": 303.26
+    },
+    {
+      "text": "announcement.",
+      "start": 303.26,
+      "end": 304.25
+    },
+    {
+      "text": "A",
+      "start": 304.25,
+      "end": 304.33
+    },
+    {
+      "text": "message",
+      "start": 304.33,
+      "end": 305.25
+    },
+    {
+      "text": "posted",
+      "start": 305.25,
+      "end": 305.37
+    },
+    {
+      "text": "in",
+      "start": 305.37,
+      "end": 305.53
+    },
+    {
+      "text": "Uber's",
+      "start": 305.53,
+      "end": 306.01
+    },
+    {
+      "text": "own",
+      "start": 306.01,
+      "end": 306.28
+    },
+    {
+      "text": "company",
+      "start": 306.28,
+      "end": 306.81
+    },
+    {
+      "text": "chat,",
+      "start": 306.81,
+      "end": 307.2
+    },
+    {
+      "text": "telling",
+      "start": 307.2,
+      "end": 307.65
+    },
+    {
+      "text": "the",
+      "start": 307.65,
+      "end": 307.84
+    },
+    {
+      "text": "staff",
+      "start": 307.84,
+      "end": 308.24
+    },
+    {
+      "text": "they",
+      "start": 308.24,
+      "end": 308.42
+    },
+    {
+      "text": "had",
+      "start": 308.42,
+      "end": 308.61
+    },
+    {
+      "text": "been",
+      "start": 308.61,
+      "end": 309.26
+    },
+    {
+      "text": "hacked.",
+      "start": 309.26,
+      "end": 309.45
+    },
+    {
+      "text": "The",
+      "start": 309.45,
+      "end": 309.64
+    },
+    {
+      "text": "banking",
+      "start": 309.64,
+      "end": 310.09
+    },
+    {
+      "text": "app",
+      "start": 310.09,
+      "end": 310.27
+    },
+    {
+      "text": "Revolut",
+      "start": 310.27,
+      "end": 310.73
+    },
+    {
+      "text": "was",
+      "start": 310.73,
+      "end": 310.92
+    },
+    {
+      "text": "hit",
+      "start": 310.92,
+      "end": 311.11
+    },
+    {
+      "text": "in",
+      "start": 311.11,
+      "end": 311.24
+    },
+    {
+      "text": "the",
+      "start": 311.24,
+      "end": 311.84
+    },
+    {
+      "text": "same",
+      "start": 311.84,
+      "end": 311.89
+    },
+    {
+      "text": "spree.",
+      "start": 311.89,
+      "end": 312.64
+    },
+    {
+      "text": "And",
+      "start": 312.64,
+      "end": 312.84
+    },
+    {
+      "text": "a",
+      "start": 312.84,
+      "end": 312.9
+    },
+    {
+      "text": "few",
+      "start": 312.9,
+      "end": 313.1
+    },
+    {
+      "text": "days",
+      "start": 313.1,
+      "end": 313.37
+    },
+    {
+      "text": "later,",
+      "start": 313.37,
+      "end": 313.84
+    },
+    {
+      "text": "the",
+      "start": 313.84,
+      "end": 314.04
+    },
+    {
+      "text": "boy",
+      "start": 314.04,
+      "end": 314.37
+    },
+    {
+      "text": "in",
+      "start": 314.37,
+      "end": 314.37
+    },
+    {
+      "text": "the",
+      "start": 314.37,
+      "end": 314.75
+    },
+    {
+      "text": "hotel",
+      "start": 314.75,
+      "end": 314.91
+    },
+    {
+      "text": "room",
+      "start": 314.91,
+      "end": 315.34
+    },
+    {
+      "text": "picked",
+      "start": 315.34,
+      "end": 315.59
+    },
+    {
+      "text": "a",
+      "start": 315.59,
+      "end": 315.65
+    },
+    {
+      "text": "new",
+      "start": 315.65,
+      "end": 315.85
+    },
+    {
+      "text": "target.",
+      "start": 315.85,
+      "end": 316.56
+    },
+    {
+      "text": "From",
+      "start": 316.56,
+      "end": 317.33
+    },
+    {
+      "text": "that",
+      "start": 317.33,
+      "end": 317.54
+    },
+    {
+      "text": "hotel",
+      "start": 317.54,
+      "end": 318.16
+    },
+    {
+      "text": "room,",
+      "start": 318.16,
+      "end": 318.64
+    },
+    {
+      "text": "using",
+      "start": 318.64,
+      "end": 319.01
+    },
+    {
+      "text": "a",
+      "start": 319.01,
+      "end": 319.08
+    },
+    {
+      "text": "fire",
+      "start": 319.08,
+      "end": 319.37
+    },
+    {
+      "text": "stick,",
+      "start": 319.37,
+      "end": 319.9
+    },
+    {
+      "text": "a",
+      "start": 319.9,
+      "end": 319.95
+    },
+    {
+      "text": "television,",
+      "start": 319.95,
+      "end": 320.87
+    },
+    {
+      "text": "and",
+      "start": 320.87,
+      "end": 321.09
+    },
+    {
+      "text": "a",
+      "start": 321.09,
+      "end": 321.34
+    },
+    {
+      "text": "phone,",
+      "start": 321.34,
+      "end": 321.67
+    },
+    {
+      "text": "Arion",
+      "start": 321.67,
+      "end": 322.05
+    },
+    {
+      "text": "got",
+      "start": 322.05,
+      "end": 322.27
+    },
+    {
+      "text": "into",
+      "start": 322.27,
+      "end": 322.57
+    },
+    {
+      "text": "the",
+      "start": 322.57,
+      "end": 323.33
+    },
+    {
+      "text": "internal",
+      "start": 323.33,
+      "end": 323.39
+    },
+    {
+      "text": "chat",
+      "start": 323.39,
+      "end": 323.78
+    },
+    {
+      "text": "of",
+      "start": 323.78,
+      "end": 324
+    },
+    {
+      "text": "Rockstar",
+      "start": 324,
+      "end": 324.63
+    },
+    {
+      "text": "Games,",
+      "start": 324.63,
+      "end": 325.36
+    },
+    {
+      "text": "the",
+      "start": 325.47,
+      "end": 325.6
+    },
+    {
+      "text": "studio",
+      "start": 325.6,
+      "end": 326.09
+    },
+    {
+      "text": "behind",
+      "start": 326.09,
+      "end": 326.58
+    },
+    {
+      "text": "Grand",
+      "start": 326.58,
+      "end": 327.4
+    },
+    {
+      "text": "Theft",
+      "start": 327.4,
+      "end": 327.47
+    },
+    {
+      "text": "Auto.",
+      "start": 327.47,
+      "end": 328.06
+    },
+    {
+      "text": "He",
+      "start": 328.06,
+      "end": 328.13
+    },
+    {
+      "text": "sent",
+      "start": 328.13,
+      "end": 328.46
+    },
+    {
+      "text": "a",
+      "start": 328.46,
+      "end": 328.54
+    },
+    {
+      "text": "message",
+      "start": 328.54,
+      "end": 329.11
+    },
+    {
+      "text": "to",
+      "start": 329.11,
+      "end": 329.27
+    },
+    {
+      "text": "every",
+      "start": 329.27,
+      "end": 330.05
+    },
+    {
+      "text": "employee.",
+      "start": 330.05,
+      "end": 330.69
+    },
+    {
+      "text": "\"I",
+      "start": 330.69,
+      "end": 330.88
+    },
+    {
+      "text": "am",
+      "start": 330.88,
+      "end": 331.12
+    },
+    {
+      "text": "not",
+      "start": 331.12,
+      "end": 331.44
+    },
+    {
+      "text": "a",
+      "start": 331.44,
+      "end": 331.6
+    },
+    {
+      "text": "Rockstar",
+      "start": 331.6,
+      "end": 332.16
+    },
+    {
+      "text": "employee.",
+      "start": 332.16,
+      "end": 332.87
+    },
+    {
+      "text": "I",
+      "start": 332.87,
+      "end": 332.93
+    },
+    {
+      "text": "am",
+      "start": 332.93,
+      "end": 333.19
+    },
+    {
+      "text": "an",
+      "start": 333.19,
+      "end": 333.19
+    },
+    {
+      "text": "attacker.\"",
+      "start": 333.19,
+      "end": 334.16
+    },
+    {
+      "text": "And",
+      "start": 334.16,
+      "end": 334.25
+    },
+    {
+      "text": "he",
+      "start": 334.25,
+      "end": 334.29
+    },
+    {
+      "text": "threatened",
+      "start": 334.29,
+      "end": 334.94
+    },
+    {
+      "text": "to",
+      "start": 334.94,
+      "end": 335.07
+    },
+    {
+      "text": "release",
+      "start": 335.07,
+      "end": 335.53
+    },
+    {
+      "text": "the",
+      "start": 335.53,
+      "end": 335.72
+    },
+    {
+      "text": "game's",
+      "start": 335.72,
+      "end": 336.11
+    },
+    {
+      "text": "source",
+      "start": 336.11,
+      "end": 336.76
+    },
+    {
+      "text": "code",
+      "start": 336.76,
+      "end": 336.85
+    },
+    {
+      "text": "unless",
+      "start": 336.85,
+      "end": 337.15
+    },
+    {
+      "text": "the",
+      "start": 337.15,
+      "end": 337.44
+    },
+    {
+      "text": "company",
+      "start": 337.44,
+      "end": 338.06
+    },
+    {
+      "text": "contacted",
+      "start": 338.06,
+      "end": 338.86
+    },
+    {
+      "text": "him.",
+      "start": 338.86,
+      "end": 339.55
+    },
+    {
+      "text": "Rockstar",
+      "start": 339.55,
+      "end": 340.14
+    },
+    {
+      "text": "didn't",
+      "start": 340.14,
+      "end": 340.6
+    },
+    {
+      "text": "make",
+      "start": 340.6,
+      "end": 340.95
+    },
+    {
+      "text": "a",
+      "start": 340.95,
+      "end": 341.03
+    },
+    {
+      "text": "deal.",
+      "start": 341.03,
+      "end": 341.81
+    },
+    {
+      "text": "So,",
+      "start": 341.81,
+      "end": 342.13
+    },
+    {
+      "text": "under",
+      "start": 342.13,
+      "end": 342.42
+    },
+    {
+      "text": "the",
+      "start": 342.42,
+      "end": 342.68
+    },
+    {
+      "text": "name",
+      "start": 342.68,
+      "end": 343.03
+    },
+    {
+      "text": "Teapot",
+      "start": 343.03,
+      "end": 343.54
+    },
+    {
+      "text": "Uber",
+      "start": 343.54,
+      "end": 344.01
+    },
+    {
+      "text": "Hacker,",
+      "start": 344.01,
+      "end": 344.56
+    },
+    {
+      "text": "he",
+      "start": 344.56,
+      "end": 344.72
+    },
+    {
+      "text": "posted",
+      "start": 344.72,
+      "end": 345.2
+    },
+    {
+      "text": "90",
+      "start": 345.2,
+      "end": 345.68
+    },
+    {
+      "text": "clips",
+      "start": 345.68,
+      "end": 346.24
+    },
+    {
+      "text": "of",
+      "start": 346.24,
+      "end": 346.24
+    },
+    {
+      "text": "the",
+      "start": 346.24,
+      "end": 346.67
+    },
+    {
+      "text": "unfinished",
+      "start": 346.67,
+      "end": 347.29
+    },
+    {
+      "text": "game",
+      "start": 347.29,
+      "end": 347.61
+    },
+    {
+      "text": "on",
+      "start": 347.61,
+      "end": 347.77
+    },
+    {
+      "text": "a",
+      "start": 347.77,
+      "end": 347.85
+    },
+    {
+      "text": "fan",
+      "start": 347.85,
+      "end": 348.09
+    },
+    {
+      "text": "forum.",
+      "start": 348.09,
+      "end": 349.12
+    },
+    {
+      "text": "Rockstar",
+      "start": 349.12,
+      "end": 349.43
+    },
+    {
+      "text": "confirmed",
+      "start": 349.43,
+      "end": 350.14
+    },
+    {
+      "text": "it.",
+      "start": 350.14,
+      "end": 350.55
+    },
+    {
+      "text": "Years",
+      "start": 350.55,
+      "end": 351.13
+    },
+    {
+      "text": "of",
+      "start": 351.13,
+      "end": 351.2
+    },
+    {
+      "text": "secret",
+      "start": 351.2,
+      "end": 351.6
+    },
+    {
+      "text": "work,",
+      "start": 351.6,
+      "end": 352.24
+    },
+    {
+      "text": "seen",
+      "start": 352.35,
+      "end": 352.53
+    },
+    {
+      "text": "by",
+      "start": 352.53,
+      "end": 352.66
+    },
+    {
+      "text": "the",
+      "start": 352.66,
+      "end": 352.89
+    },
+    {
+      "text": "entire",
+      "start": 352.89,
+      "end": 353.33
+    },
+    {
+      "text": "world",
+      "start": 353.33,
+      "end": 353.7
+    },
+    {
+      "text": "in",
+      "start": 353.7,
+      "end": 354.06
+    },
+    {
+      "text": "its",
+      "start": 354.06,
+      "end": 354.28
+    },
+    {
+      "text": "roughest,",
+      "start": 354.28,
+      "end": 354.94
+    },
+    {
+      "text": "most",
+      "start": 354.94,
+      "end": 355.07
+    },
+    {
+      "text": "unfinished",
+      "start": 355.07,
+      "end": 355.81
+    },
+    {
+      "text": "form.",
+      "start": 355.81,
+      "end": 356.62
+    },
+    {
+      "text": "On",
+      "start": 356.62,
+      "end": 356.93
+    },
+    {
+      "text": "September",
+      "start": 356.93,
+      "end": 357.66
+    },
+    {
+      "text": "22,",
+      "start": 357.66,
+      "end": 358.56
+    },
+    {
+      "text": "2022,",
+      "start": 358.56,
+      "end": 359.84
+    },
+    {
+      "text": "police",
+      "start": 359.84,
+      "end": 360.4
+    },
+    {
+      "text": "walked",
+      "start": 360.4,
+      "end": 360.85
+    },
+    {
+      "text": "into",
+      "start": 360.85,
+      "end": 361.14
+    },
+    {
+      "text": "that",
+      "start": 361.14,
+      "end": 361.45
+    },
+    {
+      "text": "hotel",
+      "start": 361.45,
+      "end": 361.84
+    },
+    {
+      "text": "room.",
+      "start": 361.84,
+      "end": 362.51
+    },
+    {
+      "text": "They",
+      "start": 362.51,
+      "end": 362.65
+    },
+    {
+      "text": "found",
+      "start": 362.65,
+      "end": 363.1
+    },
+    {
+      "text": "the",
+      "start": 363.1,
+      "end": 363.26
+    },
+    {
+      "text": "fire",
+      "start": 363.26,
+      "end": 363.56
+    },
+    {
+      "text": "stick.",
+      "start": 363.56,
+      "end": 364.16
+    },
+    {
+      "text": "And",
+      "start": 364.16,
+      "end": 364.39
+    },
+    {
+      "text": "they",
+      "start": 364.39,
+      "end": 365.07
+    },
+    {
+      "text": "found",
+      "start": 365.07,
+      "end": 365.09
+    },
+    {
+      "text": "an",
+      "start": 365.09,
+      "end": 365.22
+    },
+    {
+      "text": "iPhone,",
+      "start": 365.22,
+      "end": 365.92
+    },
+    {
+      "text": "the",
+      "start": 365.92,
+      "end": 366.16
+    },
+    {
+      "text": "one",
+      "start": 366.16,
+      "end": 366.45
+    },
+    {
+      "text": "thing",
+      "start": 366.45,
+      "end": 366.64
+    },
+    {
+      "text": "his",
+      "start": 366.64,
+      "end": 366.88
+    },
+    {
+      "text": "bail",
+      "start": 366.88,
+      "end": 367.2
+    },
+    {
+      "text": "conditions",
+      "start": 367.2,
+      "end": 368.01
+    },
+    {
+      "text": "said",
+      "start": 368.01,
+      "end": 368.32
+    },
+    {
+      "text": "he",
+      "start": 368.32,
+      "end": 368.89
+    },
+    {
+      "text": "could",
+      "start": 368.89,
+      "end": 368.99
+    },
+    {
+      "text": "not",
+      "start": 368.99,
+      "end": 369.13
+    },
+    {
+      "text": "have.",
+      "start": 369.13,
+      "end": 369.69
+    },
+    {
+      "text": "Look",
+      "start": 369.69,
+      "end": 370.01
+    },
+    {
+      "text": "at",
+      "start": 370.01,
+      "end": 370.17
+    },
+    {
+      "text": "that",
+      "start": 370.17,
+      "end": 370.49
+    },
+    {
+      "text": "timeline.",
+      "start": 370.49,
+      "end": 371.57
+    },
+    {
+      "text": "Arrested",
+      "start": 371.57,
+      "end": 372.02
+    },
+    {
+      "text": "in",
+      "start": 372.02,
+      "end": 372.21
+    },
+    {
+      "text": "January.",
+      "start": 372.21,
+      "end": 373
+    },
+    {
+      "text": "Released.",
+      "start": 373,
+      "end": 374
+    },
+    {
+      "text": "Arrested",
+      "start": 374,
+      "end": 374.64
+    },
+    {
+      "text": "in",
+      "start": 374.64,
+      "end": 374.8
+    },
+    {
+      "text": "March.",
+      "start": 374.8,
+      "end": 375.44
+    },
+    {
+      "text": "Bailed.",
+      "start": 375.44,
+      "end": 376.16
+    },
+    {
+      "text": "Arrested",
+      "start": 376.16,
+      "end": 376.8
+    },
+    {
+      "text": "in",
+      "start": 376.8,
+      "end": 377
+    },
+    {
+      "text": "September.",
+      "start": 377,
+      "end": 377.92
+    },
+    {
+      "text": "And",
+      "start": 377.92,
+      "end": 378.69
+    },
+    {
+      "text": "between",
+      "start": 378.69,
+      "end": 378.72
+    },
+    {
+      "text": "every",
+      "start": 378.72,
+      "end": 379.14
+    },
+    {
+      "text": "single",
+      "start": 379.14,
+      "end": 379.6
+    },
+    {
+      "text": "arrest,",
+      "start": 379.6,
+      "end": 380.32
+    },
+    {
+      "text": "another",
+      "start": 380.32,
+      "end": 381
+    },
+    {
+      "text": "hack.",
+      "start": 381,
+      "end": 381.68
+    },
+    {
+      "text": "This",
+      "start": 382.32,
+      "end": 382.36
+    },
+    {
+      "text": "time,",
+      "start": 382.36,
+      "end": 382.53
+    },
+    {
+      "text": "there",
+      "start": 382.53,
+      "end": 382.95
+    },
+    {
+      "text": "was",
+      "start": 382.95,
+      "end": 383.36
+    },
+    {
+      "text": "no",
+      "start": 383.36,
+      "end": 383.37
+    },
+    {
+      "text": "bail.",
+      "start": 383.37,
+      "end": 384.13
+    },
+    {
+      "text": "He",
+      "start": 384.13,
+      "end": 384.38
+    },
+    {
+      "text": "was",
+      "start": 384.38,
+      "end": 384.43
+    },
+    {
+      "text": "held",
+      "start": 384.43,
+      "end": 384.72
+    },
+    {
+      "text": "in",
+      "start": 384.72,
+      "end": 385.02
+    },
+    {
+      "text": "custody",
+      "start": 385.02,
+      "end": 385.48
+    },
+    {
+      "text": "to",
+      "start": 385.48,
+      "end": 385.69
+    },
+    {
+      "text": "wait",
+      "start": 385.69,
+      "end": 385.99
+    },
+    {
+      "text": "for",
+      "start": 385.99,
+      "end": 386.24
+    },
+    {
+      "text": "trial.",
+      "start": 386.24,
+      "end": 387.01
+    },
+    {
+      "text": "The",
+      "start": 387.01,
+      "end": 387.16
+    },
+    {
+      "text": "channel",
+      "start": 387.16,
+      "end": 387.75
+    },
+    {
+      "text": "fell",
+      "start": 387.75,
+      "end": 388.16
+    },
+    {
+      "text": "silent.",
+      "start": 388.16,
+      "end": 388.91
+    },
+    {
+      "text": "The",
+      "start": 388.91,
+      "end": 389.16
+    },
+    {
+      "text": "leaks",
+      "start": 389.16,
+      "end": 389.6
+    },
+    {
+      "text": "stopped.",
+      "start": 389.6,
+      "end": 390.43
+    },
+    {
+      "text": "Lapsis,",
+      "start": 390.43,
+      "end": 391.1
+    },
+    {
+      "text": "as",
+      "start": 391.1,
+      "end": 391.27
+    },
+    {
+      "text": "the",
+      "start": 391.27,
+      "end": 391.53
+    },
+    {
+      "text": "world",
+      "start": 391.53,
+      "end": 391.94
+    },
+    {
+      "text": "knew",
+      "start": 391.94,
+      "end": 392.27
+    },
+    {
+      "text": "it,",
+      "start": 392.27,
+      "end": 392.85
+    },
+    {
+      "text": "was",
+      "start": 392.85,
+      "end": 392.87
+    },
+    {
+      "text": "finished.",
+      "start": 392.87,
+      "end": 393.8
+    },
+    {
+      "text": "He",
+      "start": 393.8,
+      "end": 393.97
+    },
+    {
+      "text": "was",
+      "start": 393.97,
+      "end": 394.22
+    },
+    {
+      "text": "17",
+      "start": 394.22,
+      "end": 394.73
+    },
+    {
+      "text": "years",
+      "start": 394.73,
+      "end": 395.15
+    },
+    {
+      "text": "old.",
+      "start": 395.15,
+      "end": 395.76
+    }
+  ]
+}
