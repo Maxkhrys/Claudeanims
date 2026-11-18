@@ -138,7 +138,7 @@ export const Clip16: React.FC = () => {
         <Pop at={c("flood") - 10} from="up" style={{ left: 660, top: 70, width: 600, textAlign: "center" }}>
           <span style={{ ...mono(26, colors.dim), letterSpacing: "0.16em", whiteSpace: "nowrap" }}>THE CONTRACTOR'S PHONE</span>
         </Pop>
-        <PhoneBuzz at={c("flood") - 6} prompts={7} interval={14} approveAt={tApprove} time="01:07" size={250} style={{ left: 835, top: 110 }} />
+        <PhoneBuzz at={c("flood") - 6} prompts={7} interval={14} approveAt={tApprove} size={250} style={{ left: 835, top: 110 }} />
         <Chip at={c("didn't")} text="NO ANSWER" color={colors.red} fontSize={30} origin="center center" style={{ left: 600, top: 470 }} />
 
         {/* fake IT support message */}

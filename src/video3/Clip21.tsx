@@ -158,7 +158,7 @@ export const Clip21: React.FC = () => {
           <TrailerCard width={420} label="90,000,000+ VIEWS" />
         </Pop>
         <Pop at={c("pointed") + 4} from="left" style={{ left: 566, top: 250 }}>
-          <span style={{ ...mono(30, colors.amber), fontWeight: 700 }}>"look how well it did"</span>
+          <span style={{ ...mono(30, colors.amber), fontWeight: 700 }}>THE DEFENCE POINTS TO THE TRAILER</span>
         </Pop>
         <Pop at={c("The judge")} origin="center bottom" style={{ left: 1420, top: 170 }}>
           <BlobCharacter color="#3C3550" size={330} seed={4} expression={frame >= c("not persuaded") ? "angry" : "calm"} look={{ x: -0.8, y: 0.3 }} />

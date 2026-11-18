@@ -55,6 +55,24 @@ New parts added for this video (all in `src/components/`): `EmailHeader`, `MapPi
 `AssetGarage` + `Car`, `SeizedStamp`, `MarketLogo` / `OnionLogo` / `CamelLogo`, and the `Cazes`, `Cop`
 and `RossBlob` cast presets. Logos are stylised on purpose, not copies of the real ones.
 
+## Video 3: Lapsus$
+
+The narration comes in three audio parts (`public/audio/video3/part1.mp3` to `part3.mp3`), 26 clips.
+
+```bash
+npm run transcribe -- video3/part1   # once per part
+npm run timings:video3               # merges the transcripts and writes src/video3/clipTimings.ts
+npm run render:video3                # -> out/video3.mp4 (18:18 of narration plus a 15s end screen)
+npx remotion render V3-Clip17 out/v3-clip17.mp4
+```
+
+- `scripts/lapsus_script.md` is the script, with a fact-check list at the bottom.
+- `scripts/video3-timings.mjs` knows which clips are in which part, so clips can be built as each part arrives.
+- To change the sentencing outcome on screen, edit `SENTENCE_STATUS` and `SENTENCE_NOTE` at the top of
+  `src/video3/Clip25.tsx`, and regenerate part 3 of the narration to match.
+- Shared parts added for this video: `HotelRoom`, `BrandTag` (plain company wordmarks), `PhoneBuzz`,
+  `White` (the main character) and `FadeIn` (silent fade for the quiet courtroom clips).
+
 ## Vertical (TikTok / Reels)
 
 `npm run render:vertical` renders the ten Silk Road clips as 1080x1920 files in `out/vertical/`.

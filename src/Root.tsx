@@ -15,7 +15,7 @@ import { Clip10, clip10Schema } from "./clips/Clip10";
 import { ChapterCard, EndScreen, chapterSchema } from "./clips/Extras";
 import { Video2, Video2Clip, video2ClipSchema, video2Schema } from "./video2/Video2";
 import { VIDEO2_FRAMES, clipTimings } from "./video2/clipTimings";
-import { Video3, Video3Clip, video3ClipSchema, video3Schema } from "./video3/Video3";
+import { VIDEO3_OUTRO_FRAMES, Video3, Video3Clip, video3ClipSchema, video3Schema } from "./video3/Video3";
 import { VIDEO3_FRAMES, clipTimings as clipTimings3 } from "./video3/clipTimings";
 import { Thumbnail, VerticalCover, VerticalCoverAlphaBay, thumbnailSchema } from "./video2/Thumbnail";
 import { V2StyleGuide } from "./video2/V2StyleGuide";
@@ -172,7 +172,7 @@ export const RemotionRoot: React.FC = () => {
         width={VIDEO.width}
         height={VIDEO.height}
         fps={VIDEO.fps}
-        durationInFrames={VIDEO3_FRAMES}
+        durationInFrames={VIDEO3_FRAMES + VIDEO3_OUTRO_FRAMES}
       />
       {clipTimings3.map((t) => (
         <Composition

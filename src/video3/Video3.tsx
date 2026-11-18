@@ -3,7 +3,8 @@ import { AbsoluteFill, Audio, Sequence, staticFile } from "remotion";
 import { z } from "zod";
 import { colors } from "../theme";
 import { Background, Captions } from "../components";
-import { audioParts, clipTimings } from "./clipTimings";
+import { EndScreen } from "../clips/Extras";
+import { VIDEO3_FRAMES, audioParts, clipTimings } from "./clipTimings";
 import { clipWords, fullWords } from "./words";
 import { Clip1 } from "./Clip1";
 import { Clip2 } from "./Clip2";
@@ -32,6 +33,9 @@ import { Clip24 } from "./Clip24";
 import { Clip25 } from "./Clip25";
 import { Clip26 } from "./Clip26";
 
+/** A 15-second end screen follows the last clip, for YouTube's end-screen elements. */
+export const VIDEO3_OUTRO_FRAMES = 450;
+
 /** Index 0 is clip 1. */
 export const VIDEO3_CLIPS = [Clip1, Clip2, Clip3, Clip4, Clip5, Clip6, Clip7, Clip8, Clip9, Clip10, Clip11, Clip12, Clip13, Clip14, Clip15, Clip16, Clip17, Clip18, Clip19, Clip20, Clip21, Clip22, Clip23, Clip24, Clip25, Clip26];
 
@@ -56,6 +60,9 @@ export const Video3: React.FC<z.infer<typeof video3Schema>> = ({ showCaptions })
         );
       })}
     </Background>
+    <Sequence from={VIDEO3_FRAMES} durationInFrames={VIDEO3_OUTRO_FRAMES} name="end screen">
+      <EndScreen />
+    </Sequence>
     <Captions words={fullWords} enabled={showCaptions} />
   </AbsoluteFill>
 );
