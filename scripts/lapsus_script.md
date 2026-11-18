@@ -1,6 +1,6 @@
 # The Onion Archive — Lapsus$: The Teenager Who Hacked GTA 6 From a Hotel TV
 
-26 clips, ~128 words each. [VISUAL] = animation cue. Same style as videos 1 and 2.
+26 clips, about 2,800 words: roughly 15 minutes at the AlphaBay narration pace (190 words a minute), 16 at a slower read. [VISUAL] = animation cue. Same style as videos 1 and 2.
 
 Narration notes: "Lapsus$" is written "Lapsus" so the voice reads it cleanly. Numbers are spelled out. Clip 25 has an UPDATE slot to fill in after the sentencing hearing. The fact-check list is at the bottom.
 
