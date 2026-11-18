@@ -15,7 +15,7 @@ import { Clip10, clip10Schema } from "./clips/Clip10";
 import { ChapterCard, EndScreen, chapterSchema } from "./clips/Extras";
 import { Video2, Video2Clip, video2ClipSchema, video2Schema } from "./video2/Video2";
 import { VIDEO2_FRAMES, clipTimings } from "./video2/clipTimings";
-import { Thumbnail, VerticalCover, thumbnailSchema } from "./video2/Thumbnail";
+import { Thumbnail, VerticalCover, VerticalCoverAlphaBay, thumbnailSchema } from "./video2/Thumbnail";
 import { V2StyleGuide } from "./video2/V2StyleGuide";
 import { VERTICAL, VerticalClip, verticalSchema } from "./clips/Vertical";
 import { StyleGuide } from "./clips/StyleGuide";
@@ -207,6 +207,7 @@ export const RemotionRoot: React.FC = () => {
           durationInFrames={1}
         />
       ))}
+      <Composition id="V2-Cover-Vertical" component={VerticalCoverAlphaBay} width={1080} height={1920} fps={VIDEO.fps} durationInFrames={1} />
       <Composition id="V1-Cover-Vertical" component={VerticalCover} width={1080} height={1920} fps={VIDEO.fps} durationInFrames={1} />
       <Composition id="V2StyleGuide" component={V2StyleGuide} width={VIDEO.width} height={VIDEO.height} fps={VIDEO.fps} durationInFrames={VIDEO.fps * 5} />
       <Composition

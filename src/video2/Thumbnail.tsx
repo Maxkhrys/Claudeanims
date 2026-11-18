@@ -133,3 +133,30 @@ export const VerticalCover: React.FC = () => (
     <Vignette strength={0.55} />
   </AbsoluteFill>
 );
+
+/** 9:16 cover for the AlphaBay video, matching the "one email" thumbnail. */
+export const VerticalCoverAlphaBay: React.FC = () => (
+  <AbsoluteFill style={{ backgroundColor: "#06080A", overflow: "hidden" }}>
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 60%, rgba(245,200,76,0.44), rgba(0,0,0,0) 55%)" }} />
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 18%, rgba(57,255,136,0.18), rgba(0,0,0,0) 50%)" }} />
+    <div style={{ position: "absolute", left: 0, right: 0, top: 265, display: "flex", justifyContent: "center" }}>
+      <MarketLogo name="ALPHABAY" mark="alpha" size={84} />
+    </div>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 410, textAlign: "center", ...big(300, colors.text) }}>ONE EMAIL</div>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 700, textAlign: "center" }}>
+      <EmailTag text="pimp_alex_91@hotmail.com" color={colors.green} size={56} />
+    </div>
+    <div style={{ position: "absolute", left: 540 - 260, top: 850 }}>
+      <Cazes size={600} sunglasses idle={0} />
+    </div>
+    <SeizedStamp at={-60} fontSize={76} rotate={10} sound={false} style={{ left: 700, top: 1150 }} />
+    <div style={{ position: "absolute", left: 0, right: 0, top: 1290, textAlign: "center" }}>
+      <div style={{ display: "inline-block", transform: "rotate(-3deg)", background: "rgba(6,8,10,0.92)", padding: "22px 44px 6px", borderRadius: 18, border: `8px solid ${colors.gold}` }}>
+        <div style={big(212, colors.gold)}>ENDED A $1B</div>
+        <div style={big(250, colors.red)}>EMPIRE</div>
+      </div>
+    </div>
+    <Grain opacity={0.05} />
+    <Vignette strength={0.55} />
+  </AbsoluteFill>
+);

@@ -23,7 +23,8 @@
     "thumb:video2": "for v in email mistake; do remotion still V2-Thumb-$v out/thumb-$v.png && ffmpeg -y -loglevel error -i out/thumb-$v.png -vf scale=1280:720 -q:v 2 out/thumb-$v.jpg; done",
     "thumb:video1": "remotion still V1-Thumb out/thumb-silkroad.png && ffmpeg -y -loglevel error -i out/thumb-silkroad.png -vf scale=1280:720 -q:v 2 out/thumb-silkroad.jpg",
     "render:vertical": "for n in 1 2 3 4 5 6 7 8 9 10; do remotion render SilkRoad-Vertical-$n out/vertical/silkroad-part$n.mp4; done",
-    "cover:video1": "remotion still V1-Cover-Vertical out/cover-silkroad-vertical.png && ffmpeg -y -loglevel error -i out/cover-silkroad-vertical.png -q:v 2 out/cover-silkroad-vertical.jpg"
+    "cover:video1": "remotion still V1-Cover-Vertical out/cover-silkroad-vertical.png && ffmpeg -y -loglevel error -i out/cover-silkroad-vertical.png -q:v 2 out/cover-silkroad-vertical.jpg",
+    "cover:video2": "remotion still V2-Cover-Vertical out/cover-alphabay-vertical.png && ffmpeg -y -loglevel error -i out/cover-alphabay-vertical.png -q:v 2 out/cover-alphabay-vertical.jpg"
   },
   "keywords": [],
   "author": "",
