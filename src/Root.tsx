@@ -15,6 +15,8 @@ import { Clip10, clip10Schema } from "./clips/Clip10";
 import { ChapterCard, EndScreen, chapterSchema } from "./clips/Extras";
 import { Video2, Video2Clip, video2ClipSchema, video2Schema } from "./video2/Video2";
 import { VIDEO2_FRAMES, clipTimings } from "./video2/clipTimings";
+import { Video3, Video3Clip, video3ClipSchema, video3Schema } from "./video3/Video3";
+import { VIDEO3_FRAMES, clipTimings as clipTimings3 } from "./video3/clipTimings";
 import { Thumbnail, VerticalCover, VerticalCoverAlphaBay, thumbnailSchema } from "./video2/Thumbnail";
 import { V2StyleGuide } from "./video2/V2StyleGuide";
 import { VERTICAL, VerticalClip, verticalSchema } from "./clips/Vertical";
@@ -155,6 +157,29 @@ export const RemotionRoot: React.FC = () => {
           id={`V2-Clip${t.n}`}
           component={Video2Clip}
           schema={video2ClipSchema}
+          defaultProps={{ n: t.n, showCaptions: true }}
+          width={VIDEO.width}
+          height={VIDEO.height}
+          fps={VIDEO.fps}
+          durationInFrames={t.endFrame - t.startFrame}
+        />
+      ))}
+      <Composition
+        id="Video3"
+        component={Video3}
+        schema={video3Schema}
+        defaultProps={{ showCaptions: true }}
+        width={VIDEO.width}
+        height={VIDEO.height}
+        fps={VIDEO.fps}
+        durationInFrames={VIDEO3_FRAMES}
+      />
+      {clipTimings3.map((t) => (
+        <Composition
+          key={t.n}
+          id={`V3-Clip${t.n}`}
+          component={Video3Clip}
+          schema={video3ClipSchema}
           defaultProps={{ n: t.n, showCaptions: true }}
           width={VIDEO.width}
           height={VIDEO.height}

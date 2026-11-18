@@ -17,3 +17,4 @@ export * from "./AssetGarage";
 export * from "./EvidenceBoard";
 export * from "./EmailHeader";
 export * from "./MapPins";
+export * from "./Video3Parts";
