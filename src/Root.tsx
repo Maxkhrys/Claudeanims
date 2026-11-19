@@ -17,6 +17,7 @@ import { Video2, Video2Clip, video2ClipSchema, video2Schema } from "./video2/Vid
 import { VIDEO2_FRAMES, clipTimings } from "./video2/clipTimings";
 import { VIDEO3_OUTRO_FRAMES, Video3, Video3Clip, video3ClipSchema, video3Schema } from "./video3/Video3";
 import { VIDEO3_FRAMES, clipTimings as clipTimings3 } from "./video3/clipTimings";
+import { Vertical3Clip, vertical3Schema } from "./video3/Vertical3";
 import { Thumbnail, ThumbnailLapsus, VerticalCover, VerticalCoverAlphaBay, VerticalCoverLapsus, thumbnailSchema } from "./video2/Thumbnail";
 import { V2StyleGuide } from "./video2/V2StyleGuide";
 import { VERTICAL, VerticalClip, verticalSchema } from "./clips/Vertical";
@@ -183,6 +184,19 @@ export const RemotionRoot: React.FC = () => {
           defaultProps={{ n: t.n, showCaptions: true }}
           width={VIDEO.width}
           height={VIDEO.height}
+          fps={VIDEO.fps}
+          durationInFrames={t.endFrame - t.startFrame}
+        />
+      ))}
+      {clipTimings3.map((t) => (
+        <Composition
+          key={t.n}
+          id={`Lapsus-Vertical-${t.n}`}
+          component={Vertical3Clip}
+          schema={vertical3Schema}
+          defaultProps={{ n: t.n, showCaptions: true }}
+          width={1080}
+          height={1920}
           fps={VIDEO.fps}
           durationInFrames={t.endFrame - t.startFrame}
         />

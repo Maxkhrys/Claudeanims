@@ -27,7 +27,8 @@
     "cover:video2": "remotion still V2-Cover-Vertical out/cover-alphabay-vertical.png && ffmpeg -y -loglevel error -i out/cover-alphabay-vertical.png -q:v 2 out/cover-alphabay-vertical.jpg",
     "timings:video3": "node scripts/video3-timings.mjs",
     "render:video3": "remotion render Video3 out/video3.mp4",
-    "thumb:video3": "remotion still V3-Thumb out/thumb-lapsus.png && ffmpeg -y -loglevel error -i out/thumb-lapsus.png -vf scale=1280:720 -q:v 2 out/thumb-lapsus.jpg && remotion still V3-Cover-Vertical out/cover-lapsus-vertical.png && ffmpeg -y -loglevel error -i out/cover-lapsus-vertical.png -q:v 2 out/cover-lapsus-vertical.jpg"
+    "thumb:video3": "remotion still V3-Thumb out/thumb-lapsus.png && ffmpeg -y -loglevel error -i out/thumb-lapsus.png -vf scale=1280:720 -q:v 2 out/thumb-lapsus.jpg && remotion still V3-Cover-Vertical out/cover-lapsus-vertical.png && ffmpeg -y -loglevel error -i out/cover-lapsus-vertical.png -q:v 2 out/cover-lapsus-vertical.jpg",
+    "render:vertical3": "for n in $(seq 1 26); do remotion render Lapsus-Vertical-$n out/vertical3/lapsus-part$n.mp4; done"
   },
   "keywords": [],
   "author": "",
