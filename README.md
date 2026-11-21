@@ -182,3 +182,19 @@ and pass `cueFrame - sequenceStart`.
 
 Characters: DPR = `colors.dpr` + `hoodie`; FriendlyChemist = `colors.chemist` + `scared`;
 Redandwhite = `colors.redandwhite` + `bikerVest` + `bulk={1.35}`.
+
+## Shorts (native 9:16)
+
+Built for the vertical frame instead of wrapping a 16:9 clip. Flat blob characters, staged with fake 3D:
+CSS 3D rooms and buildings, characters as camera-facing billboards, cards that flip, camera moves.
+
+```bash
+npm run render:short-lapsus1     # -> out/short-lapsus-1.mp4 (about 43s)
+node scripts/short-stills.mjs out/stills 0 300 700 1100   # quick check stills, half size
+```
+
+- `src/shorts/ShortLapsus1.tsx`: Lapsus$ part 1 (the hotel room), reusing the first 41s of `audio/video3/part1.mp3`.
+  Order: headline + TV stick on frame 0, dive into the hotel window, 3D cutaway room, loadout cards,
+  studio break-in, phone takeover for the message, cliffhanger, end card pointing to the full video.
+- Captions are big and centred (`ShortCaptions`), and hidden while the typed message is on screen.
+- If Chrome can't be downloaded, add `--browser-executable=<path to chrome>` to the render command.
