@@ -361,7 +361,7 @@ const Captions: React.FC<{ from?: number }> = ({ from = 3 }) => {
   const size = chars > 17 ? 96 : chars > 12 ? 112 : 132;
   return (
     <div style={{ position: "absolute", top: 1045, left: 30, right: 30, height: 300, display: "flex", alignItems: "center", justifyContent: "center" }}>
-      <div style={{ position: "absolute", inset: "-40px 0", background: "radial-gradient(ellipse 60% 50% at 50% 50%, rgba(0,0,0,.6), transparent 75%)" }} />
+      <div style={{ position: "absolute", inset: "-40px 0", background: "radial-gradient(ellipse 60% 50% at 50% 50%, rgba(0,0,0,.38), transparent 75%)" }} />
       <div style={{ position: "relative", display: "flex", flexWrap: "wrap", justifyContent: "center", gap: `0 ${size * 0.24}px`, lineHeight: 1.02 }}>
         {g.filter((w) => t >= w.t - 0.04).map((w, i) => {
           const s = spring({ frame: frame - Math.round((w.t - 0.04) * FPS), fps: FPS, config: springs.pop, durationInFrames: 10 });
@@ -428,8 +428,8 @@ const Bubble: React.FC<{ at: number; me?: boolean; children: React.ReactNode; bi
     <div style={{ display: "flex", justifyContent: me ? "flex-end" : "flex-start", marginTop: 22 }}>
       <div
         style={{
-          maxWidth: 800,
-          padding: big ? "30px 38px" : "22px 30px",
+          maxWidth: 900,
+          padding: big ? "36px 44px" : "22px 30px",
           borderRadius: 36,
           borderBottomLeftRadius: me ? 36 : 8,
           borderBottomRightRadius: me ? 8 : 36,
@@ -437,7 +437,7 @@ const Bubble: React.FC<{ at: number; me?: boolean; children: React.ReactNode; bi
           color: "#fff",
           fontFamily: fonts.sans,
           fontWeight: 700,
-          fontSize: big ? 62 : 40,
+          fontSize: big ? 66 : 40,
           lineHeight: 1.15,
           transform: `scale(${0.5 + 0.5 * s})`,
           transformOrigin: me ? "100% 100%" : "0% 100%",
@@ -747,13 +747,13 @@ const ArupScene: React.FC = () => {
             The engineers behind the <span style={{ background: C.yellow, padding: "0 10px" }}>Sydney Opera House.</span>
           </div>
           <svg viewBox="0 0 400 190" style={{ position: "absolute", left: 120, top: 1180, width: 760 }}>
-            <g fill="none" stroke="#111" strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - draw}>
-              <path pathLength={1} d="M20 160 L380 160" />
-              <path pathLength={1} d="M50 160 Q60 70 130 40 Q118 110 132 160" />
-              <path pathLength={1} d="M112 160 Q130 60 205 22 Q186 100 196 160" />
-              <path pathLength={1} d="M180 160 Q205 90 262 62 Q246 120 252 160" />
-              <path pathLength={1} d="M262 160 Q292 105 344 92 Q330 130 334 160" />
-              <path pathLength={1} d="M20 175 L380 175" />
+            <g fill="none" stroke="#111" strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" >
+              <path pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - draw} d="M20 160 L380 160" />
+              <path pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - draw} d="M50 160 Q60 70 130 40 Q118 110 132 160" />
+              <path pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - draw} d="M112 160 Q130 60 205 22 Q186 100 196 160" />
+              <path pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - draw} d="M180 160 Q205 90 262 62 Q246 120 252 160" />
+              <path pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - draw} d="M262 160 Q292 105 344 92 Q330 130 334 160" />
+              <path pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - draw} d="M20 175 L380 175" />
             </g>
           </svg>
         </div>
