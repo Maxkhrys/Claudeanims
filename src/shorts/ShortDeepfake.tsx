@@ -883,3 +883,21 @@ export const ShortDeepfake: React.FC = () => {
     </AbsoluteFill>
   );
 };
+
+/** 9:16 cover frame for the Short. */
+export const ShortDeepfakeThumb: React.FC = () => (
+  <AbsoluteFill style={{ background: C.bg }}>
+    <Backdrop tint="#0A2A18" alarm={0.7} />
+    <div style={{ position: "absolute", top: 170, left: 0, right: 0, textAlign: "center", fontFamily: fonts.display, lineHeight: 0.95, whiteSpace: "nowrap" }}>
+      <div style={{ fontSize: 128, color: "#fff" }}>THE CFO ON THIS CALL</div>
+      <div style={{ fontSize: 216, color: C.red }}>WASN'T REAL</div>
+    </div>
+    <div style={{ position: "absolute", top: 560, left: 60, transform: "rotate(-2deg)" }}>
+      <Tile p={PEOPLE[0]} w={960} h={700} wire={0.52} glitch={0.25} label="CFO · London" active />
+    </div>
+    <div style={{ position: "absolute", top: 1310, left: 0, right: 0, textAlign: "center", fontFamily: fonts.display, lineHeight: 0.95, whiteSpace: "nowrap" }}>
+      <div style={{ fontSize: 226, color: C.yellow, textShadow: "0 10px 80px rgba(255,225,74,.4)" }}>$25 MILLION</div>
+      <div style={{ fontSize: 112, color: "#fff" }}>GONE IN ONE VIDEO CALL</div>
+    </div>
+  </AbsoluteFill>
+);

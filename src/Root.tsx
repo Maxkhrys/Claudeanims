@@ -22,7 +22,7 @@ import { Thumbnail, ThumbnailAlphaBayBright, ThumbnailLapsus, ThumbnailLapsusB, 
 import { V2StyleGuide } from "./video2/V2StyleGuide";
 import { VERTICAL, VerticalClip, verticalSchema } from "./clips/Vertical";
 import { StyleGuide } from "./clips/StyleGuide";
-import { SHORT_DEEPFAKE, ShortDeepfake } from "./shorts/ShortDeepfake";
+import { SHORT_DEEPFAKE, ShortDeepfake, ShortDeepfakeThumb } from "./shorts/ShortDeepfake";
 
 /** Composition length always follows the narration audio. */
 const durationFromAudio = (file: string) => async () => {
@@ -247,6 +247,7 @@ export const RemotionRoot: React.FC = () => {
           durationInFrames={1}
         />
       ))}
+      <Composition id="Short-Deepfake-25M-Thumb" component={ShortDeepfakeThumb} width={1080} height={1920} fps={30} durationInFrames={1} />
       <Composition id="Short-Deepfake-25M" component={ShortDeepfake} {...SHORT_DEEPFAKE} />
       <Composition id="Bright-Lapsus" component={ThumbnailLapsusBright} width={VIDEO.width} height={VIDEO.height} fps={VIDEO.fps} durationInFrames={1} />
       <Composition id="Bright-SilkRoad" component={ThumbnailSilkRoadBright} width={VIDEO.width} height={VIDEO.height} fps={VIDEO.fps} durationInFrames={1} />
