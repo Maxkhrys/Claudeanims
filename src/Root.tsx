@@ -21,6 +21,7 @@ import { Vertical3Clip, vertical3Schema } from "./video3/Vertical3";
 import { Thumbnail, ThumbnailAlphaBayBright, ThumbnailLapsus, ThumbnailLapsusB, ThumbnailLapsusBright, ThumbnailLapsusC, ThumbnailSilkRoadBright, VerticalCover, VerticalCoverAlphaBay, VerticalCoverLapsus, thumbnailSchema } from "./video2/Thumbnail";
 import { V2StyleGuide } from "./video2/V2StyleGuide";
 import { VERTICAL, VerticalClip, verticalSchema } from "./clips/Vertical";
+import { SHORT_LAPSUS1_FRAMES, ShortLapsus1 } from "./shorts/ShortLapsus1";
 import { StyleGuide } from "./clips/StyleGuide";
 
 /** Composition length always follows the narration audio. */
@@ -215,6 +216,7 @@ export const RemotionRoot: React.FC = () => {
           calculateMetadata={durationFromAudio(`audio/clip${n}.mp3`)}
         />
       ))}
+      <Composition id="Short-Lapsus-1" component={ShortLapsus1} width={1080} height={1920} fps={VIDEO.fps} durationInFrames={SHORT_LAPSUS1_FRAMES} />
       <Composition
         id="ChapterCard"
         component={ChapterCard}
