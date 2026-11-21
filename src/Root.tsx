@@ -18,7 +18,7 @@ import { VIDEO2_FRAMES, clipTimings } from "./video2/clipTimings";
 import { VIDEO3_OUTRO_FRAMES, Video3, Video3Clip, video3ClipSchema, video3Schema } from "./video3/Video3";
 import { VIDEO3_FRAMES, clipTimings as clipTimings3 } from "./video3/clipTimings";
 import { Vertical3Clip, vertical3Schema } from "./video3/Vertical3";
-import { Thumbnail, ThumbnailLapsus, VerticalCover, VerticalCoverAlphaBay, VerticalCoverLapsus, thumbnailSchema } from "./video2/Thumbnail";
+import { Thumbnail, ThumbnailLapsus, ThumbnailLapsusB, ThumbnailLapsusC, VerticalCover, VerticalCoverAlphaBay, VerticalCoverLapsus, thumbnailSchema } from "./video2/Thumbnail";
 import { V2StyleGuide } from "./video2/V2StyleGuide";
 import { VERTICAL, VerticalClip, verticalSchema } from "./clips/Vertical";
 import { StyleGuide } from "./clips/StyleGuide";
@@ -246,6 +246,8 @@ export const RemotionRoot: React.FC = () => {
           durationInFrames={1}
         />
       ))}
+      <Composition id="V3-Thumb-B" component={ThumbnailLapsusB} width={VIDEO.width} height={VIDEO.height} fps={VIDEO.fps} durationInFrames={1} />
+      <Composition id="V3-Thumb-C" component={ThumbnailLapsusC} width={VIDEO.width} height={VIDEO.height} fps={VIDEO.fps} durationInFrames={1} />
       <Composition id="V3-Thumb" component={ThumbnailLapsus} width={VIDEO.width} height={VIDEO.height} fps={VIDEO.fps} durationInFrames={1} />
       <Composition id="V3-Cover-Vertical" component={VerticalCoverLapsus} width={1080} height={1920} fps={VIDEO.fps} durationInFrames={1} />
       <Composition id="V2-Cover-Vertical" component={VerticalCoverAlphaBay} width={1080} height={1920} fps={VIDEO.fps} durationInFrames={1} />

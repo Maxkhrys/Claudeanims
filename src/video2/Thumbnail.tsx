@@ -228,3 +228,43 @@ export const VerticalCoverLapsus: React.FC = () => (
     <Vignette strength={0.55} />
   </AbsoluteFill>
 );
+
+/** Lapsus$ thumbnail, variant B: fewer words, one idea. */
+export const ThumbnailLapsusB: React.FC = () => (
+  <AbsoluteFill style={{ backgroundColor: "#06080A", overflow: "hidden" }}>
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse at 30% 45%, rgba(255,181,71,0.30), rgba(0,0,0,0) 55%)" }} />
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse at 82% 60%, rgba(255,59,59,0.30), rgba(0,0,0,0) 50%)" }} />
+    <div style={{ position: "absolute", left: 70, top: 110, ...big(520, colors.amber) }}>GTA 6</div>
+    <div style={{ position: "absolute", left: 80, top: 720, ...big(200, colors.text) }}>BY A 17-YEAR-OLD</div>
+    <SeizedStamp at={-60} text="LEAKED" fontSize={170} rotate={-8} sound={false} style={{ left: 760, top: 470 }} />
+    <div style={{ position: "absolute", left: 1400, top: 130 }}>
+      <White size={420} idle={0} look={{ x: -0.8, y: 0.3 }} />
+    </div>
+    <Grain opacity={0.05} />
+    <Vignette strength={0.55} />
+  </AbsoluteFill>
+);
+
+/** Lapsus$ thumbnail, variant C: curiosity. The object that did it, with an arrow. */
+export const ThumbnailLapsusC: React.FC = () => (
+  <AbsoluteFill style={{ backgroundColor: "#06080A", overflow: "hidden" }}>
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse at 72% 55%, rgba(255,181,71,0.34), rgba(0,0,0,0) 55%)" }} />
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse at 15% 20%, rgba(57,255,136,0.14), rgba(0,0,0,0) 55%)" }} />
+    <div style={{ position: "absolute", left: 70, top: 70, ...big(330, colors.text) }}>THIS</div>
+    <div style={{ position: "absolute", left: 70, top: 370, ...big(330, colors.red) }}>HACKED</div>
+    <div style={{ position: "absolute", left: 70, top: 670, ...big(330, colors.amber) }}>GTA 6</div>
+    {/* the streaming stick, large */}
+    <div style={{ position: "absolute", left: 1080, top: 430, width: 700, height: 210, borderRadius: 36, background: "linear-gradient(to bottom, #2A333D, #12171C)", border: "8px solid #47525E", transform: "rotate(-14deg)", boxShadow: "0 0 120px rgba(255,181,71,0.5), 0 40px 80px rgba(0,0,0,0.8)" }}>
+      <div style={{ position: "absolute", left: -90, top: 60, width: 100, height: 90, borderRadius: "10px 0 0 10px", background: "#8C96A0", border: "6px solid #5A646E" }} />
+      <div style={{ position: "absolute", right: 60, top: 78, width: 54, height: 54, borderRadius: 27, background: colors.amber, boxShadow: `0 0 50px ${colors.amber}` }} />
+      <div style={{ position: "absolute", left: 70, top: 62, fontFamily: fonts.mono, fontSize: 66, fontWeight: 700, color: "#8C96A0", letterSpacing: "0.1em" }}>TV STICK</div>
+    </div>
+    {/* arrow from the words to the stick */}
+    <svg width={520} height={300} viewBox="0 0 520 300" style={{ position: "absolute", left: 700, top: 150, overflow: "visible", filter: "drop-shadow(0 0 16px rgba(255,59,59,0.8))" }}>
+      <path d="M 20 40 C 220 0 380 80 440 230" fill="none" stroke={colors.red} strokeWidth={22} strokeLinecap="round" />
+      <path d="M 372 196 L 446 252 L 478 164" fill="none" stroke={colors.red} strokeWidth={22} strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+    <Grain opacity={0.05} />
+    <Vignette strength={0.55} />
+  </AbsoluteFill>
+);
