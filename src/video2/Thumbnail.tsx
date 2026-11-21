@@ -268,3 +268,63 @@ export const ThumbnailLapsusC: React.FC = () => (
     <Vignette strength={0.55} />
   </AbsoluteFill>
 );
+
+// ─── Bright thumbnail style: saturated background, 2-3 huge outlined words, one object ───
+const bold = (size: number, color: string): React.CSSProperties => ({
+  fontFamily: fonts.display,
+  fontSize: size,
+  lineHeight: 0.86,
+  color,
+  whiteSpace: "nowrap",
+  WebkitTextStroke: `${Math.round(size * 0.05)}px #000`,
+  paintOrder: "stroke fill",
+  textShadow: `0 ${Math.round(size * 0.04)}px 0 #000`,
+});
+const sticker = "drop-shadow(8px 0 0 #fff) drop-shadow(-8px 0 0 #fff) drop-shadow(0 8px 0 #fff) drop-shadow(0 -8px 0 #fff) drop-shadow(0 18px 30px rgba(0,0,0,0.6))";
+
+/** Lapsus$ thumbnail, bright style. */
+export const ThumbnailLapsusBright: React.FC = () => (
+  <AbsoluteFill style={{ background: "radial-gradient(ellipse at 68% 50%, #FF4A3D 0%, #C2181C 45%, #5A0A10 100%)", overflow: "hidden" }}>
+    <div style={{ position: "absolute", left: 60, top: 70, ...bold(470, "#FFFFFF") }}>GTA 6</div>
+    <div style={{ position: "absolute", left: 60, top: 480, ...bold(400, "#FFE14D") }}>HACKED</div>
+    <div style={{ position: "absolute", left: 70, top: 880, ...bold(130, "#FFFFFF") }}>BY A 17-YEAR-OLD</div>
+    {/* the streaming stick */}
+    <div style={{ position: "absolute", left: 1180, top: 420, width: 620, height: 200, borderRadius: 34, background: "linear-gradient(to bottom, #2F3944, #12171C)", transform: "rotate(-16deg)", filter: sticker }}>
+      <div style={{ position: "absolute", left: -84, top: 56, width: 96, height: 88, borderRadius: "10px 0 0 10px", background: "#9AA4AE" }} />
+      <div style={{ position: "absolute", right: 56, top: 74, width: 52, height: 52, borderRadius: 26, background: "#FFE14D", boxShadow: "0 0 40px #FFE14D" }} />
+      <div style={{ position: "absolute", left: 60, top: 58, fontFamily: fonts.mono, fontSize: 62, fontWeight: 700, color: "#9AA4AE", letterSpacing: "0.08em" }}>TV STICK</div>
+    </div>
+    <svg width={420} height={300} viewBox="0 0 420 300" style={{ position: "absolute", left: 1330, top: 60, overflow: "visible", filter: "drop-shadow(0 8px 0 #000)" }}>
+      <path d="M 300 10 C 380 90 340 170 250 230" fill="none" stroke="#FFE14D" strokeWidth={26} strokeLinecap="round" />
+      <path d="M 250 150 L 236 240 L 330 236" fill="none" stroke="#FFE14D" strokeWidth={26} strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  </AbsoluteFill>
+);
+
+/** Silk Road thumbnail, bright style. */
+export const ThumbnailSilkRoadBright: React.FC = () => (
+  <AbsoluteFill style={{ background: "radial-gradient(ellipse at 72% 50%, #FFE14D 0%, #F2B705 50%, #A86A00 100%)", overflow: "hidden" }}>
+    <div style={{ position: "absolute", left: 60, top: 70, ...bold(300, "#FFFFFF") }}>HE PAID FOR</div>
+    <div style={{ position: "absolute", left: 60, top: 350, ...bold(470, "#E3121A") }}>5 HITS</div>
+    <div style={{ position: "absolute", left: 60, top: 790, padding: "10px 40px 0", background: "#000", transform: "rotate(-3deg)" }}>
+      <div style={{ ...bold(230, "#FFE14D"), WebkitTextStroke: "0px" }}>ALL FAKE</div>
+    </div>
+    <div style={{ position: "absolute", left: 1210, top: 170, filter: sticker }}>
+      <Dpr size={760} idle={0} expression="angry" lightColor={colors.red} lightAmount={1} />
+    </div>
+  </AbsoluteFill>
+);
+
+/** AlphaBay thumbnail, bright style. */
+export const ThumbnailAlphaBayBright: React.FC = () => (
+  <AbsoluteFill style={{ background: "radial-gradient(ellipse at 70% 50%, #2BD67B 0%, #0E8F4C 50%, #063B22 100%)", overflow: "hidden" }}>
+    <div style={{ position: "absolute", left: 60, top: 60, ...bold(400, "#FFFFFF") }}>ONE EMAIL</div>
+    <div style={{ position: "absolute", left: 70, top: 440, padding: "16px 34px", background: "#000", border: "8px solid #FFE14D", borderRadius: 16, transform: "rotate(-3deg)", fontFamily: fonts.mono, fontWeight: 700, fontSize: 74, color: "#FFE14D", whiteSpace: "nowrap" }}>
+      pimp_alex_91@hotmail.com
+    </div>
+    <div style={{ position: "absolute", left: 60, top: 640, ...bold(360, "#FFE14D") }}>-$1 BILLION</div>
+    <div style={{ position: "absolute", left: 1330, top: 250, filter: sticker }}>
+      <Cazes size={700} sunglasses idle={0} />
+    </div>
+  </AbsoluteFill>
+);
