@@ -18,6 +18,7 @@ import { VIDEO2_FRAMES, clipTimings } from "./video2/clipTimings";
 import { VIDEO3_OUTRO_FRAMES, Video3, Video3Clip, video3ClipSchema, video3Schema } from "./video3/Video3";
 import { VIDEO3_FRAMES, clipTimings as clipTimings3 } from "./video3/clipTimings";
 import { Vertical3Clip, vertical3Schema } from "./video3/Vertical3";
+import { TOP5_TEENS_FRAMES, Top5Teens, top5TeensSchema } from "./shorts/Top5Teens";
 import { SHORT_CYBERLEAK_FRAMES, ShortCyberleak, shortCyberleakSchema } from "./shorts/ShortCyberleak";
 import { SHORT_H, SHORT_LAPSUS1_FRAMES, SHORT_W, ShortLapsus1, shortLapsus1Schema } from "./shorts/ShortLapsus1";
 import { Thumbnail, ThumbnailAlphaBayBright, ThumbnailLapsus, ThumbnailLapsusB, ThumbnailLapsusBright, ThumbnailLapsusC, ThumbnailSilkRoadBright, VerticalCover, VerticalCoverAlphaBay, VerticalCoverLapsus, thumbnailSchema } from "./video2/Thumbnail";
@@ -222,6 +223,16 @@ export const RemotionRoot: React.FC = () => {
         height={SHORT_H}
         fps={VIDEO.fps}
         durationInFrames={SHORT_CYBERLEAK_FRAMES}
+      />
+      <Composition
+        id="Top5-Teen-Hackers"
+        component={Top5Teens}
+        schema={top5TeensSchema}
+        defaultProps={{ showCaptions: true }}
+        width={SHORT_W}
+        height={SHORT_H}
+        fps={VIDEO.fps}
+        durationInFrames={TOP5_TEENS_FRAMES}
       />
       {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => (
         <Composition

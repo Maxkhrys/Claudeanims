@@ -54,16 +54,23 @@ const chunkWords = (words: Word[], maxWords: number, maxChars: number): Chunk[] 
 };
 
 /** Big centred captions, a few words at a time; `hot` words light up red. */
-export const ShortCaptions: React.FC<{ words: Word[]; enabled: boolean; hide: [number, number][]; centerY: number; hot?: string[] }> = ({
-  words,
-  enabled,
-  hide,
-  centerY,
-  hot = [],
-}) => {
+export const ShortCaptions: React.FC<{
+  words: Word[];
+  enabled: boolean;
+  hide: [number, number][];
+  centerY: number;
+  hot?: string[];
+  /** caption size; smaller for the newer safe-zone layout */
+  fontSize?: number;
+  maxWords?: number;
+  maxChars?: number;
+  /** horizontal bounds of the caption box (defaults: full width minus 50px) */
+  left?: number;
+  right?: number;
+}> = ({ words, enabled, hide, centerY, hot = [], fontSize = 104, maxWords = 3, maxChars = 15, left = 50, right = 50 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const chunks = useMemo(() => chunkWords(words, 3, 15), [words]);
+  const chunks = useMemo(() => chunkWords(words, maxWords, maxChars), [words, maxWords, maxChars]);
   if (!enabled || hide.some(([a, b]) => frame >= a && frame < b)) return null;
   const t = frame / fps;
   let idx = -1;
@@ -78,13 +85,13 @@ export const ShortCaptions: React.FC<{ words: Word[]; enabled: boolean; hide: [n
       <div
         style={{
           position: "absolute",
-          left: 50,
-          right: 50,
-          top: centerY - 80,
+          left,
+          right,
+          top: centerY - fontSize * 0.77,
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          columnGap: 30,
+          columnGap: fontSize * 0.29,
           transform: `scale(${0.72 + 0.28 * enter}) rotate(${tilt * (1 - enter)}deg)`,
         }}
       >
@@ -100,14 +107,14 @@ export const ShortCaptions: React.FC<{ words: Word[]; enabled: boolean; hide: [n
               style={{
                 fontFamily: fonts.sans,
                 fontWeight: 800,
-                fontSize: 104,
+                fontSize,
                 lineHeight: 1.05,
                 textTransform: "uppercase",
                 color: active ? (isHot ? colors.red : colors.amber) : "#FFFFFF",
                 opacity: spoken ? 1 : 0.35,
-                WebkitTextStroke: "14px #000",
+                WebkitTextStroke: `${Math.round(fontSize * 0.135)}px #000`,
                 paintOrder: "stroke fill",
-                textShadow: "0 10px 0 rgba(0,0,0,0.7)",
+                textShadow: `0 ${Math.round(fontSize * 0.1)}px 0 rgba(0,0,0,0.7)`,
                 transform: `scale(${active ? 1.06 : 1})`,
                 display: "inline-block",
               }}
