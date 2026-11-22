@@ -2903,64 +2903,9 @@
    "end": 235.41
   },
   {
-   "text": "follow,",
+   "text": "follow.",
    "start": 235.41,
-   "end": 235.89
-  },
-  {
-   "text": "because",
-   "start": 235.89,
-   "end": 236.21
-  },
-  {
-   "text": "next",
-   "start": 236.21,
-   "end": 236.61
-  },
-  {
-   "text": "up",
-   "start": 236.61,
-   "end": 236.81
-  },
-  {
-   "text": "is",
-   "start": 236.81,
-   "end": 237.09
-  },
-  {
-   "text": "five",
-   "start": 237.09,
-   "end": 237.42
-  },
-  {
-   "text": "hackers",
-   "start": 237.42,
-   "end": 237.9
-  },
-  {
-   "text": "caught",
-   "start": 237.9,
-   "end": 238.25
-  },
-  {
-   "text": "by",
-   "start": 238.25,
-   "end": 238.53
-  },
-  {
-   "text": "one",
-   "start": 238.53,
-   "end": 238.85
-  },
-  {
-   "text": "stupid",
-   "start": 238.85,
-   "end": 239.49
-  },
-  {
-   "text": "mistake.",
-   "start": 239.49,
-   "end": 240.09
+   "end": 235.85
   }
  ]
 }

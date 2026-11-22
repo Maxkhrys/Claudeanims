@@ -19,7 +19,7 @@ import { Between, big, Billboard, Box, type Cam, type CamKey, clamp01, lerp, Pla
  *   #3     Kane Gamble: CIA director's email via a support call, Clapper's phone rerouted
  *   #2     Graham Ivan Clark: celebrity "double your Bitcoin" posts, fake help desk, caught in 16 days
  *   #1     Arion Kurtaj: Lapsus$, laptop taken, Travelodge, TV + Fire Stick loadout, 90 GTA 6 clips
- *   outro  recap + comment poll + follow
+ *   outro  recap + comment poll + follow (no "next up" tease)
  *
  * Countdown ring on the left (like true-crime Top 5 TikToks) drains through each story.
  * Layout follows the vertical safe zone: nothing important in the top 10%, bottom 20% or
@@ -29,7 +29,7 @@ import { Between, big, Billboard, Box, type Cam, type CamKey, clamp01, lerp, Pla
 
 export const top5TeensSchema = z.object({ showCaptions: z.boolean() });
 export { SHORT_W, SHORT_H };
-export const TOP5_TEENS_FRAMES = 7230;
+export const TOP5_TEENS_FRAMES = 7160;
 
 const WORDS = transcript.words as Word[];
 type C = (w: string, n?: number, o?: number) => number;
@@ -176,7 +176,7 @@ type RoomProps = {
 const Room: React.FC<RoomProps> = ({ cam, wall, floor, accent, who, screen, extra, windowColor, bed = true, tv, label }) => {
   const frame = useCurrentFrame();
   return (
-    <Stage3D cam={cam} cx={CX - 40} cy={760}>
+    <Stage3D cam={cam} cx={CX + 50} cy={760}>
       {/* floor */}
       <Plane w={RW} h={RD} t="rotateX(90deg)" style={{ background: floor, boxShadow: "0 0 120px rgba(0,0,0,0.6)" }}>
         <div style={{ position: "absolute", inset: 0, backgroundImage: "repeating-linear-gradient(90deg, rgba(255,255,255,0.05) 0 2px, transparent 2px 76px)" }} />
@@ -205,7 +205,9 @@ const Room: React.FC<RoomProps> = ({ cam, wall, floor, accent, who, screen, extr
       <Plane w={420} h={300} t="translate3d(150px, -2px, -110px) rotateX(90deg)" style={{ background: `radial-gradient(ellipse, ${accent}55, rgba(0,0,0,0) 70%)` }} />
       {bed ? <Box x={-210} z={40} w={260} d={420} h={70} top="#C9D2DC" front="#5B6B7C" side="#4A5866" topChildren={<div style={{ position: "absolute", left: 20, top: 20, width: 220, height: 90, borderRadius: 30, background: "#E8EDF2" }} />} /> : null}
       {extra}
-      <Billboard pos={{ x: 150, y: 0, z: -90 }} cam={cam} w={260} h={300}>
+      {/* stool in front of the desk; the character sits on it, clear of the desk box */}
+      <Box x={150} z={-15} w={120} d={90} h={55} top="#2B2F36" front="#1C1F24" side="#16191D" />
+      <Billboard pos={{ x: 150, y: -57, z: -15 }} cam={cam} w={260} h={300}>
         <div style={{ transform: `translateY(${Math.sin(frame / 9) * 3}px)` }}>{who}</div>
       </Billboard>
     </Stage3D>
@@ -214,7 +216,7 @@ const Room: React.FC<RoomProps> = ({ cam, wall, floor, accent, who, screen, extr
 
 const roomCam = (at: number, ry = -24): CamKey[] => [
   { at, tx: 0, ty: -200, tz: 0, rx: -20, ry, dist: -200 },
-  { at: at + 1, tx: 60, ty: -210, tz: -60, rx: -18, ry: ry + 8, dist: 60 },
+  { at: at + 1, tx: 40, ty: -210, tz: -40, rx: -18, ry: ry + 8, dist: -60 },
 ];
 
 /* ------------------------------------------------------------------ simple drawn props */
@@ -285,7 +287,7 @@ const NumberCard: React.FC<{ at: number; n: number; color: string }> = ({ at, n,
   return (
     <AbsoluteFill style={{ background: `rgba(7,9,11,${0.82 * o})` }}>
       <Sfx name="whoosh" at={at} volume={0.6} />
-      <div style={{ position: "absolute", left: 60, width: 840, top: 330, textAlign: "center", opacity: o, transform: `scale(${lerp(1.8, 1, s)})` }}>
+      <div style={{ position: "absolute", left: 0, width: 1080, top: 330, textAlign: "center", opacity: o, transform: `scale(${lerp(1.8, 1, s)})` }}>
         <div style={{ ...big(110, colors.text) }}>NUMBER</div>
         <div style={{ ...big(460, color) }}>{n}</div>
       </div>
@@ -302,8 +304,8 @@ const Hook: React.FC<{ c: C; end: number }> = ({ c, end }) => {
   const tBed = c("bedroom");
   const tOnly = c("only");
   const cam = useCam([
-    { at: 0, tx: 40, ty: -190, tz: -80, rx: -16, ry: -18, dist: 220 },
-    { at: 4, tx: 80, ty: -200, tz: -120, rx: -14, ry: -10, dist: 330 },
+    { at: 0, tx: 30, ty: -190, tz: -60, rx: -16, ry: -18, dist: 60 },
+    { at: 4, tx: 50, ty: -200, tz: -80, rx: -14, ry: -10, dist: 140 },
     { at: tOnly, tx: 0, ty: -200, tz: 0, rx: -22, ry: -30, dist: -120 },
   ]);
   const inbox = sp(frame, fps, tDir, springs.snappy);
@@ -984,11 +986,11 @@ const Kurtaj: React.FC<{ c: C; start: number }> = ({ c, start }) => {
   const bE = frame >= tSent;
   const camHotel = useCam([
     { at: tPolice, tx: 0, ty: -200, tz: 0, rx: -20, ry: -28, dist: -150 },
-    { at: tPolice + 1, tx: 40, ty: -210, tz: -40, rx: -18, ry: -20, dist: 40 },
+    { at: tPolice + 1, tx: 30, ty: -210, tz: -30, rx: -18, ry: -20, dist: -60 },
   ]);
   const camTv = useCam([
     { at: tFrom, tx: 0, ty: -220, tz: 0, rx: -16, ry: 20, dist: -100 },
-    { at: tFrom + 1, tx: 60, ty: -260, tz: -120, rx: -10, ry: 10, dist: 160 },
+    { at: tFrom + 1, tx: 40, ty: -250, tz: -80, rx: -10, ry: 10, dist: 40 },
   ]);
   const tvGlow = frame >= tRock;
   const hotelTv = (
@@ -1206,7 +1208,6 @@ const Outro: React.FC<{ c: C; start: number }> = ({ c, start }) => {
   const tTv = c("hotel tv", 1);
   const tWhich = c("which one");
   const tFollow = c("follow");
-  const tNext = c("five hackers");
   const end = frame >= tWhich;
   return (
     <AbsoluteFill>
@@ -1273,12 +1274,6 @@ const Outro: React.FC<{ c: C; start: number }> = ({ c, start }) => {
               </div>
             </Pop2>
           ) : null}
-          {frame >= tNext ? (
-            <Pop2 at={tNext} style={{ left: 60, width: 840, top: 940, textAlign: "center" }}>
-              <div style={{ fontFamily: fonts.mono, fontWeight: 700, fontSize: 26, color: colors.dim }}>NEXT</div>
-              <div style={{ ...big(70, colors.amber), whiteSpace: "normal" }}>5 HACKERS CAUGHT BY ONE STUPID MISTAKE</div>
-            </Pop2>
-          ) : null}
         </>
       )}
     </AbsoluteFill>
@@ -1320,6 +1315,8 @@ export const Top5Teens: React.FC<z.infer<typeof top5TeensSchema>> = ({ showCapti
       <Audio src={staticFile("shorts/top5teens/vo.mp3")} />
       <Audio src={staticFile("shorts/top5teens/bed.mp3")} volume={bedVol} loop />
       <Background drift={0.35} vignette={0.7}>
+        {/* scenes are laid out on a 60..900 grid; this centres them in the frame and keeps them inside 162..918 (safe zone) */}
+        <AbsoluteFill style={{ transform: "translateX(54px) scale(0.9)", transformOrigin: "540px 760px" }}>
         <Between from={0} to={tTitle}>
           <Shake at={c("only")}>
             <Hook c={c} end={tTitle} />
@@ -1347,6 +1344,7 @@ export const Top5Teens: React.FC<z.infer<typeof top5TeensSchema>> = ({ showCapti
         <Between from={tOut} to={END}>
           <Outro c={c} start={tOut} />
         </Between>
+        </AbsoluteFill>
 
         {/* countdown ring (left, lower-middle, inside the safe zone) */}
         {stories.map((s) => (
@@ -1367,8 +1365,8 @@ export const Top5Teens: React.FC<z.infer<typeof top5TeensSchema>> = ({ showCapti
         fontSize={62}
         maxWords={4}
         maxChars={22}
-        left={70}
-        right={190}
+        left={170}
+        right={170}
         hide={[[c("which one"), END]]}
         hot={["cia", "nasa", "pentagon", "yahoo", "mafiaboy", "bragged", "brennan", "clapper", "obama", "bitcoin", "twitter", "travelodge", "gta", "guilty", "impossible", "craziest", "fifteen", "seventeen"]}
       />
