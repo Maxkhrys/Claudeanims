@@ -16,4 +16,6 @@ export const THUMBS: Record<string, Example> = {
   Cyberleak: { top: "LEAKED FOR", hit: "CRYPTO?!", logos: ["gta6.png"], accent: "#FFD60A", character: "leek", emotion: "shock", object: "coin", objectLabel: "$30M" },
   // "Top 5 teen hackers" countdown: no names, no #1, no target logos (they would give the lineup away)
   Top5Teens: { top: "TEEN HACKERS", hit: "TOP 5", accent: "#FFD60A", character: "anon", emotion: "shock", object: "mystery", objectLabel: "#1", logos: [] },
+  // "Top 5 crypto scams that vanished with billions" countdown: generic Bitcoin logo only, no scam logos/names
+  Top5Crypto: { top: "CRYPTO SCAMS", hit: "TOP 5", accent: "#FFD60A", character: "anon", emotion: "shock", object: "coin", objectLabel: "#1?", logos: ["bitcoin.svg"] },
 };
