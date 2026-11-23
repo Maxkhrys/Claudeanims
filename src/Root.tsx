@@ -22,6 +22,9 @@ import { Thumbnail, ThumbnailAlphaBayBright, ThumbnailLapsus, ThumbnailLapsusB, 
 import { V2StyleGuide } from "./video2/V2StyleGuide";
 import { VERTICAL, VerticalClip, verticalSchema } from "./clips/Vertical";
 import { StyleGuide } from "./clips/StyleGuide";
+import { Still } from "remotion";
+import { OnionThumb, onionThumbSchema } from "./thumbnails/OnionThumb";
+import { THUMBS } from "./thumbnails/examples";
 
 /** Composition length always follows the narration audio. */
 const durationFromAudio = (file: string) => async () => {
@@ -264,6 +267,11 @@ export const RemotionRoot: React.FC = () => {
         fps={VIDEO.fps}
         durationInFrames={VIDEO.fps * 10}
       />
+      {/* The Onion Archive thumbnail system: one YouTube + one vertical cover per entry in thumbnails/examples.ts */}
+      {Object.entries(THUMBS).flatMap(([id, t]) => [
+        <Still key={`${id}-yt`} id={`Thumb-${id}-YT`} component={OnionThumb} schema={onionThumbSchema} width={1280} height={720} defaultProps={{ ...t, format: "yt" as const }} />,
+        <Still key={`${id}-cv`} id={`Thumb-${id}-Cover`} component={OnionThumb} schema={onionThumbSchema} width={1080} height={1920} defaultProps={{ ...t, format: "cover" as const }} />,
+      ])}
     </>
   );
 };
