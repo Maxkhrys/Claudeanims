@@ -1377,45 +1377,39 @@ export const Top5Teens: React.FC<z.infer<typeof top5TeensSchema>> = ({ showCapti
 /* ------------------------------------------------------------------ cover / thumbnail */
 
 /**
- * Upload cover (1080x1920). Key content sits in the centre 3:4 crop (TikTok profile grid)
- * and inside the safe zone: nothing in the top 10%, bottom 20% or right 15%.
+ * Upload cover (1080x1920). No lineup, names or targets, so the countdown isn't spoiled:
+ * one hooded teen lit by a screen, a big TOP 5 and a locked #1.
+ * Key content sits in the centre 3:4 crop (TikTok grid) and inside the safe zone (x 162..918, y 192..1536).
  */
-export const Top5TeensCover: React.FC = () => {
-  const chips = [
-    { t: "NASA", c: CYAN },
-    { t: "THE CIA", c: colors.red },
-    { t: "TWITTER", c: "#1D9BF0" },
-    { t: "GTA 6", c: colors.amber },
-  ];
-  const kids = [colors.green, colors.amber, BLUE, PURPLE, WHITE];
-  return (
-    <AbsoluteFill style={{ backgroundColor: colors.bg }}>
-      <Background drift={0} vignette={0.75}>
-        <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 46%, ${colors.red}44, rgba(0,0,0,0) 55%), radial-gradient(ellipse at 50% 80%, ${colors.green}22, rgba(0,0,0,0) 50%)` }} />
-        <div style={{ position: "absolute", left: 162, width: 756, top: 300, textAlign: "center" }}>
-          <div style={{ display: "inline-block", padding: "6px 30px", borderRadius: 16, background: colors.amber, ...big(84, colors.bg), textShadow: "none", transform: "rotate(-3deg)" }}>TOP 5</div>
-          <div style={{ ...big(212, colors.text), marginTop: 14 }}>TEENS WHO</div>
-          <div style={{ ...big(128, colors.dim), marginTop: 4 }}>HACKED THE</div>
-          <div style={{ display: "inline-block", marginTop: 14, padding: "4px 34px", borderRadius: 20, background: colors.red, transform: "rotate(-2deg)" }}>
-            <div style={{ ...big(166, colors.bg), textShadow: "none" }}>IMPOSSIBLE</div>
-          </div>
+export const Top5TeensCover: React.FC = () => (
+  <AbsoluteFill style={{ backgroundColor: colors.bg }}>
+    <Background drift={0} vignette={0.8}>
+      <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 70%, ${colors.red}55, rgba(0,0,0,0) 45%), radial-gradient(ellipse at 50% 30%, ${colors.amber}22, rgba(0,0,0,0) 50%)` }} />
+      <div style={{ position: "absolute", left: 162, width: 756, top: 250, textAlign: "center" }}>
+        <div style={{ ...big(330, colors.amber) }}>TOP 5</div>
+        <div style={{ ...big(110, colors.text), marginTop: 6 }}>TEENS WHO HACKED</div>
+        <div style={{ display: "inline-block", marginTop: 16, padding: "4px 34px", borderRadius: 20, background: colors.red, transform: "rotate(-2deg)" }}>
+          <div style={{ ...big(122, colors.bg), textShadow: "none" }}>THE IMPOSSIBLE</div>
         </div>
-        <div style={{ position: "absolute", left: 162, width: 756, top: 1030, display: "flex", justifyContent: "center", gap: 8 }}>
-          {kids.map((k, i) => (
-            <div key={i} style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-              <BlobCharacter color={k} accessory="hoodie" size={i === 4 ? 170 : 128} seed={i} idle={0} lightColor={colors.red} lightAmount={0.3} />
-              <div style={{ ...big(56, i === 4 ? colors.amber : colors.text), marginTop: 6 }}>#{5 - i}</div>
-            </div>
-          ))}
+      </div>
+      {/* the teen, from behind-ish, lit by a red screen */}
+      <div style={{ position: "absolute", left: 540 - 230, top: 990, width: 460, height: 300, borderRadius: 18, background: "#0B0F14", border: "10px solid #1E252D", boxShadow: `0 0 120px ${colors.red}AA`, overflow: "hidden", padding: 22 }}>
+        {[0.8, 0.55, 0.7, 0.4, 0.65, 0.5].map((w, k) => (
+          <div key={k} style={{ height: 18, width: `${w * 100}%`, marginBottom: 20, borderRadius: 4, background: colors.red, opacity: 0.85 }} />
+        ))}
+        <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <div style={{ padding: "8px 26px", borderRadius: 12, background: "rgba(7,9,11,0.92)", border: `5px solid ${colors.green}`, fontFamily: fonts.mono, fontWeight: 700, fontSize: 44, color: colors.green }}>ACCESS GRANTED</div>
         </div>
-        <div style={{ position: "absolute", left: 162, width: 756, top: 1360, display: "flex", justifyContent: "center", gap: 10 }}>
-          {chips.map((ch) => (
-            <div key={ch.t} style={{ padding: "6px 14px", borderRadius: 14, border: `5px solid ${ch.c}`, background: "rgba(7,9,11,0.9)", ...big(46, ch.c), textShadow: "none" }}>
-              {ch.t}
-            </div>
-          ))}
+      </div>
+      <div style={{ position: "absolute", left: 540 - 110, top: 1160 }}>
+        <BlobCharacter color="#20262E" accessory="hoodie" size={260} idle={0} lightColor={colors.red} lightAmount={0.6} look={{ x: 0, y: -1 }} />
+      </div>
+      {/* locked #1 */}
+      <div style={{ position: "absolute", left: 162, width: 756, top: 1428, display: "flex", justifyContent: "center" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 16, padding: "10px 28px", borderRadius: 16, background: "rgba(7,9,11,0.92)", border: `5px solid ${colors.amber}` }}>
+          <div style={{ ...big(66, colors.amber), textShadow: "none" }}>#1 WILL SHOCK YOU</div>
         </div>
-      </Background>
-    </AbsoluteFill>
-  );
-};
+      </div>
+    </Background>
+  </AbsoluteFill>
+);
