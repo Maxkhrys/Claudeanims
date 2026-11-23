@@ -34,6 +34,11 @@ export const onionThumbSchema = z.object({
   emotion: z.enum(["shock", "smirk", "fear"]).default("shock"),
   object: z.enum(["tvstick", "evidence", "coin", "mystery", "none"]),
   objectLabel: z.string().optional(),
+  /**
+   * Real logos of the companies / games the video is about (files in public/thumbnails/logos/).
+   * Required on every video, e.g. ["gta6.png"]. Countdowns: only logos that don't spoil the order.
+   */
+  logos: z.array(z.string()).default([]),
 });
 export type OnionThumbProps = z.infer<typeof onionThumbSchema>;
 
@@ -42,6 +47,8 @@ type Layout = {
   H: number;
   logo: { x: number; y: number; s: number };
   text: { x: number; y: number; maxW: number; maxSize: number };
+  /** Row of real logos above the headline. */
+  brand: { x: number; y: number; h: number; maxW: number };
   char: { x: number; y: number; s: number };
   obj: { x: number; y: number; s: number };
   glow: { x: number; y: number; r: number };
@@ -52,7 +59,8 @@ const YT: Layout = {
   W: 1280,
   H: 720,
   logo: { x: 1172, y: 24, s: 84 },
-  text: { x: 52, y: 70, maxW: 600, maxSize: 170 },
+  brand: { x: 44, y: 22, h: 236, maxW: 600 },
+  text: { x: 52, y: 278, maxW: 600, maxSize: 132 },
   char: { x: 960, y: 330, s: 1.0 },
   obj: { x: 700, y: 560, s: 0.62 },
   glow: { x: 940, y: 360, r: 460 },
@@ -67,10 +75,11 @@ const COVER: Layout = {
   W: 1080,
   H: 1920,
   logo: { x: 66, y: 262, s: 124 },
-  text: { x: 66, y: 420, maxW: 840, maxSize: 230 },
-  char: { x: 460, y: 1070, s: 1.5 },
-  obj: { x: 650, y: 1360, s: 0.9 },
-  glow: { x: 480, y: 1120, r: 640 },
+  brand: { x: 210, y: 252, h: 330, maxW: 700 },
+  text: { x: 66, y: 610, maxW: 840, maxSize: 185 },
+  char: { x: 460, y: 1200, s: 1.32 },
+  obj: { x: 655, y: 1400, s: 0.82 },
+  glow: { x: 480, y: 1150, r: 660 },
 };
 
 /** Rough Anton advance widths (em) so the headline always fits. */
@@ -153,8 +162,11 @@ const StickerDefs: React.FC = () => (
 export const OnionThumb: React.FC<OnionThumbProps> = (p) => {
   const L = p.format === "yt" ? YT : COVER;
   const accent = p.accent ?? BRAND.accent;
-  const topSize = fit(p.top, L.text.maxW, L.text.maxSize);
-  const hitSize = fit(p.hit, L.text.maxW - 40, L.text.maxSize * 0.92);
+  const logos = p.logos ?? [];
+  // Without a logo the headline moves up into the logo's space.
+  const text = logos.length ? L.text : { ...L.text, y: L.brand.y + (p.format === "yt" ? 44 : 150), maxSize: L.text.maxSize * 1.15 };
+  const topSize = fit(p.top, text.maxW, text.maxSize);
+  const hitSize = fit(p.hit, text.maxW - 40, text.maxSize * 0.92);
   const ringRx = 250 * L.obj.s;
   const ringRy = 190 * L.obj.s;
 
@@ -195,7 +207,7 @@ export const OnionThumb: React.FC<OnionThumbProps> = (p) => {
       )}
 
       {/* headline */}
-      <div style={{ position: "absolute", left: L.text.x, top: L.text.y, width: L.text.maxW, fontFamily: "Anton", lineHeight: 1, whiteSpace: "nowrap" }}>
+      <div style={{ position: "absolute", left: text.x, top: text.y, width: text.maxW, fontFamily: "Anton", lineHeight: 1, whiteSpace: "nowrap" }}>
         <div
           style={{
             fontSize: topSize,
@@ -226,7 +238,36 @@ export const OnionThumb: React.FC<OnionThumbProps> = (p) => {
         </div>
       </div>
 
-      {/* logo: same corner, same size, every time */}
+      {/* real logos of what the video is about: big, above the headline */}
+      {logos.length > 0 && (
+        <div
+          style={{
+            position: "absolute",
+            left: L.brand.x,
+            top: L.brand.y,
+            width: L.brand.maxW,
+            height: L.brand.h,
+            display: "flex",
+            alignItems: "center",
+            gap: L.brand.h * 0.12,
+          }}
+        >
+          {logos.map((l) => (
+            <Img
+              key={l}
+              src={staticFile(`thumbnails/logos/${l}`)}
+              style={{
+                maxHeight: logos.length > 1 ? L.brand.h * 0.8 : L.brand.h,
+                maxWidth: (L.brand.maxW - (logos.length - 1) * L.brand.h * 0.12) / logos.length,
+                objectFit: "contain",
+                filter: "drop-shadow(0 10px 18px rgba(0,0,0,.9))",
+              }}
+            />
+          ))}
+        </div>
+      )}
+
+      {/* onion logo: same corner, same size, every time */}
       <Img
         src={staticFile("thumbnails/onion-logo.png")}
         style={{
