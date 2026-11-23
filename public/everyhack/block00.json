@@ -1,0 +1,196 @@
+{
+ "clip": "block00",
+ "model": "sherpa-zipformer-en + script align",
+ "words": [
+  {
+   "text": "One",
+   "start": 0.0,
+   "end": 0.31
+  },
+  {
+   "text": "phone",
+   "start": 0.32,
+   "end": 0.79
+  },
+  {
+   "text": "call...",
+   "start": 0.8,
+   "end": 1.265
+  },
+  {
+   "text": "and",
+   "start": 1.28,
+   "end": 1.47
+  },
+  {
+   "text": "the",
+   "start": 1.48,
+   "end": 1.67
+  },
+  {
+   "text": "slot",
+   "start": 1.68,
+   "end": 2.03
+  },
+  {
+   "text": "machines",
+   "start": 2.04,
+   "end": 2.47
+  },
+  {
+   "text": "of",
+   "start": 2.48,
+   "end": 2.59
+  },
+  {
+   "text": "a",
+   "start": 2.6,
+   "end": 2.71
+  },
+  {
+   "text": "Las",
+   "start": 2.72,
+   "end": 2.942
+  },
+  {
+   "text": "Vegas",
+   "start": 2.952,
+   "end": 3.35
+  },
+  {
+   "text": "casino",
+   "start": 3.36,
+   "end": 3.99
+  },
+  {
+   "text": "went",
+   "start": 4.0,
+   "end": 4.39
+  },
+  {
+   "text": "dark.",
+   "start": 4.4,
+   "end": 5.03
+  },
+  {
+   "text": "One",
+   "start": 5.12,
+   "end": 5.493
+  },
+  {
+   "text": "TV",
+   "start": 5.52,
+   "end": 5.808
+  },
+  {
+   "text": "stick",
+   "start": 5.96,
+   "end": 6.27
+  },
+  {
+   "text": "in",
+   "start": 6.28,
+   "end": 6.39
+  },
+  {
+   "text": "a",
+   "start": 6.4,
+   "end": 6.52
+  },
+  {
+   "text": "hotel",
+   "start": 6.56,
+   "end": 7.07
+  },
+  {
+   "text": "room...",
+   "start": 7.08,
+   "end": 7.575
+  },
+  {
+   "text": "and",
+   "start": 7.6,
+   "end": 7.83
+  },
+  {
+   "text": "the",
+   "start": 7.84,
+   "end": 8.03
+  },
+  {
+   "text": "biggest",
+   "start": 8.04,
+   "end": 8.59
+  },
+  {
+   "text": "game",
+   "start": 8.6,
+   "end": 8.95
+  },
+  {
+   "text": "on",
+   "start": 8.96,
+   "end": 9.19
+  },
+  {
+   "text": "earth",
+   "start": 9.2,
+   "end": 9.67
+  },
+  {
+   "text": "leaked.",
+   "start": 9.68,
+   "end": 10.483
+  },
+  {
+   "text": "Every",
+   "start": 10.52,
+   "end": 11.03
+  },
+  {
+   "text": "famous",
+   "start": 11.04,
+   "end": 11.59
+  },
+  {
+   "text": "hack",
+   "start": 11.6,
+   "end": 11.91
+  },
+  {
+   "text": "in",
+   "start": 11.92,
+   "end": 12.11
+  },
+  {
+   "text": "history.",
+   "start": 12.12,
+   "end": 12.909
+  },
+  {
+   "text": "Explained.",
+   "start": 12.92,
+   "end": 13.75
+  },
+  {
+   "text": "Twelve",
+   "start": 13.76,
+   "end": 14.23
+  },
+  {
+   "text": "minutes.",
+   "start": 14.24,
+   "end": 14.75
+  },
+  {
+   "text": "Let's",
+   "start": 14.76,
+   "end": 15.19
+  },
+  {
+   "text": "go.",
+   "start": 15.2,
+   "end": 15.52
+  }
+ ]
+}
