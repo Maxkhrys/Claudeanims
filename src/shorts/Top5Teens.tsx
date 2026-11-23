@@ -27,7 +27,7 @@ import { Between, big, Billboard, Box, type Cam, type CamKey, clamp01, lerp, Pla
  * Mocked-up UI only: no real logos, photos or game footage.
  */
 
-export const top5TeensSchema = z.object({ showCaptions: z.boolean() });
+export const top5TeensSchema = z.object({ showCaptions: z.boolean(), landscape: z.boolean().optional() });
 export { SHORT_W, SHORT_H };
 export const TOP5_TEENS_FRAMES = 7160;
 
@@ -276,10 +276,45 @@ const Ring: React.FC<{ n: number; start: number; end: number; name: string; sub:
   );
 };
 
+/* landscape (1920x1080) layout of the scene canvas */
+const LS = (() => {
+  const S = 1.03;
+  const T = 50 - 230 * S;
+  const sideL = 1000 - 162 * S;
+  const centerL = 960 - 540 * S;
+  return { S, T, sideL, centerL };
+})();
+
+/** Countdown panel for the landscape version: big ring with the name stacked underneath, left side. */
+const RingWide: React.FC<{ n: number; start: number; end: number; name: string; sub: string; color: string }> = ({ n, start, end, name, sub, color }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const enter = sp(frame, fps, start + 6, springs.pop);
+  const p = clamp01((frame - start) / Math.max(1, end - start));
+  const R = 100;
+  const circ = 2 * Math.PI * R;
+  const out = clamp01((frame - (end - 6)) / 6);
+  return (
+    <div style={{ position: "absolute", left: 110, top: 230, width: 800, opacity: (1 - out) * clamp01(enter * 2) }}>
+      <div style={{ position: "relative", width: 250, height: 250, transform: `scale(${enter})`, transformOrigin: "0 50%" }}>
+        <svg width={250} height={250} style={{ position: "absolute", inset: 0, transform: "rotate(-90deg)" }}>
+          <circle cx={125} cy={125} r={R} fill="rgba(7,9,11,0.75)" stroke="rgba(255,255,255,0.15)" strokeWidth={18} />
+          <circle cx={125} cy={125} r={R} fill="none" stroke="#FFFFFF" strokeWidth={18} strokeLinecap="round" strokeDasharray={circ} strokeDashoffset={circ * p} />
+        </svg>
+        <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", ...big(190, "#FFFFFF"), paddingTop: 14 }}>{n}</div>
+      </div>
+      <div style={{ marginTop: 34, transform: `translateX(${(1 - enter) * -40}px)` }}>
+        <div style={{ ...big(108, color), whiteSpace: "normal" }}>{name}</div>
+        <div style={{ fontFamily: fonts.mono, fontWeight: 700, fontSize: 40, color: colors.text, letterSpacing: "0.06em", marginTop: 14 }}>{sub}</div>
+      </div>
+    </div>
+  );
+};
+
 /** Big "NUMBER X" card at the start of each story. */
 const NumberCard: React.FC<{ at: number; n: number; color: string }> = ({ at, n, color }) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
+  const { fps, width, height } = useVideoConfig();
   const dur = 26;
   if (frame < at || frame > at + dur) return null;
   const s = sp(frame, fps, at, springs.slam);
@@ -287,7 +322,7 @@ const NumberCard: React.FC<{ at: number; n: number; color: string }> = ({ at, n,
   return (
     <AbsoluteFill style={{ background: `rgba(7,9,11,${0.82 * o})` }}>
       <Sfx name="whoosh" at={at} volume={0.6} />
-      <div style={{ position: "absolute", left: 0, width: 1080, top: 330, textAlign: "center", opacity: o, transform: `scale(${lerp(1.8, 1, s)})` }}>
+      <div style={{ position: "absolute", left: 0, right: 0, top: height > width ? 330 : 120, textAlign: "center", opacity: o, transform: `scale(${lerp(1.8, 1, s)})` }}>
         <div style={{ ...big(110, colors.text) }}>NUMBER</div>
         <div style={{ ...big(460, color) }}>{n}</div>
       </div>
@@ -1282,7 +1317,7 @@ const Outro: React.FC<{ c: C; start: number }> = ({ c, start }) => {
 
 /* ------------------------------------------------------------------ the video */
 
-export const Top5Teens: React.FC<z.infer<typeof top5TeensSchema>> = ({ showCaptions }) => {
+export const Top5Teens: React.FC<z.infer<typeof top5TeensSchema>> = ({ showCaptions, landscape = false }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const cue = useMemo(() => createCues(WORDS, fps), [fps]);
@@ -1305,6 +1340,10 @@ export const Top5Teens: React.FC<z.infer<typeof top5TeensSchema>> = ({ showCapti
     { n: 1, start: t1, end: tOut, name: "ARION KURTAJ", sub: "TEEN · GTA 6", color: colors.amber },
   ];
 
+  // landscape placement of the scene canvas (content box x 162..918, y 230..1080 in canvas px)
+  const toSide = sp(frame, fps, t5, springs.smooth, 20) - sp(frame, fps, tOut, springs.smooth, 20);
+  const sceneL = lerp(LS.centerL, LS.sideL, toSide);
+
   const bedVol = (f: number) => {
     const fadeOut = interpolate(f, [END - 45, END], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
     return 0.09 * fadeOut;
@@ -1315,7 +1354,9 @@ export const Top5Teens: React.FC<z.infer<typeof top5TeensSchema>> = ({ showCapti
       <Audio src={staticFile("shorts/top5teens/vo.mp3")} />
       <Audio src={staticFile("shorts/top5teens/bed.mp3")} volume={bedVol} loop />
       <Background drift={0.35} vignette={0.7}>
-        {/* scenes are laid out on a 60..900 grid; this centres them in the frame and keeps them inside 162..918 (safe zone) */}
+        {/* scenes are laid out on a 60..900 grid; this centres them in the frame and keeps them inside 162..918 (safe zone).
+            Landscape: the same 1080x1920 scene canvas, scaled and placed right of the countdown panel (centred during hook/title/outro). */}
+        <div style={landscape ? { position: "absolute", left: sceneL, top: LS.T, width: SHORT_W, height: SHORT_H, transform: `scale(${LS.S})`, transformOrigin: "0 0" } : { position: "absolute", inset: 0 }}>
         <AbsoluteFill style={{ transform: "translateX(54px) scale(0.9)", transformOrigin: "540px 760px" }}>
         <Between from={0} to={tTitle}>
           <Shake at={c("only")}>
@@ -1345,11 +1386,12 @@ export const Top5Teens: React.FC<z.infer<typeof top5TeensSchema>> = ({ showCapti
           <Outro c={c} start={tOut} />
         </Between>
         </AbsoluteFill>
+        </div>
 
         {/* countdown ring (left, lower-middle, inside the safe zone) */}
         {stories.map((s) => (
           <Between key={s.n} from={s.start} to={s.end}>
-            <Ring n={s.n} start={s.start} end={s.end} name={s.name} sub={s.sub} color={s.color} />
+            {landscape ? <RingWide n={s.n} start={s.start} end={s.end} name={s.name} sub={s.sub} color={s.color} /> : <Ring n={s.n} start={s.start} end={s.end} name={s.name} sub={s.sub} color={s.color} />}
           </Between>
         ))}
         {stories.map((s) => (
@@ -1361,12 +1403,12 @@ export const Top5Teens: React.FC<z.infer<typeof top5TeensSchema>> = ({ showCapti
       <ShortCaptions
         words={WORDS}
         enabled={showCaptions}
-        centerY={CAPTION_Y}
-        fontSize={62}
-        maxWords={4}
-        maxChars={22}
-        left={170}
-        right={170}
+        centerY={landscape ? 1000 : CAPTION_Y}
+        fontSize={landscape ? 56 : 62}
+        maxWords={landscape ? 6 : 4}
+        maxChars={landscape ? 34 : 22}
+        left={landscape ? 260 : 170}
+        right={landscape ? 260 : 170}
         hide={[[c("which one"), END]]}
         hot={["cia", "nasa", "pentagon", "yahoo", "mafiaboy", "bragged", "brennan", "clapper", "obama", "bitcoin", "twitter", "travelodge", "gta", "guilty", "impossible", "craziest", "fifteen", "seventeen"]}
       />
@@ -1409,6 +1451,36 @@ export const Top5TeensCover: React.FC = () => (
         <div style={{ display: "flex", alignItems: "center", gap: 16, padding: "10px 28px", borderRadius: 16, background: "rgba(7,9,11,0.92)", border: `5px solid ${colors.amber}` }}>
           <div style={{ ...big(66, colors.amber), textShadow: "none" }}>#1 WILL SHOCK YOU</div>
         </div>
+      </div>
+    </Background>
+  </AbsoluteFill>
+);
+
+/** YouTube thumbnail (1920x1080, exported at 1280x720). Spoiler-free; keeps the bottom-right corner clear for the timestamp. */
+export const Top5TeensThumbYT: React.FC = () => (
+  <AbsoluteFill style={{ backgroundColor: colors.bg }}>
+    <Background drift={0} vignette={0.8}>
+      <AbsoluteFill style={{ background: `radial-gradient(ellipse at 72% 55%, ${colors.red}66, rgba(0,0,0,0) 45%), radial-gradient(ellipse at 25% 40%, ${colors.amber}22, rgba(0,0,0,0) 50%)` }} />
+      <div style={{ position: "absolute", left: 100, top: 110, width: 960 }}>
+        <div style={{ ...big(400, colors.amber) }}>TOP 5</div>
+        <div style={{ ...big(150, colors.text), marginTop: 10 }}>TEENS WHO HACKED</div>
+        <div style={{ display: "inline-block", marginTop: 22, padding: "6px 40px", borderRadius: 22, background: colors.red, transform: "rotate(-2deg)" }}>
+          <div style={{ ...big(170, colors.bg), textShadow: "none" }}>THE IMPOSSIBLE</div>
+        </div>
+      </div>
+      <div style={{ position: "absolute", left: 1150, top: 200, width: 620, height: 390, borderRadius: 22, background: "#0B0F14", border: "12px solid #1E252D", boxShadow: `0 0 160px ${colors.red}AA`, overflow: "hidden", padding: 30 }}>
+        {[0.8, 0.55, 0.7, 0.4, 0.65, 0.5].map((w, k) => (
+          <div key={k} style={{ height: 24, width: `${w * 100}%`, marginBottom: 28, borderRadius: 5, background: colors.red, opacity: 0.85 }} />
+        ))}
+        <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <div style={{ padding: "10px 32px", borderRadius: 14, background: "rgba(7,9,11,0.92)", border: `6px solid ${colors.green}`, fontFamily: fonts.mono, fontWeight: 700, fontSize: 58, color: colors.green }}>ACCESS GRANTED</div>
+        </div>
+      </div>
+      <div style={{ position: "absolute", left: 1460 - 160, top: 470 }}>
+        <BlobCharacter color="#20262E" accessory="hoodie" size={360} idle={0} lightColor={colors.red} lightAmount={0.6} look={{ x: 0, y: -1 }} />
+      </div>
+      <div style={{ position: "absolute", left: 100, top: 860 }}>
+        <div style={{ padding: "10px 30px", borderRadius: 16, background: "rgba(7,9,11,0.92)", border: `6px solid ${colors.amber}`, ...big(84, colors.amber), textShadow: "none" }}>#1 WILL SHOCK YOU</div>
       </div>
     </Background>
   </AbsoluteFill>

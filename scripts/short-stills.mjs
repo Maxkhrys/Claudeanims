@@ -7,9 +7,10 @@ const frames = process.argv.slice(3).map(Number);
 // Set BROWSER to a Chrome binary when remotion.media is unreachable (e.g. /opt/pw-browsers/chromium_headless_shell).
 const BX = process.env.BROWSER || undefined;
 const out = process.argv[2];
+const COMP_PROPS = process.env.LANDSCAPE ? { showCaptions: true, landscape: true } : { showCaptions: true };
 const serveUrl = await bundle({ entryPoint: path.resolve("src/index.ts") });
-const comp = await selectComposition({ serveUrl, id: process.env.COMP || "Short-Lapsus-1", inputProps: { showCaptions: true }, browserExecutable: BX });
+const comp = await selectComposition({ serveUrl, id: process.env.COMP || "Short-Lapsus-1", inputProps: COMP_PROPS, browserExecutable: BX });
 for (const f of frames) {
-  await renderStill({ serveUrl, composition: comp, frame: f, output: `${out}/f${String(f).padStart(4, "0")}.jpg`, imageFormat: "jpeg", scale: 0.5, inputProps: { showCaptions: true }, browserExecutable: BX });
+  await renderStill({ serveUrl, composition: comp, frame: f, output: `${out}/f${String(f).padStart(4, "0")}.jpg`, imageFormat: "jpeg", scale: 0.5, inputProps: COMP_PROPS, browserExecutable: BX });
   console.log("done", f);
 }
