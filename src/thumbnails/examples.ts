@@ -14,6 +14,8 @@ export const THUMBS: Record<string, Example> = {
   Judge: { top: "LEAKED WITH", hit: "THIS?!", logos: ["gta6.png"], accent: "#FFD60A", character: "judge", emotion: "shock", object: "evidence" },
   // "The GTA 6 Leak Was a Crypto Scam?"
   Cyberleak: { top: "LEAKED FOR", hit: "CRYPTO?!", logos: ["gta6.png"], accent: "#FFD60A", character: "leek", emotion: "shock", object: "coin", objectLabel: "$30M" },
+  // "The GTA 6 Hacker Just Walked Free" (7 years, time served, 23 Nov 2026)
+  WalksFree: { top: "7 YEARS...", hit: "WALKED FREE?!", logos: ["gta6.png"], accent: "#FFD60A", character: "hacker", emotion: "smirk", object: "tvstick", objectLabel: "FIRE STICK" },
   // "Top 5 teen hackers" countdown: no names, no #1, no target logos (they would give the lineup away)
   Top5Teens: { top: "TEEN HACKERS", hit: "TOP 5", accent: "#FFD60A", character: "anon", emotion: "shock", object: "mystery", objectLabel: "#1", logos: [] },
   // "Top 5 crypto scams that vanished with billions" countdown: generic Bitcoin logo only, no scam logos/names
