@@ -26,6 +26,9 @@ import { Thumbnail, ThumbnailAlphaBayBright, ThumbnailLapsus, ThumbnailLapsusB, 
 import { V2StyleGuide } from "./video2/V2StyleGuide";
 import { VERTICAL, VerticalClip, verticalSchema } from "./clips/Vertical";
 import { StyleGuide } from "./clips/StyleGuide";
+import { EveryHack, everyHackFrames, everyHackSchema } from "./everyhack/EveryHack";
+import { OnionThumb, onionThumbSchema } from "./thumbnails/OnionThumb";
+import { THUMBS } from "./thumbnails/examples";
 
 /** Composition length always follows the narration audio. */
 const durationFromAudio = (file: string) => async () => {
@@ -332,6 +335,33 @@ export const RemotionRoot: React.FC = () => {
         fps={VIDEO.fps}
         durationInFrames={VIDEO.fps * 10}
       />
+      {/* Every Famous Hack Explained: long 16:9 (all recorded blocks) + the Mitnick Short */}
+      <Composition
+        id="EveryHack-YT"
+        component={EveryHack}
+        schema={everyHackSchema}
+        defaultProps={{ showCaptions: true, blocks: [] as string[] }}
+        width={1920}
+        height={1080}
+        fps={VIDEO.fps}
+        durationInFrames={everyHackFrames([])}
+        calculateMetadata={({ props }: { props: { blocks: string[] } }) => ({ durationInFrames: everyHackFrames(props.blocks) })}
+      />
+      <Composition
+        id="EveryHack-Short-Mitnick"
+        component={EveryHack}
+        schema={everyHackSchema}
+        defaultProps={{ showCaptions: true, blocks: ["mitnick"] }}
+        width={SHORT_W}
+        height={SHORT_H}
+        fps={VIDEO.fps}
+        durationInFrames={everyHackFrames(["mitnick"])}
+      />
+      {/* The Onion Archive thumbnail system: one YouTube + one vertical cover per entry in thumbnails/examples.ts */}
+      {Object.entries(THUMBS).flatMap(([id, t]) => [
+        <Still key={`${id}-yt`} id={`Thumb-${id}-YT`} component={OnionThumb} schema={onionThumbSchema} width={1280} height={720} defaultProps={{ ...t, format: "yt" as const }} />,
+        <Still key={`${id}-cv`} id={`Thumb-${id}-Cover`} component={OnionThumb} schema={onionThumbSchema} width={1080} height={1920} defaultProps={{ ...t, format: "cover" as const }} />,
+      ])}
     </>
   );
 };

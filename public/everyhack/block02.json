@@ -1,0 +1,666 @@
+{
+ "clip": "block02",
+ "model": "sherpa-zipformer-en + script align",
+ "words": [
+  {
+   "text": "In",
+   "start": 0.0,
+   "end": 0.19
+  },
+  {
+   "text": "the",
+   "start": 0.2,
+   "end": 0.31
+  },
+  {
+   "text": "nineteen",
+   "start": 0.32,
+   "end": 0.83
+  },
+  {
+   "text": "nineties,",
+   "start": 0.84,
+   "end": 1.51
+  },
+  {
+   "text": "the",
+   "start": 1.52,
+   "end": 1.71
+  },
+  {
+   "text": "most",
+   "start": 1.72,
+   "end": 2.03
+  },
+  {
+   "text": "wanted",
+   "start": 2.04,
+   "end": 2.47
+  },
+  {
+   "text": "hacker",
+   "start": 2.48,
+   "end": 2.83
+  },
+  {
+   "text": "in",
+   "start": 2.84,
+   "end": 2.99
+  },
+  {
+   "text": "America",
+   "start": 3.0,
+   "end": 3.67
+  },
+  {
+   "text": "was",
+   "start": 3.68,
+   "end": 3.99
+  },
+  {
+   "text": "Kevin",
+   "start": 4.0,
+   "end": 4.39
+  },
+  {
+   "text": "Mitnick.",
+   "start": 4.4,
+   "end": 5.15
+  },
+  {
+   "text": "And",
+   "start": 5.16,
+   "end": 5.43
+  },
+  {
+   "text": "his",
+   "start": 5.44,
+   "end": 5.67
+  },
+  {
+   "text": "best",
+   "start": 5.68,
+   "end": 6.03
+  },
+  {
+   "text": "weapon",
+   "start": 6.04,
+   "end": 6.55
+  },
+  {
+   "text": "wasn't",
+   "start": 6.56,
+   "end": 6.95
+  },
+  {
+   "text": "a",
+   "start": 6.96,
+   "end": 7.08
+  },
+  {
+   "text": "computer.",
+   "start": 7.12,
+   "end": 7.83
+  },
+  {
+   "text": "It",
+   "start": 7.84,
+   "end": 8.03
+  },
+  {
+   "text": "was",
+   "start": 8.04,
+   "end": 8.19
+  },
+  {
+   "text": "a",
+   "start": 8.2,
+   "end": 8.32
+  },
+  {
+   "text": "telephone.",
+   "start": 8.36,
+   "end": 9.15
+  },
+  {
+   "text": "He'd",
+   "start": 9.16,
+   "end": 9.507
+  },
+  {
+   "text": "call",
+   "start": 9.52,
+   "end": 9.71
+  },
+  {
+   "text": "a",
+   "start": 9.72,
+   "end": 9.84
+  },
+  {
+   "text": "company,",
+   "start": 9.88,
+   "end": 10.39
+  },
+  {
+   "text": "pretend",
+   "start": 10.4,
+   "end": 10.71
+  },
+  {
+   "text": "to",
+   "start": 10.72,
+   "end": 10.83
+  },
+  {
+   "text": "be",
+   "start": 10.84,
+   "end": 10.95
+  },
+  {
+   "text": "a",
+   "start": 10.96,
+   "end": 11.07
+  },
+  {
+   "text": "co-worker,",
+   "start": 11.08,
+   "end": 11.75
+  },
+  {
+   "text": "and",
+   "start": 11.76,
+   "end": 11.95
+  },
+  {
+   "text": "just...",
+   "start": 11.96,
+   "end": 12.39
+  },
+  {
+   "text": "ask",
+   "start": 12.4,
+   "end": 12.747
+  },
+  {
+   "text": "for",
+   "start": 12.76,
+   "end": 12.87
+  },
+  {
+   "text": "the",
+   "start": 12.88,
+   "end": 13.07
+  },
+  {
+   "text": "password.",
+   "start": 13.08,
+   "end": 13.75
+  },
+  {
+   "text": "It",
+   "start": 13.76,
+   "end": 14.01
+  },
+  {
+   "text": "worked",
+   "start": 14.04,
+   "end": 14.31
+  },
+  {
+   "text": "on",
+   "start": 14.32,
+   "end": 14.55
+  },
+  {
+   "text": "giants",
+   "start": 14.56,
+   "end": 15.15
+  },
+  {
+   "text": "like",
+   "start": 15.16,
+   "end": 15.35
+  },
+  {
+   "text": "Motorola",
+   "start": 15.36,
+   "end": 16.07
+  },
+  {
+   "text": "and",
+   "start": 16.08,
+   "end": 16.27
+  },
+  {
+   "text": "Nokia.",
+   "start": 16.28,
+   "end": 16.91
+  },
+  {
+   "text": "He",
+   "start": 16.92,
+   "end": 17.17
+  },
+  {
+   "text": "spent",
+   "start": 17.2,
+   "end": 17.63
+  },
+  {
+   "text": "years",
+   "start": 17.64,
+   "end": 17.99
+  },
+  {
+   "text": "on",
+   "start": 18.0,
+   "end": 18.15
+  },
+  {
+   "text": "the",
+   "start": 18.16,
+   "end": 18.31
+  },
+  {
+   "text": "run,",
+   "start": 18.32,
+   "end": 18.63
+  },
+  {
+   "text": "with",
+   "start": 18.64,
+   "end": 18.83
+  },
+  {
+   "text": "the",
+   "start": 18.84,
+   "end": 19.03
+  },
+  {
+   "text": "F.B.I.",
+   "start": 19.04,
+   "end": 19.28
+  },
+  {
+   "text": "chasing",
+   "start": 19.52,
+   "end": 19.95
+  },
+  {
+   "text": "him",
+   "start": 19.96,
+   "end": 20.11
+  },
+  {
+   "text": "across",
+   "start": 20.12,
+   "end": 20.55
+  },
+  {
+   "text": "the",
+   "start": 20.56,
+   "end": 20.67
+  },
+  {
+   "text": "country.",
+   "start": 20.68,
+   "end": 21.27
+  },
+  {
+   "text": "In",
+   "start": 21.28,
+   "end": 21.51
+  },
+  {
+   "text": "February",
+   "start": 21.52,
+   "end": 22.19
+  },
+  {
+   "text": "nineteen",
+   "start": 22.2,
+   "end": 22.63
+  },
+  {
+   "text": "ninety-five,",
+   "start": 22.64,
+   "end": 23.39
+  },
+  {
+   "text": "they",
+   "start": 23.4,
+   "end": 23.59
+  },
+  {
+   "text": "finally",
+   "start": 23.6,
+   "end": 24.15
+  },
+  {
+   "text": "track",
+   "start": 24.16,
+   "end": 24.39
+  },
+  {
+   "text": "him",
+   "start": 24.4,
+   "end": 24.55
+  },
+  {
+   "text": "to",
+   "start": 24.56,
+   "end": 24.67
+  },
+  {
+   "text": "an",
+   "start": 24.68,
+   "end": 24.83
+  },
+  {
+   "text": "apartment",
+   "start": 24.84,
+   "end": 25.27
+  },
+  {
+   "text": "in",
+   "start": 25.28,
+   "end": 25.43
+  },
+  {
+   "text": "North",
+   "start": 25.44,
+   "end": 25.75
+  },
+  {
+   "text": "Carolina.",
+   "start": 25.76,
+   "end": 26.55
+  },
+  {
+   "text": "And",
+   "start": 26.56,
+   "end": 26.79
+  },
+  {
+   "text": "prosecutors",
+   "start": 26.8,
+   "end": 27.67
+  },
+  {
+   "text": "were",
+   "start": 27.68,
+   "end": 27.83
+  },
+  {
+   "text": "so",
+   "start": 27.84,
+   "end": 28.11
+  },
+  {
+   "text": "scared",
+   "start": 28.16,
+   "end": 28.55
+  },
+  {
+   "text": "of",
+   "start": 28.56,
+   "end": 28.71
+  },
+  {
+   "text": "him,",
+   "start": 28.72,
+   "end": 28.99
+  },
+  {
+   "text": "he",
+   "start": 29.0,
+   "end": 29.23
+  },
+  {
+   "text": "said,",
+   "start": 29.24,
+   "end": 29.55
+  },
+  {
+   "text": "that",
+   "start": 29.56,
+   "end": 29.75
+  },
+  {
+   "text": "they",
+   "start": 29.76,
+   "end": 29.95
+  },
+  {
+   "text": "claimed",
+   "start": 29.96,
+   "end": 30.31
+  },
+  {
+   "text": "he",
+   "start": 30.32,
+   "end": 30.43
+  },
+  {
+   "text": "could",
+   "start": 30.44,
+   "end": 30.63
+  },
+  {
+   "text": "start",
+   "start": 30.64,
+   "end": 30.87
+  },
+  {
+   "text": "a",
+   "start": 30.88,
+   "end": 31.0
+  },
+  {
+   "text": "nuclear",
+   "start": 31.04,
+   "end": 31.67
+  },
+  {
+   "text": "war",
+   "start": 31.68,
+   "end": 32.027
+  },
+  {
+   "text": "by",
+   "start": 32.04,
+   "end": 32.23
+  },
+  {
+   "text": "whistling",
+   "start": 32.24,
+   "end": 32.83
+  },
+  {
+   "text": "into",
+   "start": 32.84,
+   "end": 33.03
+  },
+  {
+   "text": "a",
+   "start": 33.04,
+   "end": 33.16
+  },
+  {
+   "text": "payphone.",
+   "start": 33.2,
+   "end": 33.95
+  },
+  {
+   "text": "He",
+   "start": 33.96,
+   "end": 34.21
+  },
+  {
+   "text": "served",
+   "start": 34.24,
+   "end": 34.71
+  },
+  {
+   "text": "about",
+   "start": 34.72,
+   "end": 35.03
+  },
+  {
+   "text": "five",
+   "start": 35.04,
+   "end": 35.43
+  },
+  {
+   "text": "years.",
+   "start": 35.44,
+   "end": 35.91
+  },
+  {
+   "text": "Then",
+   "start": 35.92,
+   "end": 36.23
+  },
+  {
+   "text": "he",
+   "start": 36.24,
+   "end": 36.47
+  },
+  {
+   "text": "spent",
+   "start": 36.48,
+   "end": 36.75
+  },
+  {
+   "text": "the",
+   "start": 36.76,
+   "end": 36.91
+  },
+  {
+   "text": "rest",
+   "start": 36.92,
+   "end": 37.19
+  },
+  {
+   "text": "of",
+   "start": 37.2,
+   "end": 37.28
+  },
+  {
+   "text": "his",
+   "start": 37.28,
+   "end": 37.47
+  },
+  {
+   "text": "life",
+   "start": 37.48,
+   "end": 37.71
+  },
+  {
+   "text": "getting",
+   "start": 37.72,
+   "end": 37.99
+  },
+  {
+   "text": "paid",
+   "start": 38.0,
+   "end": 38.31
+  },
+  {
+   "text": "to",
+   "start": 38.32,
+   "end": 38.51
+  },
+  {
+   "text": "hack",
+   "start": 38.52,
+   "end": 38.83
+  },
+  {
+   "text": "companies...",
+   "start": 38.84,
+   "end": 39.67
+  },
+  {
+   "text": "legally.",
+   "start": 39.68,
+   "end": 40.606
+  },
+  {
+   "text": "Mitnick",
+   "start": 40.64,
+   "end": 41.27
+  },
+  {
+   "text": "talked",
+   "start": 41.28,
+   "end": 41.63
+  },
+  {
+   "text": "his",
+   "start": 41.64,
+   "end": 41.83
+  },
+  {
+   "text": "way",
+   "start": 41.84,
+   "end": 42.07
+  },
+  {
+   "text": "in.",
+   "start": 42.08,
+   "end": 42.35
+  },
+  {
+   "text": "The",
+   "start": 42.4,
+   "end": 42.63
+  },
+  {
+   "text": "next",
+   "start": 42.64,
+   "end": 42.99
+  },
+  {
+   "text": "one",
+   "start": 43.0,
+   "end": 43.23
+  },
+  {
+   "text": "was",
+   "start": 43.24,
+   "end": 43.51
+  },
+  {
+   "text": "fifteen.",
+   "start": 43.52,
+   "end": 44.27
+  },
+  {
+   "text": "And",
+   "start": 44.28,
+   "end": 44.59
+  },
+  {
+   "text": "he",
+   "start": 44.6,
+   "end": 44.83
+  },
+  {
+   "text": "took",
+   "start": 44.84,
+   "end": 45.07
+  },
+  {
+   "text": "down",
+   "start": 45.08,
+   "end": 45.31
+  },
+  {
+   "text": "Yahoo.",
+   "start": 45.32,
+   "end": 45.64
+  }
+ ]
+}
