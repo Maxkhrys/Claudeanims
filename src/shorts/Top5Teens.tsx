@@ -1373,3 +1373,49 @@ export const Top5Teens: React.FC<z.infer<typeof top5TeensSchema>> = ({ showCapti
     </AbsoluteFill>
   );
 };
+
+/* ------------------------------------------------------------------ cover / thumbnail */
+
+/**
+ * Upload cover (1080x1920). Key content sits in the centre 3:4 crop (TikTok profile grid)
+ * and inside the safe zone: nothing in the top 10%, bottom 20% or right 15%.
+ */
+export const Top5TeensCover: React.FC = () => {
+  const chips = [
+    { t: "NASA", c: CYAN },
+    { t: "THE CIA", c: colors.red },
+    { t: "TWITTER", c: "#1D9BF0" },
+    { t: "GTA 6", c: colors.amber },
+  ];
+  const kids = [colors.green, colors.amber, BLUE, PURPLE, WHITE];
+  return (
+    <AbsoluteFill style={{ backgroundColor: colors.bg }}>
+      <Background drift={0} vignette={0.75}>
+        <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 46%, ${colors.red}44, rgba(0,0,0,0) 55%), radial-gradient(ellipse at 50% 80%, ${colors.green}22, rgba(0,0,0,0) 50%)` }} />
+        <div style={{ position: "absolute", left: 162, width: 756, top: 300, textAlign: "center" }}>
+          <div style={{ display: "inline-block", padding: "6px 30px", borderRadius: 16, background: colors.amber, ...big(84, colors.bg), textShadow: "none", transform: "rotate(-3deg)" }}>TOP 5</div>
+          <div style={{ ...big(212, colors.text), marginTop: 14 }}>TEENS WHO</div>
+          <div style={{ ...big(128, colors.dim), marginTop: 4 }}>HACKED THE</div>
+          <div style={{ display: "inline-block", marginTop: 14, padding: "4px 34px", borderRadius: 20, background: colors.red, transform: "rotate(-2deg)" }}>
+            <div style={{ ...big(166, colors.bg), textShadow: "none" }}>IMPOSSIBLE</div>
+          </div>
+        </div>
+        <div style={{ position: "absolute", left: 162, width: 756, top: 1030, display: "flex", justifyContent: "center", gap: 8 }}>
+          {kids.map((k, i) => (
+            <div key={i} style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+              <BlobCharacter color={k} accessory="hoodie" size={i === 4 ? 170 : 128} seed={i} idle={0} lightColor={colors.red} lightAmount={0.3} />
+              <div style={{ ...big(56, i === 4 ? colors.amber : colors.text), marginTop: 6 }}>#{5 - i}</div>
+            </div>
+          ))}
+        </div>
+        <div style={{ position: "absolute", left: 162, width: 756, top: 1360, display: "flex", justifyContent: "center", gap: 10 }}>
+          {chips.map((ch) => (
+            <div key={ch.t} style={{ padding: "6px 14px", borderRadius: 14, border: `5px solid ${ch.c}`, background: "rgba(7,9,11,0.9)", ...big(46, ch.c), textShadow: "none" }}>
+              {ch.t}
+            </div>
+          ))}
+        </div>
+      </Background>
+    </AbsoluteFill>
+  );
+};
