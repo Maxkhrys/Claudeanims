@@ -1,0 +1,836 @@
+{
+ "clip": "shorts/judge-gta6",
+ "model": "sherpa-zipformer-en + script align",
+ "words": [
+  {
+   "text": "GTA 6",
+   "start": 0.0,
+   "end": 0.92
+  },
+  {
+   "text": "sold",
+   "start": 0.92,
+   "end": 1.24
+  },
+  {
+   "text": "an",
+   "start": 1.24,
+   "end": 1.4
+  },
+  {
+   "text": "estimated",
+   "start": 1.4,
+   "end": 2.08
+  },
+  {
+   "text": "17",
+   "start": 2.08,
+   "end": 2.84
+  },
+  {
+   "text": "million",
+   "start": 2.84,
+   "end": 3.4
+  },
+  {
+   "text": "copies.",
+   "start": 3.4,
+   "end": 4.2
+  },
+  {
+   "text": "The",
+   "start": 4.2,
+   "end": 4.48
+  },
+  {
+   "text": "first",
+   "start": 4.48,
+   "end": 4.8
+  },
+  {
+   "text": "person",
+   "start": 4.8,
+   "end": 5.08
+  },
+  {
+   "text": "to",
+   "start": 5.08,
+   "end": 5.28
+  },
+  {
+   "text": "show",
+   "start": 5.28,
+   "end": 5.52
+  },
+  {
+   "text": "it",
+   "start": 5.52,
+   "end": 5.68
+  },
+  {
+   "text": "to",
+   "start": 5.68,
+   "end": 5.8
+  },
+  {
+   "text": "the",
+   "start": 5.8,
+   "end": 6.0
+  },
+  {
+   "text": "world...",
+   "start": 6.0,
+   "end": 6.64
+  },
+  {
+   "text": "just",
+   "start": 6.64,
+   "end": 7.04
+  },
+  {
+   "text": "faced",
+   "start": 7.04,
+   "end": 7.44
+  },
+  {
+   "text": "a",
+   "start": 7.44,
+   "end": 7.6
+  },
+  {
+   "text": "judge.",
+   "start": 7.6,
+   "end": 8.2
+  },
+  {
+   "text": "And",
+   "start": 8.2,
+   "end": 8.48
+  },
+  {
+   "text": "he",
+   "start": 8.48,
+   "end": 8.68
+  },
+  {
+   "text": "did",
+   "start": 8.68,
+   "end": 8.96
+  },
+  {
+   "text": "it",
+   "start": 8.96,
+   "end": 9.2
+  },
+  {
+   "text": "with",
+   "start": 9.2,
+   "end": 9.4
+  },
+  {
+   "text": "a",
+   "start": 9.4,
+   "end": 9.56
+  },
+  {
+   "text": "Fire",
+   "start": 9.56,
+   "end": 10.0
+  },
+  {
+   "text": "Stick.",
+   "start": 10.0,
+   "end": 10.64
+  },
+  {
+   "text": "September",
+   "start": 10.64,
+   "end": 11.44
+  },
+  {
+   "text": "2022.",
+   "start": 11.44,
+   "end": 12.8
+  },
+  {
+   "text": "Arion",
+   "start": 12.8,
+   "end": 13.32
+  },
+  {
+   "text": "Kurtaj",
+   "start": 13.32,
+   "end": 13.92
+  },
+  {
+   "text": "is",
+   "start": 13.92,
+   "end": 14.08
+  },
+  {
+   "text": "on",
+   "start": 14.08,
+   "end": 14.28
+  },
+  {
+   "text": "bail",
+   "start": 14.28,
+   "end": 14.68
+  },
+  {
+   "text": "for",
+   "start": 14.68,
+   "end": 14.88
+  },
+  {
+   "text": "hacking",
+   "start": 14.88,
+   "end": 15.2
+  },
+  {
+   "text": "a",
+   "start": 15.2,
+   "end": 15.32
+  },
+  {
+   "text": "phone",
+   "start": 15.32,
+   "end": 15.68
+  },
+  {
+   "text": "network.",
+   "start": 15.68,
+   "end": 16.32
+  },
+  {
+   "text": "The",
+   "start": 16.32,
+   "end": 16.56
+  },
+  {
+   "text": "police",
+   "start": 16.56,
+   "end": 17.04
+  },
+  {
+   "text": "have",
+   "start": 17.04,
+   "end": 17.24
+  },
+  {
+   "text": "his",
+   "start": 17.24,
+   "end": 17.44
+  },
+  {
+   "text": "laptop.",
+   "start": 17.44,
+   "end": 18.24
+  },
+  {
+   "text": "Rival",
+   "start": 18.24,
+   "end": 18.72
+  },
+  {
+   "text": "hackers",
+   "start": 18.72,
+   "end": 19.2
+  },
+  {
+   "text": "are",
+   "start": 19.2,
+   "end": 19.36
+  },
+  {
+   "text": "threatening",
+   "start": 19.36,
+   "end": 19.84
+  },
+  {
+   "text": "him",
+   "start": 19.84,
+   "end": 20.04
+  },
+  {
+   "text": "over",
+   "start": 20.04,
+   "end": 20.28
+  },
+  {
+   "text": "stolen",
+   "start": 20.28,
+   "end": 20.72
+  },
+  {
+   "text": "Bitcoin.",
+   "start": 20.72,
+   "end": 21.52
+  },
+  {
+   "text": "So",
+   "start": 21.52,
+   "end": 21.92
+  },
+  {
+   "text": "he's",
+   "start": 21.92,
+   "end": 22.32
+  },
+  {
+   "text": "hidden",
+   "start": 22.32,
+   "end": 22.68
+  },
+  {
+   "text": "in",
+   "start": 22.68,
+   "end": 22.8
+  },
+  {
+   "text": "a",
+   "start": 22.8,
+   "end": 22.96
+  },
+  {
+   "text": "Travelodge.",
+   "start": 22.96,
+   "end": 24.0
+  },
+  {
+   "text": "All",
+   "start": 24.0,
+   "end": 24.16
+  },
+  {
+   "text": "he",
+   "start": 24.16,
+   "end": 24.32
+  },
+  {
+   "text": "has",
+   "start": 24.32,
+   "end": 24.6
+  },
+  {
+   "text": "is",
+   "start": 24.6,
+   "end": 24.76
+  },
+  {
+   "text": "a",
+   "start": 24.76,
+   "end": 24.88
+  },
+  {
+   "text": "phone,",
+   "start": 24.88,
+   "end": 25.36
+  },
+  {
+   "text": "the",
+   "start": 25.36,
+   "end": 25.6
+  },
+  {
+   "text": "hotel",
+   "start": 25.6,
+   "end": 26.12
+  },
+  {
+   "text": "Wi-Fi...",
+   "start": 26.12,
+   "end": 26.8
+  },
+  {
+   "text": "and",
+   "start": 26.8,
+   "end": 27.12
+  },
+  {
+   "text": "this,",
+   "start": 27.12,
+   "end": 27.52
+  },
+  {
+   "text": "plugged",
+   "start": 27.52,
+   "end": 28.08
+  },
+  {
+   "text": "into",
+   "start": 28.08,
+   "end": 28.32
+  },
+  {
+   "text": "the",
+   "start": 28.32,
+   "end": 28.52
+  },
+  {
+   "text": "TV.",
+   "start": 28.52,
+   "end": 29.12
+  },
+  {
+   "text": "From",
+   "start": 29.12,
+   "end": 29.4
+  },
+  {
+   "text": "that",
+   "start": 29.4,
+   "end": 29.6
+  },
+  {
+   "text": "hotel",
+   "start": 29.6,
+   "end": 30.12
+  },
+  {
+   "text": "bed,",
+   "start": 30.12,
+   "end": 30.48
+  },
+  {
+   "text": "he",
+   "start": 30.48,
+   "end": 30.72
+  },
+  {
+   "text": "breaks",
+   "start": 30.72,
+   "end": 31.16
+  },
+  {
+   "text": "into",
+   "start": 31.16,
+   "end": 31.4
+  },
+  {
+   "text": "Rockstar",
+   "start": 31.4,
+   "end": 32.08
+  },
+  {
+   "text": "Games.",
+   "start": 32.08,
+   "end": 32.8
+  },
+  {
+   "text": "90",
+   "start": 32.8,
+   "end": 33.4
+  },
+  {
+   "text": "clips",
+   "start": 33.4,
+   "end": 33.84
+  },
+  {
+   "text": "of",
+   "start": 33.84,
+   "end": 34.08
+  },
+  {
+   "text": "GTA 6.",
+   "start": 34.08,
+   "end": 34.96
+  },
+  {
+   "text": "Nearly",
+   "start": 34.96,
+   "end": 35.44
+  },
+  {
+   "text": "an",
+   "start": 35.44,
+   "end": 35.68
+  },
+  {
+   "text": "hour",
+   "start": 35.68,
+   "end": 36.0
+  },
+  {
+   "text": "of",
+   "start": 36.0,
+   "end": 36.16
+  },
+  {
+   "text": "footage,",
+   "start": 36.16,
+   "end": 36.76
+  },
+  {
+   "text": "four",
+   "start": 36.76,
+   "end": 37.16
+  },
+  {
+   "text": "years",
+   "start": 37.16,
+   "end": 37.6
+  },
+  {
+   "text": "before",
+   "start": 37.6,
+   "end": 38.0
+  },
+  {
+   "text": "release.",
+   "start": 38.0,
+   "end": 38.84
+  },
+  {
+   "text": "Leaked.",
+   "start": 38.84,
+   "end": 39.74
+  },
+  {
+   "text": "Rockstar",
+   "start": 40.16,
+   "end": 40.88
+  },
+  {
+   "text": "says",
+   "start": 40.88,
+   "end": 41.16
+  },
+  {
+   "text": "it",
+   "start": 41.16,
+   "end": 41.32
+  },
+  {
+   "text": "cost",
+   "start": 41.32,
+   "end": 41.68
+  },
+  {
+   "text": "$5",
+   "start": 41.68,
+   "end": 42.08
+  },
+  {
+   "text": "million",
+   "start": 42.08,
+   "end": 42.6
+  },
+  {
+   "text": "dollars.",
+   "start": 42.6,
+   "end": 43.36
+  },
+  {
+   "text": "He's",
+   "start": 43.36,
+   "end": 43.76
+  },
+  {
+   "text": "caught.",
+   "start": 43.76,
+   "end": 44.2
+  },
+  {
+   "text": "But",
+   "start": 44.2,
+   "end": 44.44
+  },
+  {
+   "text": "he's",
+   "start": 44.44,
+   "end": 44.76
+  },
+  {
+   "text": "ruled",
+   "start": 44.76,
+   "end": 45.08
+  },
+  {
+   "text": "unfit",
+   "start": 45.08,
+   "end": 45.6
+  },
+  {
+   "text": "for",
+   "start": 45.6,
+   "end": 45.8
+  },
+  {
+   "text": "trial...",
+   "start": 45.8,
+   "end": 46.32
+  },
+  {
+   "text": "and",
+   "start": 46.32,
+   "end": 46.56
+  },
+  {
+   "text": "locked",
+   "start": 46.56,
+   "end": 46.92
+  },
+  {
+   "text": "in",
+   "start": 46.92,
+   "end": 47.04
+  },
+  {
+   "text": "a",
+   "start": 47.04,
+   "end": 47.16
+  },
+  {
+   "text": "secure",
+   "start": 47.16,
+   "end": 47.64
+  },
+  {
+   "text": "hospital,",
+   "start": 47.64,
+   "end": 48.32
+  },
+  {
+   "text": "with",
+   "start": 48.32,
+   "end": 48.56
+  },
+  {
+   "text": "no",
+   "start": 48.56,
+   "end": 48.84
+  },
+  {
+   "text": "end date.",
+   "start": 48.84,
+   "end": 49.58
+  },
+  {
+   "text": "Then",
+   "start": 49.58,
+   "end": 50.06
+  },
+  {
+   "text": "doctors",
+   "start": 50.06,
+   "end": 50.86
+  },
+  {
+   "text": "say",
+   "start": 50.86,
+   "end": 51.06
+  },
+  {
+   "text": "he's",
+   "start": 51.06,
+   "end": 51.34
+  },
+  {
+   "text": "fit",
+   "start": 51.34,
+   "end": 51.66
+  },
+  {
+   "text": "after",
+   "start": 51.66,
+   "end": 51.94
+  },
+  {
+   "text": "all.",
+   "start": 51.94,
+   "end": 52.3
+  },
+  {
+   "text": "On",
+   "start": 52.3,
+   "end": 52.46
+  },
+  {
+   "text": "the",
+   "start": 52.46,
+   "end": 52.62
+  },
+  {
+   "text": "16th",
+   "start": 52.62,
+   "end": 53.22
+  },
+  {
+   "text": "of",
+   "start": 53.22,
+   "end": 53.34
+  },
+  {
+   "text": "November",
+   "start": 53.34,
+   "end": 53.86
+  },
+  {
+   "text": "2026,",
+   "start": 53.86,
+   "end": 54.98
+  },
+  {
+   "text": "he",
+   "start": 54.98,
+   "end": 55.18
+  },
+  {
+   "text": "pleads",
+   "start": 55.18,
+   "end": 55.66
+  },
+  {
+   "text": "guilty.",
+   "start": 55.66,
+   "end": 56.3
+  },
+  {
+   "text": "Three",
+   "start": 56.3,
+   "end": 56.7
+  },
+  {
+   "text": "days",
+   "start": 56.7,
+   "end": 57.02
+  },
+  {
+   "text": "later,",
+   "start": 57.02,
+   "end": 57.7
+  },
+  {
+   "text": "GTA 6",
+   "start": 57.7,
+   "end": 58.54
+  },
+  {
+   "text": "comes",
+   "start": 58.54,
+   "end": 58.86
+  },
+  {
+   "text": "out,",
+   "start": 58.86,
+   "end": 59.06
+  },
+  {
+   "text": "and",
+   "start": 59.06,
+   "end": 59.22
+  },
+  {
+   "text": "sells",
+   "start": 59.22,
+   "end": 59.58
+  },
+  {
+   "text": "an",
+   "start": 59.58,
+   "end": 59.74
+  },
+  {
+   "text": "estimated",
+   "start": 59.74,
+   "end": 60.46
+  },
+  {
+   "text": "17",
+   "start": 60.46,
+   "end": 61.26
+  },
+  {
+   "text": "million",
+   "start": 61.26,
+   "end": 61.82
+  },
+  {
+   "text": "copies.",
+   "start": 61.82,
+   "end": 62.54
+  },
+  {
+   "text": "And",
+   "start": 62.54,
+   "end": 62.78
+  },
+  {
+   "text": "the",
+   "start": 62.78,
+   "end": 62.98
+  },
+  {
+   "text": "kid",
+   "start": 62.98,
+   "end": 63.22
+  },
+  {
+   "text": "who",
+   "start": 63.22,
+   "end": 63.42
+  },
+  {
+   "text": "showed",
+   "start": 63.42,
+   "end": 63.7
+  },
+  {
+   "text": "it",
+   "start": 63.7,
+   "end": 63.86
+  },
+  {
+   "text": "to",
+   "start": 63.86,
+   "end": 63.94
+  },
+  {
+   "text": "the",
+   "start": 63.94,
+   "end": 64.1
+  },
+  {
+   "text": "world",
+   "start": 64.1,
+   "end": 64.5
+  },
+  {
+   "text": "first?",
+   "start": 64.5,
+   "end": 65.18
+  },
+  {
+   "text": "All",
+   "start": 65.71,
+   "end": 66.03
+  },
+  {
+   "text": "because",
+   "start": 66.03,
+   "end": 66.35
+  },
+  {
+   "text": "of",
+   "start": 66.35,
+   "end": 66.51
+  },
+  {
+   "text": "a",
+   "start": 66.51,
+   "end": 66.67
+  },
+  {
+   "text": "Fire",
+   "start": 66.67,
+   "end": 67.07
+  },
+  {
+   "text": "Stick.",
+   "start": 67.07,
+   "end": 67.61
+  }
+ ]
+}

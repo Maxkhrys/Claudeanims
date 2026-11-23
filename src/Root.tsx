@@ -19,6 +19,7 @@ import { VIDEO3_OUTRO_FRAMES, Video3, Video3Clip, video3ClipSchema, video3Schema
 import { VIDEO3_FRAMES, clipTimings as clipTimings3 } from "./video3/clipTimings";
 import { Vertical3Clip, vertical3Schema } from "./video3/Vertical3";
 import { TOP5_TEENS_FRAMES, Top5Teens, Top5TeensCover, Top5TeensThumbYT, top5TeensSchema } from "./shorts/Top5Teens";
+import { JUDGE_GTA6_FRAMES, JudgeGTA6, judgeGta6Schema } from "./shorts/JudgeGTA6";
 import { SHORT_CYBERLEAK_FRAMES, ShortCyberleak, shortCyberleakSchema } from "./shorts/ShortCyberleak";
 import { SHORT_H, SHORT_LAPSUS1_FRAMES, SHORT_W, ShortLapsus1, shortLapsus1Schema } from "./shorts/ShortLapsus1";
 import { Thumbnail, ThumbnailAlphaBayBright, ThumbnailLapsus, ThumbnailLapsusB, ThumbnailLapsusBright, ThumbnailLapsusC, ThumbnailSilkRoadBright, VerticalCover, VerticalCoverAlphaBay, VerticalCoverLapsus, thumbnailSchema } from "./video2/Thumbnail";
@@ -243,6 +244,26 @@ export const RemotionRoot: React.FC = () => {
         height={1080}
         fps={VIDEO.fps}
         durationInFrames={TOP5_TEENS_FRAMES}
+      />
+      <Composition
+        id="Judge-GTA6"
+        component={JudgeGTA6}
+        schema={judgeGta6Schema}
+        defaultProps={{ showCaptions: true }}
+        width={SHORT_W}
+        height={SHORT_H}
+        fps={VIDEO.fps}
+        durationInFrames={JUDGE_GTA6_FRAMES}
+      />
+      <Composition
+        id="Judge-GTA6-YT"
+        component={JudgeGTA6}
+        schema={judgeGta6Schema}
+        defaultProps={{ showCaptions: true, landscape: true }}
+        width={1920}
+        height={1080}
+        fps={VIDEO.fps}
+        durationInFrames={JUDGE_GTA6_FRAMES}
       />
       <Still id="Top5-Teen-Hackers-Thumb-YT" component={Top5TeensThumbYT} width={1920} height={1080} />
       <Still id="Top5-Teen-Hackers-Cover" component={Top5TeensCover} width={SHORT_W} height={SHORT_H} />
