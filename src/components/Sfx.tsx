@@ -17,7 +17,18 @@ export type SfxName =
   | "crash"
   | "door"
   | "rumble"
-  | "snap";
+  | "snap"
+  | "boom"
+  | "firework"
+  | "crowd"
+  | "beep"
+  | "flatline"
+  | "crack"
+  | "dissolve"
+  | "kaching"
+  | "heartbeat"
+  | "creak"
+  | "plane";
 
 /** Master level for all sound effects, relative to the narration. */
 export const SFX_VOLUME = 0.55;
