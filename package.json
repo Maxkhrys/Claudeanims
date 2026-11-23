@@ -29,7 +29,8 @@
     "render:video3": "remotion render Video3 out/video3.mp4",
     "thumb:video3": "remotion still V3-Thumb out/thumb-lapsus.png && ffmpeg -y -loglevel error -i out/thumb-lapsus.png -vf scale=1280:720 -q:v 2 out/thumb-lapsus.jpg && remotion still V3-Cover-Vertical out/cover-lapsus-vertical.png && ffmpeg -y -loglevel error -i out/cover-lapsus-vertical.png -q:v 2 out/cover-lapsus-vertical.jpg",
     "render:vertical3": "for n in $(seq 1 26); do remotion render Lapsus-Vertical-$n out/vertical3/lapsus-part$n.mp4; done",
-    "thumb:bright": "for v in Lapsus SilkRoad AlphaBay; do remotion still Bright-$v out/bright-$v.png && ffmpeg -y -loglevel error -i out/bright-$v.png -vf scale=1280:720 -q:v 2 out/bright-$v.jpg; done"
+    "thumb:bright": "for v in Lapsus SilkRoad AlphaBay; do remotion still Bright-$v out/bright-$v.png && ffmpeg -y -loglevel error -i out/bright-$v.png -vf scale=1280:720 -q:v 2 out/bright-$v.jpg; done",
+    "thumbs": "node scripts/thumbs.mjs"
   },
   "keywords": [],
   "author": "",
