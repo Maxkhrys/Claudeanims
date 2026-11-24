@@ -1,5 +1,5 @@
 const { chromium } = require('playwright'); const path=require('path');
-const ctrl=`<svg viewBox="-130 -80 260 160" width="100%"><path d="M-80,-40 C-60,-62 60,-62 80,-40 C108,-12 122,44 98,56 C74,64 58,30 40,20 L-40,20 C-58,30 -74,64 -98,56 C-122,44 -108,-12 -80,-40Z" fill="#2a2b33" stroke="#fff" stroke-width="7"/><circle cx="58" cy="-26" r="10" fill="#ff4d6d"/><circle cx="78" cy="-8" r="10" fill="#22E6FF"/><circle cx="38" cy="-8" r="10" fill="#FFD60A"/><circle cx="58" cy="10" r="10" fill="#39FF88"/><path d="M-72,-10 h38 M-53,-29 v38" stroke="#ddd" stroke-width="11" stroke-linecap="round"/><circle cx="-22" cy="22" r="12" fill="#111"/><circle cx="24" cy="22" r="12" fill="#111"/></svg>`;
+const ctrl=`<svg viewBox="-110 -110 220 220" width="100%"><rect x="-90" y="-80" width="180" height="170" rx="16" fill="#fff"/><rect x="-90" y="-80" width="180" height="52" rx="16" fill="#E8283C"/><rect x="-90" y="-46" width="180" height="18" fill="#E8283C"/><rect x="-52" y="-100" width="14" height="40" rx="7" fill="#2a2b33"/><rect x="38" y="-100" width="14" height="40" rx="7" fill="#2a2b33"/><text x="0" y="-42" text-anchor="middle" font-family="Anton" font-size="30" fill="#fff" letter-spacing="3">DAYS</text><text x="0" y="72" text-anchor="middle" font-family="Anton" font-size="112" fill="#0B0C10">11</text></svg>`;
 const css=(W,H)=>`@font-face{font-family:Anton;src:url(Anton-400.woff2)}*{margin:0;box-sizing:border-box}body{width:${W}px;height:${H}px;background:#0B0C10;overflow:hidden;position:relative;font-family:Anton;text-transform:uppercase}
 .rays{position:absolute;inset:-50%;background:repeating-conic-gradient(from 0deg at 50% 50%,rgba(255,255,255,.045) 0 9deg,transparent 9deg 22deg)}
 .glow{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(255,214,10,.30),transparent 65%)}
@@ -12,8 +12,7 @@ const css=(W,H)=>`@font-face{font-family:Anton;src:url(Anton-400.woff2)}*{margin
 const yt=`<style>${css(1280,720)}</style><div class="rays"></div><div class="glow" style="left:560px;top:-40px;width:900px;height:900px"></div>
 <img class="j" src="jensen-cut.png" style="left:680px;top:60px;width:620px">
 <div class="vig" style="pointer-events:none"></div>
-<img src="nvidia-logo-white.png" style="position:absolute;left:60px;top:28px;height:215px">
-<img src="gta6.png" style="position:absolute;left:372px;top:34px;height:205px">
+<img src="nvidia-logo-white.png" style="position:absolute;left:60px;top:24px;height:225px">
 <div class="top" style="left:60px;top:262px;font-size:150px">He quit...</div>
 <div class="hit" style="left:54px;top:440px;font-size:122px;padding:8px 26px 14px">He's back?!</div>
 <div class="ring" style="left:640px;top:468px;width:240px;height:240px"><div style="width:185px">${ctrl}</div></div>
@@ -22,8 +21,7 @@ const cover=`<style>${css(1080,1920)}</style><div class="rays"></div><div class=
 <img class="j" src="jensen-cut.png" style="left:110px;top:985px;width:740px">
 <div class="vig" style="pointer-events:none"></div>
 <img class="onion" src="onion.png" style="left:62px;top:268px;width:120px">
-<img src="nvidia-logo-white.png" style="position:absolute;left:200px;top:255px;height:290px">
-<img src="gta6.png" style="position:absolute;left:600px;top:262px;height:275px">
+<img src="nvidia-logo-white.png" style="position:absolute;left:215px;top:255px;height:290px">
 <div class="top" style="left:66px;top:575px;font-size:176px">He quit...</div>
 <div class="hit" style="left:60px;top:770px;font-size:170px;padding:8px 28px 16px">He's back?!</div>
 <div class="ring" style="left:560px;top:1290px;width:330px;height:330px"><div style="width:250px">${ctrl}</div></div>`;
