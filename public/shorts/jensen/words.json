@@ -1,0 +1,721 @@
+{
+ "clip": "shorts/jensen-back",
+ "model": "sherpa-zipformer-en + script align",
+ "words": [
+  {
+   "text": "Nvidia's",
+   "start": 0.0,
+   "end": 0.75
+  },
+  {
+   "text": "boss",
+   "start": 0.76,
+   "end": 1.19
+  },
+  {
+   "text": "quit",
+   "start": 1.2,
+   "end": 1.51
+  },
+  {
+   "text": "over",
+   "start": 1.52,
+   "end": 1.71
+  },
+  {
+   "text": "a",
+   "start": 1.72,
+   "end": 1.83
+  },
+  {
+   "text": "suspected",
+   "start": 1.84,
+   "end": 2.35
+  },
+  {
+   "text": "Chinese",
+   "start": 2.36,
+   "end": 2.75
+  },
+  {
+   "text": "spy...",
+   "start": 2.76,
+   "end": 3.15
+  },
+  {
+   "text": "and",
+   "start": 3.16,
+   "end": 3.35
+  },
+  {
+   "text": "eleven",
+   "start": 3.36,
+   "end": 3.83
+  },
+  {
+   "text": "days",
+   "start": 3.84,
+   "end": 4.07
+  },
+  {
+   "text": "later,",
+   "start": 4.08,
+   "end": 4.39
+  },
+  {
+   "text": "he",
+   "start": 4.4,
+   "end": 4.55
+  },
+  {
+   "text": "got",
+   "start": 4.56,
+   "end": 4.75
+  },
+  {
+   "text": "his",
+   "start": 4.76,
+   "end": 4.91
+  },
+  {
+   "text": "job",
+   "start": 4.92,
+   "end": 5.21
+  },
+  {
+   "text": "back.",
+   "start": 5.22,
+   "end": 5.43
+  },
+  {
+   "text": "Jensen",
+   "start": 5.44,
+   "end": 5.91
+  },
+  {
+   "text": "Huang.",
+   "start": 5.92,
+   "end": 6.27
+  },
+  {
+   "text": "The",
+   "start": 6.28,
+   "end": 6.39
+  },
+  {
+   "text": "leather",
+   "start": 6.4,
+   "end": 6.75
+  },
+  {
+   "text": "jacket.",
+   "start": 6.76,
+   "end": 7.27
+  },
+  {
+   "text": "The",
+   "start": 7.28,
+   "end": 7.43
+  },
+  {
+   "text": "chips",
+   "start": 7.44,
+   "end": 7.79
+  },
+  {
+   "text": "that",
+   "start": 7.8,
+   "end": 7.99
+  },
+  {
+   "text": "run",
+   "start": 8.0,
+   "end": 8.27
+  },
+  {
+   "text": "all",
+   "start": 8.28,
+   "end": 8.51
+  },
+  {
+   "text": "of",
+   "start": 8.52,
+   "end": 8.63
+  },
+  {
+   "text": "AI.",
+   "start": 8.64,
+   "end": 9.15
+  },
+  {
+   "text": "November",
+   "start": 9.16,
+   "end": 9.67
+  },
+  {
+   "text": "twelfth.",
+   "start": 9.68,
+   "end": 10.15
+  },
+  {
+   "text": "He",
+   "start": 10.16,
+   "end": 10.31
+  },
+  {
+   "text": "resigns.",
+   "start": 10.32,
+   "end": 10.99
+  },
+  {
+   "text": "Reports",
+   "start": 11.0,
+   "end": 11.47
+  },
+  {
+   "text": "of",
+   "start": 11.48,
+   "end": 11.59
+  },
+  {
+   "text": "affairs...",
+   "start": 11.6,
+   "end": 12.35
+  },
+  {
+   "text": "and",
+   "start": 12.36,
+   "end": 12.63
+  },
+  {
+   "text": "one",
+   "start": 12.64,
+   "end": 12.95
+  },
+  {
+   "text": "woman",
+   "start": 12.96,
+   "end": 13.39
+  },
+  {
+   "text": "US",
+   "start": 13.4,
+   "end": 13.67
+  },
+  {
+   "text": "officials",
+   "start": 13.68,
+   "end": 14.19
+  },
+  {
+   "text": "reportedly",
+   "start": 14.2,
+   "end": 14.79
+  },
+  {
+   "text": "suspect",
+   "start": 14.8,
+   "end": 15.23
+  },
+  {
+   "text": "of",
+   "start": 15.24,
+   "end": 15.39
+  },
+  {
+   "text": "ties",
+   "start": 15.4,
+   "end": 15.75
+  },
+  {
+   "text": "to",
+   "start": 15.76,
+   "end": 15.95
+  },
+  {
+   "text": "Chinese",
+   "start": 15.96,
+   "end": 16.39
+  },
+  {
+   "text": "intelligence.",
+   "start": 16.4,
+   "end": 17.03
+  },
+  {
+   "text": "The",
+   "start": 17.04,
+   "end": 17.19
+  },
+  {
+   "text": "board",
+   "start": 17.2,
+   "end": 17.51
+  },
+  {
+   "text": "says:",
+   "start": 17.52,
+   "end": 17.79
+  },
+  {
+   "text": "he's",
+   "start": 17.8,
+   "end": 18.07
+  },
+  {
+   "text": "done.",
+   "start": 18.08,
+   "end": 18.39
+  },
+  {
+   "text": "Not",
+   "start": 18.4,
+   "end": 18.55
+  },
+  {
+   "text": "coming",
+   "start": 18.56,
+   "end": 18.87
+  },
+  {
+   "text": "back.",
+   "start": 18.88,
+   "end": 19.07
+  },
+  {
+   "text": "But",
+   "start": 19.08,
+   "end": 19.31
+  },
+  {
+   "text": "while",
+   "start": 19.32,
+   "end": 19.51
+  },
+  {
+   "text": "he's",
+   "start": 19.52,
+   "end": 19.79
+  },
+  {
+   "text": "gone...",
+   "start": 19.8,
+   "end": 20.31
+  },
+  {
+   "text": "GTA 6",
+   "start": 20.32,
+   "end": 20.95
+  },
+  {
+   "text": "drops.",
+   "start": 20.96,
+   "end": 21.47
+  },
+  {
+   "text": "Missing",
+   "start": 21.48,
+   "end": 21.91
+  },
+  {
+   "text": "boss.",
+   "start": 21.92,
+   "end": 22.43
+  },
+  {
+   "text": "Biggest",
+   "start": 22.44,
+   "end": 22.83
+  },
+  {
+   "text": "game",
+   "start": 22.84,
+   "end": 23.07
+  },
+  {
+   "text": "ever.",
+   "start": 23.08,
+   "end": 23.43
+  },
+  {
+   "text": "You",
+   "start": 23.44,
+   "end": 23.63
+  },
+  {
+   "text": "do",
+   "start": 23.64,
+   "end": 23.79
+  },
+  {
+   "text": "the",
+   "start": 23.8,
+   "end": 23.91
+  },
+  {
+   "text": "math.",
+   "start": 23.92,
+   "end": 24.23
+  },
+  {
+   "text": "Joke.",
+   "start": 24.24,
+   "end": 24.63
+  },
+  {
+   "text": "Obviously",
+   "start": 24.64,
+   "end": 25.23
+  },
+  {
+   "text": "a",
+   "start": 25.24,
+   "end": 25.35
+  },
+  {
+   "text": "joke.",
+   "start": 25.36,
+   "end": 25.67
+  },
+  {
+   "text": "He",
+   "start": 25.68,
+   "end": 25.79
+  },
+  {
+   "text": "runs",
+   "start": 25.8,
+   "end": 26.03
+  },
+  {
+   "text": "Nvidia...",
+   "start": 26.04,
+   "end": 26.59
+  },
+  {
+   "text": "and",
+   "start": 26.6,
+   "end": 26.87
+  },
+  {
+   "text": "GTA 6",
+   "start": 26.88,
+   "end": 27.43
+  },
+  {
+   "text": "isn't",
+   "start": 27.44,
+   "end": 27.71
+  },
+  {
+   "text": "even",
+   "start": 27.72,
+   "end": 27.91
+  },
+  {
+   "text": "on",
+   "start": 27.92,
+   "end": 28.07
+  },
+  {
+   "text": "PC.",
+   "start": 28.08,
+   "end": 28.47
+  },
+  {
+   "text": "But",
+   "start": 28.48,
+   "end": 28.71
+  },
+  {
+   "text": "here's",
+   "start": 28.72,
+   "end": 29.03
+  },
+  {
+   "text": "what",
+   "start": 29.04,
+   "end": 29.19
+  },
+  {
+   "text": "actually",
+   "start": 29.2,
+   "end": 29.59
+  },
+  {
+   "text": "happened.",
+   "start": 29.6,
+   "end": 29.99
+  },
+  {
+   "text": "The",
+   "start": 30.0,
+   "end": 30.15
+  },
+  {
+   "text": "President",
+   "start": 30.16,
+   "end": 30.67
+  },
+  {
+   "text": "backs",
+   "start": 30.68,
+   "end": 30.95
+  },
+  {
+   "text": "him.",
+   "start": 30.96,
+   "end": 31.15
+  },
+  {
+   "text": "Silicon",
+   "start": 31.16,
+   "end": 31.63
+  },
+  {
+   "text": "Valley",
+   "start": 31.64,
+   "end": 31.99
+  },
+  {
+   "text": "rallies.",
+   "start": 32.0,
+   "end": 32.55
+  },
+  {
+   "text": "Government",
+   "start": 32.56,
+   "end": 32.99
+  },
+  {
+   "text": "officials",
+   "start": 33.0,
+   "end": 33.51
+  },
+  {
+   "text": "tell",
+   "start": 33.52,
+   "end": 33.67
+  },
+  {
+   "text": "the",
+   "start": 33.68,
+   "end": 33.83
+  },
+  {
+   "text": "board:",
+   "start": 33.84,
+   "end": 34.19
+  },
+  {
+   "text": "no",
+   "start": 34.2,
+   "end": 34.39
+  },
+  {
+   "text": "security",
+   "start": 34.4,
+   "end": 34.91
+  },
+  {
+   "text": "risk.",
+   "start": 34.92,
+   "end": 35.35
+  },
+  {
+   "text": "Day",
+   "start": 35.36,
+   "end": 35.55
+  },
+  {
+   "text": "eleven.",
+   "start": 35.56,
+   "end": 36.07
+  },
+  {
+   "text": "Jensen",
+   "start": 36.08,
+   "end": 36.47
+  },
+  {
+   "text": "walks",
+   "start": 36.48,
+   "end": 36.75
+  },
+  {
+   "text": "back",
+   "start": 36.76,
+   "end": 36.95
+  },
+  {
+   "text": "in.",
+   "start": 36.96,
+   "end": 37.15
+  },
+  {
+   "text": "Employees",
+   "start": 37.16,
+   "end": 37.75
+  },
+  {
+   "text": "cheer.",
+   "start": 37.76,
+   "end": 38.19
+  },
+  {
+   "text": "The",
+   "start": 38.2,
+   "end": 38.39
+  },
+  {
+   "text": "stock",
+   "start": 38.4,
+   "end": 38.71
+  },
+  {
+   "text": "rockets",
+   "start": 38.72,
+   "end": 39.15
+  },
+  {
+   "text": "thirty-one",
+   "start": 39.16,
+   "end": 39.63
+  },
+  {
+   "text": "percent.",
+   "start": 39.64,
+   "end": 40.07
+  },
+  {
+   "text": "But",
+   "start": 40.08,
+   "end": 40.27
+  },
+  {
+   "text": "the",
+   "start": 40.28,
+   "end": 40.39
+  },
+  {
+   "text": "investigation",
+   "start": 40.4,
+   "end": 41.11
+  },
+  {
+   "text": "into",
+   "start": 41.12,
+   "end": 41.31
+  },
+  {
+   "text": "that",
+   "start": 41.32,
+   "end": 41.51
+  },
+  {
+   "text": "spy",
+   "start": 41.52,
+   "end": 41.75
+  },
+  {
+   "text": "link?",
+   "start": 41.76,
+   "end": 42.23
+  },
+  {
+   "text": "Still",
+   "start": 42.24,
+   "end": 42.51
+  },
+  {
+   "text": "open.",
+   "start": 42.52,
+   "end": 42.91
+  },
+  {
+   "text": "So...",
+   "start": 42.92,
+   "end": 43.31
+  },
+  {
+   "text": "did",
+   "start": 43.32,
+   "end": 43.59
+  },
+  {
+   "text": "Jensen",
+   "start": 43.6,
+   "end": 43.99
+  },
+  {
+   "text": "beat",
+   "start": 44.0,
+   "end": 44.19
+  },
+  {
+   "text": "the",
+   "start": 44.2,
+   "end": 44.31
+  },
+  {
+   "text": "scandal...",
+   "start": 44.32,
+   "end": 44.83
+  },
+  {
+   "text": "or",
+   "start": 44.84,
+   "end": 45.15
+  },
+  {
+   "text": "did",
+   "start": 45.16,
+   "end": 45.35
+  },
+  {
+   "text": "he",
+   "start": 45.36,
+   "end": 45.51
+  },
+  {
+   "text": "just",
+   "start": 45.52,
+   "end": 45.67
+  },
+  {
+   "text": "finish",
+   "start": 45.68,
+   "end": 45.95
+  },
+  {
+   "text": "the",
+   "start": 45.96,
+   "end": 46.19
+  },
+  {
+   "text": "GTA 6",
+   "start": 46.2,
+   "end": 46.71
+  },
+  {
+   "text": "story",
+   "start": 46.72,
+   "end": 47.07
+  },
+  {
+   "text": "mode?",
+   "start": 47.08,
+   "end": 47.71
+  },
+  {
+   "text": "Comment",
+   "start": 47.72,
+   "end": 47.95
+  },
+  {
+   "text": "below.",
+   "start": 47.96,
+   "end": 48.58
+  }
+ ]
+}
