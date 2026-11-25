@@ -22,6 +22,7 @@ import { TOP5_TEENS_FRAMES, Top5Teens, Top5TeensCover, Top5TeensThumbYT, top5Tee
 import { JUDGE_GTA6_FRAMES, JudgeGTA6, judgeGta6Schema } from "./shorts/JudgeGTA6";
 import { WALKS_FREE_FRAMES, WalksFreeGTA6, walksFreeSchema } from "./shorts/WalksFreeGTA6";
 import { JENSEN_BACK_FRAMES, JensenBack, jensenBackSchema } from "./shorts/JensenBack";
+import { AI_BANK_FRAMES, AiBankHeist, aiBankSchema } from "./shorts/AiBankHeist";
 import { SHORT_CYBERLEAK_FRAMES, ShortCyberleak, shortCyberleakSchema } from "./shorts/ShortCyberleak";
 import { SHORT_H, SHORT_LAPSUS1_FRAMES, SHORT_W, ShortLapsus1, shortLapsus1Schema } from "./shorts/ShortLapsus1";
 import { Thumbnail, ThumbnailAlphaBayBright, ThumbnailLapsus, ThumbnailLapsusB, ThumbnailLapsusBright, ThumbnailLapsusC, ThumbnailSilkRoadBright, VerticalCover, VerticalCoverAlphaBay, VerticalCoverLapsus, thumbnailSchema } from "./video2/Thumbnail";
@@ -276,6 +277,16 @@ export const RemotionRoot: React.FC = () => {
         height={SHORT_H}
         fps={VIDEO.fps}
         durationInFrames={JENSEN_BACK_FRAMES}
+      />
+      <Composition
+        id="AI-Bank-Heist"
+        component={AiBankHeist}
+        schema={aiBankSchema}
+        defaultProps={{ showCaptions: true }}
+        width={SHORT_W}
+        height={SHORT_H}
+        fps={VIDEO.fps}
+        durationInFrames={AI_BANK_FRAMES}
       />
       <Composition
         id="Judge-GTA6-YT"
