@@ -1,0 +1,581 @@
+{
+ "clip": "shorts/one-week-hacked",
+ "model": "sherpa-zipformer-en + script align",
+ "words": [
+  {
+   "text": "One",
+   "start": 0.0,
+   "end": 0.31
+  },
+  {
+   "text": "week...",
+   "start": 0.32,
+   "end": 0.83
+  },
+  {
+   "text": "The",
+   "start": 0.84,
+   "end": 1.15
+  },
+  {
+   "text": "FBI.",
+   "start": 1.16,
+   "end": 1.79
+  },
+  {
+   "text": "The",
+   "start": 1.8,
+   "end": 2.11
+  },
+  {
+   "text": "CIA.",
+   "start": 2.12,
+   "end": 2.79
+  },
+  {
+   "text": "The",
+   "start": 2.8,
+   "end": 3.11
+  },
+  {
+   "text": "US",
+   "start": 3.12,
+   "end": 3.43
+  },
+  {
+   "text": "Treasury.",
+   "start": 3.44,
+   "end": 4.14
+  },
+  {
+   "text": "All",
+   "start": 4.24,
+   "end": 4.59
+  },
+  {
+   "text": "hacked.",
+   "start": 4.6,
+   "end": 5.11
+  },
+  {
+   "text": "And",
+   "start": 5.12,
+   "end": 5.35
+  },
+  {
+   "text": "nobody",
+   "start": 5.36,
+   "end": 5.99
+  },
+  {
+   "text": "knows",
+   "start": 6.0,
+   "end": 6.27
+  },
+  {
+   "text": "who",
+   "start": 6.28,
+   "end": 6.47
+  },
+  {
+   "text": "did",
+   "start": 6.48,
+   "end": 6.67
+  },
+  {
+   "text": "it.",
+   "start": 6.68,
+   "end": 6.95
+  },
+  {
+   "text": "Friday.",
+   "start": 6.96,
+   "end": 7.59
+  },
+  {
+   "text": "The",
+   "start": 7.6,
+   "end": 7.83
+  },
+  {
+   "text": "FBI's",
+   "start": 7.84,
+   "end": 8.27
+  },
+  {
+   "text": "crime",
+   "start": 8.28,
+   "end": 8.55
+  },
+  {
+   "text": "database.",
+   "start": 8.56,
+   "end": 9.11
+  },
+  {
+   "text": "The",
+   "start": 9.12,
+   "end": 9.31
+  },
+  {
+   "text": "one",
+   "start": 9.32,
+   "end": 9.51
+  },
+  {
+   "text": "every",
+   "start": 9.52,
+   "end": 9.79
+  },
+  {
+   "text": "cop",
+   "start": 9.8,
+   "end": 9.99
+  },
+  {
+   "text": "in",
+   "start": 10.0,
+   "end": 10.07
+  },
+  {
+   "text": "America",
+   "start": 10.08,
+   "end": 10.51
+  },
+  {
+   "text": "checks",
+   "start": 10.52,
+   "end": 10.79
+  },
+  {
+   "text": "when",
+   "start": 10.8,
+   "end": 10.91
+  },
+  {
+   "text": "they",
+   "start": 10.92,
+   "end": 11.03
+  },
+  {
+   "text": "pull",
+   "start": 11.04,
+   "end": 11.23
+  },
+  {
+   "text": "you",
+   "start": 11.24,
+   "end": 11.43
+  },
+  {
+   "text": "over.",
+   "start": 11.44,
+   "end": 11.87
+  },
+  {
+   "text": "Warrants.",
+   "start": 11.88,
+   "end": 12.47
+  },
+  {
+   "text": "Criminal",
+   "start": 12.48,
+   "end": 12.91
+  },
+  {
+   "text": "records.",
+   "start": 12.92,
+   "end": 13.35
+  },
+  {
+   "text": "Missing",
+   "start": 13.36,
+   "end": 13.79
+  },
+  {
+   "text": "people...",
+   "start": 13.8,
+   "end": 14.39
+  },
+  {
+   "text": "Breached.",
+   "start": 14.4,
+   "end": 15.1
+  },
+  {
+   "text": "Then",
+   "start": 15.28,
+   "end": 15.55
+  },
+  {
+   "text": "the",
+   "start": 15.56,
+   "end": 15.79
+  },
+  {
+   "text": "CIA.",
+   "start": 15.8,
+   "end": 16.21
+  },
+  {
+   "text": "A",
+   "start": 16.22,
+   "end": 16.63
+  },
+  {
+   "text": "spy-agency",
+   "start": 16.64,
+   "end": 17.34
+  },
+  {
+   "text": "system,",
+   "start": 17.6,
+   "end": 18.07
+  },
+  {
+   "text": "broken",
+   "start": 18.08,
+   "end": 18.59
+  },
+  {
+   "text": "into.",
+   "start": 18.6,
+   "end": 18.95
+  },
+  {
+   "text": "They",
+   "start": 18.96,
+   "end": 19.23
+  },
+  {
+   "text": "say",
+   "start": 19.24,
+   "end": 19.47
+  },
+  {
+   "text": "nothing",
+   "start": 19.48,
+   "end": 19.83
+  },
+  {
+   "text": "classified",
+   "start": 19.84,
+   "end": 20.51
+  },
+  {
+   "text": "was",
+   "start": 20.52,
+   "end": 20.71
+  },
+  {
+   "text": "touched...",
+   "start": 20.72,
+   "end": 21.19
+  },
+  {
+   "text": "but",
+   "start": 21.2,
+   "end": 21.55
+  },
+  {
+   "text": "they",
+   "start": 21.56,
+   "end": 21.87
+  },
+  {
+   "text": "still",
+   "start": 21.88,
+   "end": 22.15
+  },
+  {
+   "text": "got",
+   "start": 22.16,
+   "end": 22.39
+  },
+  {
+   "text": "in.",
+   "start": 22.4,
+   "end": 22.75
+  },
+  {
+   "text": "Then",
+   "start": 22.76,
+   "end": 23.07
+  },
+  {
+   "text": "Tuesday.",
+   "start": 23.08,
+   "end": 23.78
+  },
+  {
+   "text": "The",
+   "start": 23.84,
+   "end": 23.99
+  },
+  {
+   "text": "Treasury.",
+   "start": 24.0,
+   "end": 24.67
+  },
+  {
+   "text": "The",
+   "start": 24.68,
+   "end": 24.87
+  },
+  {
+   "text": "office",
+   "start": 24.88,
+   "end": 25.27
+  },
+  {
+   "text": "banks",
+   "start": 25.28,
+   "end": 25.55
+  },
+  {
+   "text": "report",
+   "start": 25.56,
+   "end": 25.87
+  },
+  {
+   "text": "dirty",
+   "start": 25.88,
+   "end": 26.23
+  },
+  {
+   "text": "money",
+   "start": 26.24,
+   "end": 26.55
+  },
+  {
+   "text": "to.",
+   "start": 26.56,
+   "end": 26.87
+  },
+  {
+   "text": "Systems...",
+   "start": 26.88,
+   "end": 27.55
+  },
+  {
+   "text": "pulled",
+   "start": 27.56,
+   "end": 27.91
+  },
+  {
+   "text": "offline.",
+   "start": 27.92,
+   "end": 28.62
+  },
+  {
+   "text": "And",
+   "start": 28.68,
+   "end": 28.83
+  },
+  {
+   "text": "the",
+   "start": 28.84,
+   "end": 28.99
+  },
+  {
+   "text": "White",
+   "start": 29.0,
+   "end": 29.27
+  },
+  {
+   "text": "House's",
+   "start": 29.28,
+   "end": 29.67
+  },
+  {
+   "text": "top",
+   "start": 29.68,
+   "end": 29.95
+  },
+  {
+   "text": "cyber",
+   "start": 29.96,
+   "end": 30.35
+  },
+  {
+   "text": "chief?",
+   "start": 30.36,
+   "end": 31.03
+  },
+  {
+   "text": "Gone...",
+   "start": 31.04,
+   "end": 31.63
+  },
+  {
+   "text": "that",
+   "start": 31.64,
+   "end": 31.91
+  },
+  {
+   "text": "same",
+   "start": 31.92,
+   "end": 32.31
+  },
+  {
+   "text": "week.",
+   "start": 32.32,
+   "end": 32.87
+  },
+  {
+   "text": "Who's",
+   "start": 32.88,
+   "end": 33.23
+  },
+  {
+   "text": "behind",
+   "start": 33.24,
+   "end": 33.59
+  },
+  {
+   "text": "it?",
+   "start": 33.6,
+   "end": 33.87
+  },
+  {
+   "text": "Nobody's",
+   "start": 33.88,
+   "end": 34.58
+  },
+  {
+   "text": "said.",
+   "start": 34.6,
+   "end": 34.87
+  },
+  {
+   "text": "Nobody's",
+   "start": 34.88,
+   "end": 35.58
+  },
+  {
+   "text": "claimed",
+   "start": 35.6,
+   "end": 35.99
+  },
+  {
+   "text": "it.",
+   "start": 36.0,
+   "end": 36.31
+  },
+  {
+   "text": "Three",
+   "start": 36.32,
+   "end": 36.63
+  },
+  {
+   "text": "of",
+   "start": 36.64,
+   "end": 36.79
+  },
+  {
+   "text": "the",
+   "start": 36.8,
+   "end": 36.95
+  },
+  {
+   "text": "most",
+   "start": 36.96,
+   "end": 37.23
+  },
+  {
+   "text": "powerful",
+   "start": 37.24,
+   "end": 37.67
+  },
+  {
+   "text": "agencies",
+   "start": 37.68,
+   "end": 38.23
+  },
+  {
+   "text": "on",
+   "start": 38.24,
+   "end": 38.47
+  },
+  {
+   "text": "Earth...",
+   "start": 38.48,
+   "end": 38.87
+  },
+  {
+   "text": "in",
+   "start": 38.88,
+   "end": 39.11
+  },
+  {
+   "text": "one",
+   "start": 39.12,
+   "end": 39.51
+  },
+  {
+   "text": "week.",
+   "start": 39.52,
+   "end": 40.11
+  },
+  {
+   "text": "So",
+   "start": 40.12,
+   "end": 40.47
+  },
+  {
+   "text": "who",
+   "start": 40.48,
+   "end": 40.63
+  },
+  {
+   "text": "do",
+   "start": 40.64,
+   "end": 40.79
+  },
+  {
+   "text": "you",
+   "start": 40.8,
+   "end": 40.87
+  },
+  {
+   "text": "think",
+   "start": 40.88,
+   "end": 41.07
+  },
+  {
+   "text": "it",
+   "start": 41.08,
+   "end": 41.23
+  },
+  {
+   "text": "is?",
+   "start": 41.24,
+   "end": 41.55
+  },
+  {
+   "text": "Tell",
+   "start": 41.56,
+   "end": 41.75
+  },
+  {
+   "text": "me",
+   "start": 41.76,
+   "end": 41.91
+  },
+  {
+   "text": "in",
+   "start": 41.92,
+   "end": 42.03
+  },
+  {
+   "text": "the",
+   "start": 42.04,
+   "end": 42.15
+  },
+  {
+   "text": "comments.",
+   "start": 42.16,
+   "end": 42.76
+  }
+ ]
+}
