@@ -24,6 +24,7 @@ import { WALKS_FREE_FRAMES, WalksFreeGTA6, walksFreeSchema } from "./shorts/Walk
 import { JENSEN_BACK_FRAMES, JensenBack, jensenBackSchema } from "./shorts/JensenBack";
 import { AI_BANK_FRAMES, AiBankHeist, aiBankSchema } from "./shorts/AiBankHeist";
 import { ONE_WEEK_FRAMES, OneWeekHacked, oneWeekSchema } from "./shorts/OneWeekHacked";
+import { PC_PORT_FRAMES, GTA6PcPort, pcPortSchema } from "./shorts/GTA6PcPort";
 import { SHORT_CYBERLEAK_FRAMES, ShortCyberleak, shortCyberleakSchema } from "./shorts/ShortCyberleak";
 import { SHORT_H, SHORT_LAPSUS1_FRAMES, SHORT_W, ShortLapsus1, shortLapsus1Schema } from "./shorts/ShortLapsus1";
 import { Thumbnail, ThumbnailAlphaBayBright, ThumbnailLapsus, ThumbnailLapsusB, ThumbnailLapsusBright, ThumbnailLapsusC, ThumbnailSilkRoadBright, VerticalCover, VerticalCoverAlphaBay, VerticalCoverLapsus, thumbnailSchema } from "./video2/Thumbnail";
@@ -298,6 +299,16 @@ export const RemotionRoot: React.FC = () => {
         height={SHORT_H}
         fps={VIDEO.fps}
         durationInFrames={ONE_WEEK_FRAMES}
+      />
+      <Composition
+        id="GTA6-PC-Port"
+        component={GTA6PcPort}
+        schema={pcPortSchema}
+        defaultProps={{ showCaptions: true }}
+        width={SHORT_W}
+        height={SHORT_H}
+        fps={VIDEO.fps}
+        durationInFrames={PC_PORT_FRAMES}
       />
       <Composition
         id="Judge-GTA6-YT"
