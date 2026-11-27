@@ -25,6 +25,7 @@ import { JENSEN_BACK_FRAMES, JensenBack, jensenBackSchema } from "./shorts/Jense
 import { AI_BANK_FRAMES, AiBankHeist, aiBankSchema } from "./shorts/AiBankHeist";
 import { ONE_WEEK_FRAMES, OneWeekHacked, oneWeekSchema } from "./shorts/OneWeekHacked";
 import { PC_PORT_FRAMES, GTA6PcPort, pcPortSchema } from "./shorts/GTA6PcPort";
+import { PHOTO_BAN_FRAMES, GTA6PhotoBan, photoBanSchema } from "./shorts/GTA6PhotoBan";
 import { SHORT_CYBERLEAK_FRAMES, ShortCyberleak, shortCyberleakSchema } from "./shorts/ShortCyberleak";
 import { SHORT_H, SHORT_LAPSUS1_FRAMES, SHORT_W, ShortLapsus1, shortLapsus1Schema } from "./shorts/ShortLapsus1";
 import { Thumbnail, ThumbnailAlphaBayBright, ThumbnailLapsus, ThumbnailLapsusB, ThumbnailLapsusBright, ThumbnailLapsusC, ThumbnailSilkRoadBright, VerticalCover, VerticalCoverAlphaBay, VerticalCoverLapsus, thumbnailSchema } from "./video2/Thumbnail";
@@ -309,6 +310,16 @@ export const RemotionRoot: React.FC = () => {
         height={SHORT_H}
         fps={VIDEO.fps}
         durationInFrames={PC_PORT_FRAMES}
+      />
+      <Composition
+        id="GTA6-Photo-Ban"
+        component={GTA6PhotoBan}
+        schema={photoBanSchema}
+        defaultProps={{ showCaptions: true }}
+        width={SHORT_W}
+        height={SHORT_H}
+        fps={VIDEO.fps}
+        durationInFrames={PHOTO_BAN_FRAMES}
       />
       <Composition
         id="Judge-GTA6-YT"
